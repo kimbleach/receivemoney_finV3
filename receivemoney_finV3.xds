@@ -1,6 +1,9 @@
 {
     "name": "receivemoney_finV3",
-    "settings": {},
+    "settings": {
+        "urlPrefix": "http://localhost/receivemoney_finV3/",
+        "exportPath": ""
+    },
     "xdsVersion": "2.2.1",
     "xdsBuild": 951,
     "schemaVersion": 1,
