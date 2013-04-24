@@ -120,7 +120,7 @@
             "userConfig": {
                 "designer|userClassName": "MyColumn8",
                 "dataIndex": "id",
-                "text": "Id"
+                "text": "รายการที่"
             },
             "designerId": "4853784e-df93-4d1d-8458-0901b83afa29"
         },
@@ -134,7 +134,7 @@
             "userConfig": {
                 "designer|userClassName": "MyDateColumn2",
                 "dataIndex": "date",
-                "text": "Date"
+                "text": "วันที่"
             },
             "designerId": "4c3420b0-1f21-407d-99ec-7f901927a564"
         },
@@ -146,9 +146,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "width": 118,
                 "designer|userClassName": "MyColumn9",
                 "dataIndex": "transaction",
-                "text": "Transaction"
+                "text": "ประเภทรายการ"
             },
             "designerId": "8b8e5490-73f1-44d3-9012-6317fec0436e"
         },
@@ -162,7 +163,7 @@
             "userConfig": {
                 "designer|userClassName": "MyColumn10",
                 "dataIndex": "deposit",
-                "text": "Deposit"
+                "text": "ยอดเงิน"
             },
             "designerId": "067dd2b7-4f04-4796-932b-9336711c004c"
         },
@@ -174,9 +175,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "width": 146,
                 "designer|userClassName": "MyColumn11",
                 "dataIndex": "tellerId",
-                "text": "TellerId"
+                "text": "หมายเลขผู้ทำรายการ"
             },
             "designerId": "fa71119d-64f3-4437-b192-341a23372efd"
         },

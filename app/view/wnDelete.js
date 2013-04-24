@@ -19,13 +19,13 @@ Ext.define('MyApp.view.wnDelete', {
 
     height: 165,
     id: 'wnDelete',
-    width: 275,
+    width: 289,
     layout: {
         type: 'absolute'
     },
     icon: 'http://www.dhl.co.th/content/dam/General%20DHL%20pictures/Icons/ImportantInfo_teaser_29x29/white_icon_teaser_1_29x29.jpg',
     iconCls: '',
-    title: 'Delete',
+    title: 'คำเตือน',
 
     initComponent: function() {
         var me = this;
@@ -41,7 +41,7 @@ Ext.define('MyApp.view.wnDelete', {
                     margin: '50 0 0 50',
                     width: 70,
                     icon: 'http://anonmails.de/img/icon_ok.gif',
-                    text: 'yes'
+                    text: 'ใช่'
                 },
                 {
                     xtype: 'button',
@@ -52,7 +52,7 @@ Ext.define('MyApp.view.wnDelete', {
                     margin: '50 0 0 50',
                     width: 70,
                     icon: 'http://www.qcm.ch/typo3conf/ext/qcm_courses/res/icons/icon_no.png',
-                    text: 'no'
+                    text: 'ไม่'
                 },
                 {
                     xtype: 'label',
@@ -61,7 +61,7 @@ Ext.define('MyApp.view.wnDelete', {
                     height: 20,
                     html: '',
                     width: 160,
-                    text: 'Are you sure to delete !'
+                    text: 'คุณต้องการลบข้อมูลใช่หรือไม่'
                 },
                 {
                     xtype: 'image',

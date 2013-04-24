@@ -72,27 +72,29 @@ Ext.define('MyApp.view.mygridpanel2', {
                 {
                     xtype: 'gridcolumn',
                     dataIndex: 'id',
-                    text: 'Id'
+                    text: 'รายการที่'
                 },
                 {
                     xtype: 'datecolumn',
                     dataIndex: 'date',
-                    text: 'Date'
+                    text: 'วันที่'
                 },
                 {
                     xtype: 'gridcolumn',
+                    width: 118,
                     dataIndex: 'transaction',
-                    text: 'Transaction'
+                    text: 'ประเภทรายการ'
                 },
                 {
                     xtype: 'gridcolumn',
                     dataIndex: 'deposit',
-                    text: 'Deposit'
+                    text: 'ยอดเงิน'
                 },
                 {
                     xtype: 'gridcolumn',
+                    width: 146,
                     dataIndex: 'tellerId',
-                    text: 'TellerId'
+                    text: 'หมายเลขผู้ทำรายการ'
                 },
                 {
                     xtype: 'actioncolumn',
