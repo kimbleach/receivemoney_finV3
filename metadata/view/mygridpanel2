@@ -1,0 +1,294 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": null,
+        "id": "mygridpanel2",
+        "width": null,
+        "designer|userClassName": "mygridpanel2",
+        "designer|userAlias": "mygridpanel2",
+        "title": null,
+        "store": "cultData"
+    },
+    "designerId": "fbc0b5b6-c6cc-4e1a-8a9a-6fee818c735e",
+    "cn": [
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView"
+            },
+            "designerId": "f4f24c9f-e37a-4deb-8763-9630dba0b59f"
+        },
+        {
+            "type": "Ext.grid.feature.Grouping",
+            "reference": {
+                "name": "features",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGroupingFeature"
+            },
+            "designerId": "1283748e-58b2-444d-873b-63cbae8f1e54",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "groupHeaderTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "groupHeaderTpl",
+                        "implHandler": [
+                            "{columnName}: {name}"
+                        ],
+                        "designer|displayName": "groupHeaderTpl"
+                    },
+                    "designerId": "78235c3b-bd9b-45c5-a161-8aa485eb991a",
+                    "cn": [
+                        {
+                            "type": "templatefunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "Date",
+                                "fn": "Date",
+                                "designer|params": [
+                                    "data"
+                                ],
+                                "implHandler": [
+                                    "var today = Ext.Date.clearTime(new Date()),\r",
+                                    "    todayTime = today.getTime(),\r",
+                                    "    dueDateTime;\r",
+                                    "\r",
+                                    "if(!date) {\r",
+                                    "    return '(No Date)';\r",
+                                    "}\r",
+                                    "dueDateTime = Ext.Date.clearTime(date).getTime();\r",
+                                    "if(dueDateTime === todayTime) {\r",
+                                    "    return 'Today';\r",
+                                    "}\r",
+                                    "if(dueDateTime > todayTime) {\r",
+                                    "    if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, 1).getTime()) {\r",
+                                    "        // due date is current date + 1 day\r",
+                                    "        return 'Tomorrow';\r",
+                                    "    }\r",
+                                    "    if(dueDateTime < Ext.Date.add(today, Ext.Date.DAY, 7).getTime()) {\r",
+                                    "        // if the due date is less than one week in the future, return the day of the week.\r",
+                                    "        return Ext.Date.format(date, 'l');\r",
+                                    "    }\r",
+                                    "} else {\r",
+                                    "    if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, -1).getTime()) {\r",
+                                    "        // due date is current date - 1 day.\r",
+                                    "        return 'Yesterday';\r",
+                                    "    }\r",
+                                    "    if(dueDateTime > Ext.Date.add(today, Ext.Date.DAY, -7).getTime()) {\r",
+                                    "        // if the due date is less than one week past, return 'Last' + the day of the week.\r",
+                                    "        return 'Last '+ Ext.Date.format(date, 'l');\r",
+                                    "    }\r",
+                                    "}\r",
+                                    "return date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');\r",
+                                    ""
+                                ]
+                            },
+                            "designerId": "1ccd5113-c0d2-4399-a85c-b48e30aa8d71"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn8",
+                "dataIndex": "id",
+                "text": "Id"
+            },
+            "designerId": "4853784e-df93-4d1d-8458-0901b83afa29"
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyDateColumn2",
+                "dataIndex": "date",
+                "text": "Date"
+            },
+            "designerId": "4c3420b0-1f21-407d-99ec-7f901927a564"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn9",
+                "dataIndex": "transaction",
+                "text": "Transaction"
+            },
+            "designerId": "8b8e5490-73f1-44d3-9012-6317fec0436e"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn10",
+                "dataIndex": "deposit",
+                "text": "Deposit"
+            },
+            "designerId": "067dd2b7-4f04-4796-932b-9336711c004c"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn11",
+                "dataIndex": "tellerId",
+                "text": "TellerId"
+            },
+            "designerId": "fa71119d-64f3-4437-b192-341a23372efd"
+        },
+        {
+            "type": "Ext.grid.column.Action",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyActionColumn",
+                "designer|displayName": "Edit",
+                "sortable": true,
+                "menuText": null,
+                "altText": ""
+            },
+            "designerId": "7e6dd1a8-a081-4005-bbb2-ab0ced52e5f2",
+            "cn": [
+                {
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem1",
+                        "designer|displayName": "edit",
+                        "icon": "http://b.dryicons.com/images/icon_sets/luna_blue_icons/png/128x128/edit.png",
+                        "tooltip": "edit"
+                    },
+                    "designerId": "c9dff468-de0e-47f2-bd3b-cd415b7ec24b",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "view",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "item",
+                                    "e",
+                                    "record",
+                                    "row"
+                                ],
+                                "implHandler": [
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "var rec = view.getRecords(view.getNodes())[rowIndex];\r",
+                                    "\r",
+                                    "this.fireEvent('itemclick', this, 'addd',  view, rowIndex, colIndex, item, e,record,row);"
+                                ]
+                            },
+                            "designerId": "8f24fac5-72d3-421b-b6d5-5c5a1e7b6ea9"
+                        }
+                    ]
+                },
+                {
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem",
+                        "designer|displayName": "delete",
+                        "icon": "http://a.dryicons.com/images/icon_sets/luna_blue_icons/png/128x128/delete.png",
+                        "tooltip": "detete"
+                    },
+                    "designerId": "23f320fa-b0cd-47dc-a134-6cac9f507e8c",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "view",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "item",
+                                    "e",
+                                    "record",
+                                    "row"
+                                ],
+                                "implHandler": [
+                                    "\r",
+                                    "\r",
+                                    "this.fireEvent('itemclick', this, 'delete', view, rowIndex, colIndex, item, e,record,row);\r",
+                                    ""
+                                ]
+                            },
+                            "designerId": "4ccc994e-f327-45d7-b89a-c46c2481d59f"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

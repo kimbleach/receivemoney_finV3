@@ -1,0 +1,67 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "cultMemberBalance"
+    },
+    "designerId": "7f71da91-8e46-4765-9aa2-b5cff339438b",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "designer|userClassName": "MyField3"
+            },
+            "designerId": "e1fdbf19-6965-49d4-9aad-8807a6c6d90f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lastShare",
+                "designer|userClassName": "MyField4"
+            },
+            "designerId": "e42134de-6edb-49e7-99bd-61155d804531"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "memberId",
+                "designer|userClassName": "MyField5"
+            },
+            "designerId": "521b9ba5-a162-4798-9efa-9c137b1f29fa"
+        },
+        {
+            "type": "Ext.data.association.HasOne",
+            "reference": {
+                "name": "hasOne",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "model": "cultMember",
+                "designer|userClassName": "MyHasOneAssociation",
+                "designer|displayName": "hasOnecultMember"
+            },
+            "designerId": "1203ef66-d6e2-48b8-8d89-100c6e5b843d"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "cultMember"
+    },
+    "designerId": "a94671f8-c67f-4846-8c8e-b79ff15df248",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "designer|userClassName": "MyField"
+            },
+            "designerId": "71c5c1bc-c8ad-490b-8d59-efd771516f88"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "designer|userClassName": "MyField1"
+            },
+            "designerId": "c490801e-8276-4918-a33c-3a7de8a79c5f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "mobilePhone",
+                "designer|userClassName": "MyField2"
+            },
+            "designerId": "3913c703-bc57-4cc1-8d06-a1c61720958b"
+        },
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "model": "cultMemberBalance",
+                "designer|userClassName": "MyHasManyAssociation",
+                "designer|displayName": "hasManycultMemberBalance",
+                "autoLoad": true,
+                "foreignKey": "memberId"
+            },
+            "designerId": "c58106fa-953b-488e-ac60-84de55fec284"
+        },
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "model": "cultMemberLoanBalance",
+                "designer|userClassName": "MyHasManyAssociation1",
+                "designer|displayName": "hasManycultMemberLoanBalance",
+                "foreignKey": "memberId"
+            },
+            "designerId": "4dfa4aa6-c7fe-4253-8b81-72cfd4378024"
+        },
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "model": "cultMemberS5",
+                "designer|userClassName": "MyHasManyAssociation2",
+                "designer|displayName": "hasManycultMemberS5",
+                "foreignKey": "memberId"
+            },
+            "designerId": "41195e6c-aa38-4989-819d-944e755fd975"
+        },
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "model": "cultMemberS12",
+                "designer|userClassName": "MyHasManyAssociation3",
+                "designer|displayName": "hasManycultMemberS12",
+                "foreignKey": "memberId"
+            },
+            "designerId": "e74e49aa-c9e1-4550-9934-143cf453a723"
+        }
+    ]
+}

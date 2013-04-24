@@ -1,0 +1,28 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 250,
+        "width": 400,
+        "designer|userClassName": "MyPanel2",
+        "designer|userAlias": "mypanel2",
+        "title": "My Panel"
+    },
+    "designerId": "f3f9db18-33da-4921-b51e-bb907de8ad4c",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "bec40217-920a-403e-887e-5c8ad379685b",
+            "masterInstanceId": "fbc0b5b6-c6cc-4e1a-8a9a-6fee818c735e"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "pnAll",
+        "designer|initialView": true,
+        "layout": "border"
+    },
+    "designerId": "2407bca4-90e9-4894-bae7-955c00d57036",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "layout|region": "north"
+            },
+            "designerId": "b3e6f128-d0de-4b39-bb41-cf972c8b6bad",
+            "masterInstanceId": "e95d4825-2b78-4af8-9fd2-f7c6da206a4a"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "รายการกริด",
+                "layout|flex": 3,
+                "layout|region": "center"
+            },
+            "designerId": "7f9e5352-ac2b-40cd-bac4-f8b99c405f90",
+            "masterInstanceId": "f3f9db18-33da-4921-b51e-bb907de8ad4c"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "south"
+            },
+            "designerId": "f0d7e043-75df-4292-819a-c21f014361b7",
+            "masterInstanceId": "17d16757-e503-47ad-8f25-3c86f950a0da"
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "cultMemberLoanBalance"
+    },
+    "designerId": "95250623-fb4b-4795-b456-d4667bec8cba",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "designer|userClassName": "MyField11"
+            },
+            "designerId": "a10abc1a-075f-45ce-b93c-5691f8722d4b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lastInterestDate",
+                "designer|userClassName": "MyField12"
+            },
+            "designerId": "9a51f161-4583-4d26-8e75-e94beedfc35a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lastPrinciple",
+                "designer|userClassName": "MyField13"
+            },
+            "designerId": "9662a575-f3c7-4f1d-a8d0-ce14b6053a2c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "periodAmt",
+                "designer|userClassName": "MyField14"
+            },
+            "designerId": "5fb6456a-db5b-4189-ab3e-281690d98dd0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "memberId",
+                "designer|userClassName": "MyField15"
+            },
+            "designerId": "bc9719d1-d090-4b4c-b02a-0f630bf7e69f"
+        },
+        {
+            "type": "Ext.data.association.HasOne",
+            "reference": {
+                "name": "hasOne",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "model": "cultMember",
+                "designer|userClassName": "MyHasOneAssociation1",
+                "designer|displayName": "hasOnecultMember"
+            },
+            "designerId": "a095ab8a-8cb0-42f6-babb-d8993274dae6"
+        }
+    ]
+}

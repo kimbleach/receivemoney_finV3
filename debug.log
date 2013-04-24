@@ -1,0 +1,27 @@
+[1404:6060:0423/120006:10309466:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[1404:6060:0423/120006:10309466:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[1404:6060:0423/120006:10309466:ERROR:backend_impl.cc(221)] Unable to create cache
+[6412:6464:0423/143313:19495741:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[6412:6464:0423/143313:19495741:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[6412:6464:0423/143313:19495741:ERROR:backend_impl.cc(221)] Unable to create cache
+[6412:6416:0423/143322:19504867:INFO:CONSOLE(43)] "Could not find master instance 1ca95de5-fd58-4f7a-ac1a-f7c26ed9ceb7 for linked instance "component4" - the linked instance will be removed.", source: ionp:/src/frameworks/common/definitions/LinkedInstance.js?0.5165662930812687 (43)
+[6412:6416:0423/143331:19514367:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[6800:6852:0423/143358:19541356:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[6800:6852:0423/143358:19541356:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[6800:6852:0423/143358:19541356:ERROR:backend_impl.cc(221)] Unable to create cache
+[6800:6804:0423/143407:19550216:INFO:CONSOLE(43)] "Could not find master instance 1ca95de5-fd58-4f7a-ac1a-f7c26ed9ceb7 for linked instance "component4" - the linked instance will be removed.", source: ionp:/src/frameworks/common/definitions/LinkedInstance.js?0.4760197205469012 (43)
+[6800:6804:0423/143532:19635034:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[7540:7592:0423/143621:19684003:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[7540:7592:0423/143621:19684003:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[7540:7592:0423/143621:19684003:ERROR:backend_impl.cc(221)] Unable to create cache
+[7540:7544:0423/143629:19692474:INFO:CONSOLE(43)] "Could not find master instance 1ca95de5-fd58-4f7a-ac1a-f7c26ed9ceb7 for linked instance "component4" - the linked instance will be removed.", source: ionp:/src/frameworks/common/definitions/LinkedInstance.js?0.9451072809752077 (43)
+[7540:7544:0423/153843:23425874:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[2424:7024:0423/153850:23433487:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[2424:7024:0423/153850:23433487:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[2424:7024:0423/153850:23433487:ERROR:backend_impl.cc(221)] Unable to create cache
+[2424:2208:0423/153859:23441708:INFO:CONSOLE(43)] "Could not find master instance 1ca95de5-fd58-4f7a-ac1a-f7c26ed9ceb7 for linked instance "component4" - the linked instance will be removed.", source: ionp:/src/frameworks/common/definitions/LinkedInstance.js?0.8625434038694948 (43)
+[2424:2208:0423/160836:25218731:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[6748:7584:0423/160904:25246640:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[6748:7584:0423/160904:25246640:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[6748:7584:0423/160904:25246640:ERROR:backend_impl.cc(221)] Unable to create cache
+[6748:6496:0423/160912:25254892:INFO:CONSOLE(43)] "Could not find master instance 1ca95de5-fd58-4f7a-ac1a-f7c26ed9ceb7 for linked instance "component4" - the linked instance will be removed.", source: ionp:/src/frameworks/common/definitions/LinkedInstance.js?0.1846633313689381 (43)

@@ -1,0 +1,16 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": null,
+        "width": null,
+        "designer|userClassName": "pnGrid",
+        "designer|userAlias": "mypanel11",
+        "title": "รายการข้อมูล"
+    },
+    "designerId": "7391f0dd-8b84-41cc-82c3-ef9fdb3b83cf"
+}

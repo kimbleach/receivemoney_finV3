@@ -1,0 +1,31 @@
+{
+    "type": "Ext.toolbar.Toolbar",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "width": 400,
+        "designer|userClassName": "MyToolbar",
+        "designer|userAlias": "mytoolbar2"
+    },
+    "designerId": "17d16757-e503-47ad-8f25-3c86f950a0da",
+    "cn": [
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "id": "btnAdd",
+                "designer|userClassName": "MyButton3",
+                "text": "รับเงิน"
+            },
+            "designerId": "cce87f4b-ade1-442a-8b59-f6122069d500"
+        }
+    ]
+}

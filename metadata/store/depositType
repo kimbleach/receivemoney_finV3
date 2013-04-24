@@ -1,0 +1,45 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "depositTypeModel",
+        "storeId": "MyJsonStore6",
+        "designer|userClassName": "depositType"
+    },
+    "designerId": "4f0aad23-b2b2-4e0e-9e3c-22c0a855dea5",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy6",
+                "url": "../receivemoney_finV3/data/depositType.json"
+            },
+            "designerId": "d32eb531-663b-4fdb-b990-c03de36023d2",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "depositType",
+                        "designer|userClassName": "MyJsonReader6"
+                    },
+                    "designerId": "5bac0bd6-2bd7-487e-b206-7517e3be68f1"
+                }
+            ]
+        }
+    ]
+}

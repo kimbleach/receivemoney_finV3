@@ -1,0 +1,80 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "cultMemberS12"
+    },
+    "designerId": "90d40d68-e8a8-4be6-94f8-8e9219b00aff",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "designer|userClassName": "MyField19"
+            },
+            "designerId": "6e1694a0-6663-4b83-bc0e-70cfd69cfe42"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lastS1",
+                "designer|userClassName": "MyField20"
+            },
+            "designerId": "bb12daa4-093f-4fba-a76f-da4f990f0034"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lastS2",
+                "designer|userClassName": "MyField21"
+            },
+            "designerId": "3c6b4afb-844c-4001-8ae9-f6dbcab7f06b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "memberId",
+                "designer|userClassName": "MyField22"
+            },
+            "designerId": "0931c4f4-654e-402e-abc6-4c8300e3ca34"
+        },
+        {
+            "type": "Ext.data.association.HasOne",
+            "reference": {
+                "name": "hasOne",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "model": "cultMember",
+                "designer|userClassName": "MyHasOneAssociation3",
+                "designer|displayName": "hasOnecultMember"
+            },
+            "designerId": "828638a0-4fb9-4b4e-9152-cbdf922d5113"
+        }
+    ]
+}

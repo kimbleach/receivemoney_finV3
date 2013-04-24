@@ -1,0 +1,44 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "cultMember",
+            "cultMemberBalance",
+            "cultMemberLoanBalance",
+            "cultMemberS5",
+            "cultMemberS12",
+            "cultData",
+            "depositTypeModel"
+        ],
+        "stores": [
+            "cultMemberStore",
+            "cultMemberBalanceStore",
+            "cultMemberLoanBalanceStore",
+            "cultMemberS5Store",
+            "cultMemberS12Store",
+            "cultData",
+            "depositType"
+        ],
+        "views": [
+            "pnAll",
+            "pnSearch",
+            "pnGrid",
+            "MyToolbar",
+            "pnAddListMoneyWindows",
+            "mygridpanel2",
+            "MyPanel2",
+            "wnDelete"
+        ],
+        "autoCreateViewport": true,
+        "controllers": [
+            "MyController"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}

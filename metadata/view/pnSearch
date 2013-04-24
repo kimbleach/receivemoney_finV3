@@ -1,0 +1,46 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 176,
+        "width": 700,
+        "designer|userClassName": "pnSearch",
+        "designer|userAlias": "mypanel",
+        "title": "รายการค้นหา"
+    },
+    "designerId": "e95d4825-2b78-4af8-9fd2-f7c6da206a4a",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyTextField",
+                "fieldLabel": ""
+            },
+            "designerId": "52535c38-172f-4d41-aa00-db3e9e023e18"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 25,
+                "width": 59,
+                "designer|userClassName": "MyButton",
+                "text": "ค้นหา"
+            },
+            "designerId": "38e19390-4603-436f-b4ea-f75801632b1e"
+        }
+    ]
+}

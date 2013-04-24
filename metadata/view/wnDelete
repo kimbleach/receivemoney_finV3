@@ -1,0 +1,51 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 183,
+        "id": "wnDelete",
+        "width": 374,
+        "designer|userClassName": "wnDelete",
+        "designer|userAlias": "wnDelete",
+        "title": "Delete"
+    },
+    "designerId": "e06ac87b-cb15-4c22-8e30-acdf74d29786",
+    "cn": [
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "btnYes",
+                "margin": "50 0 0 50",
+                "width": 100,
+                "designer|userClassName": "MyButton4",
+                "text": "yes"
+            },
+            "designerId": "f45f1c75-110c-47ad-8124-a7dedfe3174d"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "btnNo",
+                "margin": "50 0 0 50",
+                "width": 100,
+                "designer|userClassName": "MyButton5",
+                "text": "no"
+            },
+            "designerId": "c5cdd3a9-c731-47a1-87cd-40937f499ce8"
+        }
+    ]
+}

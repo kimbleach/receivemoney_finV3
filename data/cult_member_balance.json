@@ -1,0 +1,23 @@
+[
+	{
+		"id" : "1",
+		"lastShare" : "30000",
+		"memberId" : "1"
+		
+	},{
+		"id" : "2",
+		"lastShare" : "30000",
+		"memberId" : "2"
+		
+	},{
+		"id" : "3",
+		"lastShare" : "30000",
+		"memberId" : "3"
+		
+	},{
+		"id" : "4",
+		"lastShare" : "30000",
+		"memberId" : "4"
+		
+	}
+]

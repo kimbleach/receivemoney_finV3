@@ -1,0 +1,241 @@
+{
+    "name": "receivemoney_finV3",
+    "settings": {},
+    "xdsVersion": "2.2.1",
+    "xdsBuild": 951,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000500,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "2407bca4-90e9-4894-bae7-955c00d57036": {
+            "paths": [
+                "metadata/view/pnAll",
+                "app/view/override/pnAll.js",
+                "app/view/pnAll.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "pnAll"
+        },
+        "e95d4825-2b78-4af8-9fd2-f7c6da206a4a": {
+            "paths": [
+                "metadata/view/pnSearch",
+                "app/view/override/pnSearch.js",
+                "app/view/pnSearch.js"
+            ],
+            "className": "pnSearch"
+        },
+        "7391f0dd-8b84-41cc-82c3-ef9fdb3b83cf": {
+            "paths": [
+                "metadata/view/pnGrid",
+                "app/view/override/pnGrid.js",
+                "app/view/pnGrid.js"
+            ],
+            "className": "pnGrid"
+        },
+        "5bb44bbe-f01f-43c4-afa5-48327f6e14d6": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "d2f202ae-22e2-4097-89b7-e79495de3c26": {
+            "paths": [
+                "metadata/store/cultMemberStore",
+                "app/store/override/cultMemberStore.js",
+                "app/store/cultMemberStore.js"
+            ],
+            "className": "cultMemberStore"
+        },
+        "a94671f8-c67f-4846-8c8e-b79ff15df248": {
+            "paths": [
+                "metadata/model/cultMember",
+                "app/model/override/cultMember.js",
+                "app/model/cultMember.js"
+            ],
+            "className": "cultMember"
+        },
+        "7f71da91-8e46-4765-9aa2-b5cff339438b": {
+            "paths": [
+                "metadata/model/cultMemberBalance",
+                "app/model/override/cultMemberBalance.js",
+                "app/model/cultMemberBalance.js"
+            ],
+            "className": "cultMemberBalance"
+        },
+        "0e7067c5-3081-4061-b3a5-f3f034c47225": {
+            "paths": [
+                "metadata/store/cultMemberBalanceStore",
+                "app/store/override/cultMemberBalanceStore.js",
+                "app/store/cultMemberBalanceStore.js"
+            ],
+            "className": "cultMemberBalanceStore"
+        },
+        "9e2287ed-fb94-4762-b6a3-43d06faac925": {
+            "paths": [
+                "metadata/store/cultMemberLoanBalanceStore",
+                "app/store/override/cultMemberLoanBalanceStore.js",
+                "app/store/cultMemberLoanBalanceStore.js"
+            ],
+            "className": "cultMemberLoanBalanceStore"
+        },
+        "25a05024-fdce-4058-aa50-46d2e5660c46": {
+            "paths": [
+                "metadata/store/cultMemberS5Store",
+                "app/store/override/cultMemberS5Store.js",
+                "app/store/cultMemberS5Store.js"
+            ],
+            "className": "cultMemberS5Store"
+        },
+        "1e004b8f-6512-4d87-a874-287f9d6b32fd": {
+            "paths": [
+                "metadata/store/cultMemberS12Store",
+                "app/store/override/cultMemberS12Store.js",
+                "app/store/cultMemberS12Store.js"
+            ],
+            "className": "cultMemberS12Store"
+        },
+        "95250623-fb4b-4795-b456-d4667bec8cba": {
+            "paths": [
+                "metadata/model/cultMemberLoanBalance",
+                "app/model/override/cultMemberLoanBalance.js",
+                "app/model/cultMemberLoanBalance.js"
+            ],
+            "className": "cultMemberLoanBalance"
+        },
+        "6891d505-cb4d-4c91-88c4-c9487688b3a0": {
+            "paths": [
+                "metadata/model/cultMemberS5",
+                "app/model/override/cultMemberS5.js",
+                "app/model/cultMemberS5.js"
+            ],
+            "className": "cultMemberS5"
+        },
+        "90d40d68-e8a8-4be6-94f8-8e9219b00aff": {
+            "paths": [
+                "metadata/model/cultMemberS12",
+                "app/model/override/cultMemberS12.js",
+                "app/model/cultMemberS12.js"
+            ],
+            "className": "cultMemberS12"
+        },
+        "5206848e-bfe9-4732-bde7-aa654445b989": {
+            "paths": [
+                "metadata/controller/MyController",
+                "app/controller/override/MyController.js",
+                "app/controller/MyController.js"
+            ],
+            "className": "MyController"
+        },
+        "2a76f874-bf40-49d7-be57-4c49ccee5c09": {
+            "paths": [
+                "metadata/model/cultData",
+                "app/model/override/cultData.js",
+                "app/model/cultData.js"
+            ],
+            "className": "cultData"
+        },
+        "5028e83a-0414-405b-8e3f-3ae7864f9637": {
+            "paths": [
+                "metadata/store/cultData",
+                "app/store/override/cultData.js",
+                "app/store/cultData.js"
+            ],
+            "className": "cultData"
+        },
+        "17d16757-e503-47ad-8f25-3c86f950a0da": {
+            "paths": [
+                "metadata/view/MyToolbar",
+                "app/view/override/MyToolbar.js",
+                "app/view/MyToolbar.js"
+            ],
+            "className": "MyToolbar"
+        },
+        "5a1d7163-796d-4fb1-9e0e-815b8784cf84": {
+            "paths": [
+                "metadata/view/pnAddListMoneyWindows",
+                "app/view/override/pnAddListMoneyWindows.js",
+                "app/view/pnAddListMoneyWindows.js"
+            ],
+            "className": "pnAddListMoneyWindows"
+        },
+        "fbc0b5b6-c6cc-4e1a-8a9a-6fee818c735e": {
+            "paths": [
+                "metadata/view/mygridpanel2",
+                "app/view/override/mygridpanel2.js",
+                "app/view/mygridpanel2.js"
+            ],
+            "className": "mygridpanel2"
+        },
+        "f3f9db18-33da-4921-b51e-bb907de8ad4c": {
+            "paths": [
+                "metadata/view/MyPanel2",
+                "app/view/override/MyPanel2.js",
+                "app/view/MyPanel2.js"
+            ],
+            "className": "MyPanel2"
+        },
+        "4f0aad23-b2b2-4e0e-9e3c-22c0a855dea5": {
+            "paths": [
+                "metadata/store/depositType",
+                "app/store/override/depositType.js",
+                "app/store/depositType.js"
+            ],
+            "className": "depositType"
+        },
+        "4f716d20-f44a-41b6-b0f6-1a4fbe7e8468": {
+            "paths": [
+                "metadata/model/depositTypeModel",
+                "app/model/override/depositTypeModel.js",
+                "app/model/depositTypeModel.js"
+            ],
+            "className": "depositTypeModel"
+        },
+        "e06ac87b-cb15-4c22-8e30-acdf74d29786": {
+            "paths": [
+                "metadata/view/wnDelete",
+                "app/view/override/wnDelete.js",
+                "app/view/wnDelete.js"
+            ],
+            "className": "wnDelete"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "2407bca4-90e9-4894-bae7-955c00d57036",
+            "e95d4825-2b78-4af8-9fd2-f7c6da206a4a",
+            "7391f0dd-8b84-41cc-82c3-ef9fdb3b83cf",
+            "fbc0b5b6-c6cc-4e1a-8a9a-6fee818c735e",
+            "17d16757-e503-47ad-8f25-3c86f950a0da",
+            "5a1d7163-796d-4fb1-9e0e-815b8784cf84",
+            "f3f9db18-33da-4921-b51e-bb907de8ad4c",
+            "e06ac87b-cb15-4c22-8e30-acdf74d29786"
+        ],
+        "store": [
+            "d2f202ae-22e2-4097-89b7-e79495de3c26",
+            "0e7067c5-3081-4061-b3a5-f3f034c47225",
+            "9e2287ed-fb94-4762-b6a3-43d06faac925",
+            "25a05024-fdce-4058-aa50-46d2e5660c46",
+            "1e004b8f-6512-4d87-a874-287f9d6b32fd",
+            "5028e83a-0414-405b-8e3f-3ae7864f9637",
+            "4f0aad23-b2b2-4e0e-9e3c-22c0a855dea5"
+        ],
+        "controller": [
+            "5206848e-bfe9-4732-bde7-aa654445b989"
+        ],
+        "model": [
+            "a94671f8-c67f-4846-8c8e-b79ff15df248",
+            "7f71da91-8e46-4765-9aa2-b5cff339438b",
+            "95250623-fb4b-4795-b456-d4667bec8cba",
+            "6891d505-cb4d-4c91-88c4-c9487688b3a0",
+            "90d40d68-e8a8-4be6-94f8-8e9219b00aff",
+            "2a76f874-bf40-49d7-be57-4c49ccee5c09",
+            "4f716d20-f44a-41b6-b0f6-1a4fbe7e8468"
+        ],
+        "resource": [
+            "5bb44bbe-f01f-43c4-afa5-48327f6e14d6"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
