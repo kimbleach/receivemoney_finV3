@@ -17,9 +17,14 @@ Ext.define('MyApp.view.wnDelete', {
     extend: 'Ext.window.Window',
     alias: 'widget.wnDelete',
 
-    height: 183,
+    height: 165,
     id: 'wnDelete',
-    width: 374,
+    width: 275,
+    layout: {
+        type: 'absolute'
+    },
+    icon: 'http://www.dhl.co.th/content/dam/General%20DHL%20pictures/Icons/ImportantInfo_teaser_29x29/white_icon_teaser_1_29x29.jpg',
+    iconCls: '',
     title: 'Delete',
 
     initComponent: function() {
@@ -29,17 +34,42 @@ Ext.define('MyApp.view.wnDelete', {
             items: [
                 {
                     xtype: 'button',
+                    x: 0,
+                    y: 40,
+                    height: 20,
                     id: 'btnYes',
                     margin: '50 0 0 50',
-                    width: 100,
+                    width: 70,
+                    icon: 'http://anonmails.de/img/icon_ok.gif',
                     text: 'yes'
                 },
                 {
                     xtype: 'button',
+                    x: 110,
+                    y: 40,
+                    height: 20,
                     id: 'btnNo',
                     margin: '50 0 0 50',
-                    width: 100,
+                    width: 70,
+                    icon: 'http://www.qcm.ch/typo3conf/ext/qcm_courses/res/icons/icon_no.png',
                     text: 'no'
+                },
+                {
+                    xtype: 'label',
+                    x: 100,
+                    y: 40,
+                    height: 20,
+                    html: '',
+                    width: 160,
+                    text: 'Are you sure to delete !'
+                },
+                {
+                    xtype: 'image',
+                    x: 30,
+                    y: 20,
+                    height: 50,
+                    width: 50,
+                    src: 'http://mblog.manager.co.th/uploads/4576/images/alert.gif'
                 }
             ]
         });

@@ -6,11 +6,15 @@
     },
     "codeClass": null,
     "userConfig": {
-        "height": 183,
+        "designer|snapToGrid": 10,
+        "height": 165,
         "id": "wnDelete",
-        "width": 374,
+        "width": 275,
         "designer|userClassName": "wnDelete",
         "designer|userAlias": "wnDelete",
+        "layout": "absolute",
+        "icon": "http://www.dhl.co.th/content/dam/General%20DHL%20pictures/Icons/ImportantInfo_teaser_29x29/white_icon_teaser_1_29x29.jpg",
+        "iconCls": "",
         "title": "Delete"
     },
     "designerId": "e06ac87b-cb15-4c22-8e30-acdf74d29786",
@@ -23,10 +27,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "layout|x": 0,
+                "layout|y": 40,
+                "height": 20,
                 "id": "btnYes",
                 "margin": "50 0 0 50",
-                "width": 100,
+                "width": 70,
                 "designer|userClassName": "MyButton4",
+                "icon": "http://anonmails.de/img/icon_ok.gif",
                 "text": "yes"
             },
             "designerId": "f45f1c75-110c-47ad-8124-a7dedfe3174d"
@@ -39,13 +47,52 @@
             },
             "codeClass": null,
             "userConfig": {
+                "layout|x": 110,
+                "layout|y": 40,
+                "height": 20,
                 "id": "btnNo",
                 "margin": "50 0 0 50",
-                "width": 100,
+                "width": 70,
                 "designer|userClassName": "MyButton5",
+                "icon": "http://www.qcm.ch/typo3conf/ext/qcm_courses/res/icons/icon_no.png",
                 "text": "no"
             },
             "designerId": "c5cdd3a9-c731-47a1-87cd-40937f499ce8"
+        },
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 100,
+                "layout|y": 40,
+                "height": 20,
+                "html": "",
+                "width": 160,
+                "designer|userClassName": "MyLabel",
+                "text": "Are you sure to delete !"
+            },
+            "designerId": "149e70a1-80bf-4aff-82d8-34d832b42fff"
+        },
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 30,
+                "layout|y": 20,
+                "height": 50,
+                "width": 50,
+                "designer|userClassName": "MyImg",
+                "src": "http://mblog.manager.co.th/uploads/4576/images/alert.gif"
+            },
+            "designerId": "28a34556-9c4b-4189-9386-1a44bf3cc613"
         }
     ]
 }
