@@ -25,3 +25,7 @@
 [6748:7584:0423/160904:25246640:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
 [6748:7584:0423/160904:25246640:ERROR:backend_impl.cc(221)] Unable to create cache
 [6748:6496:0423/160912:25254892:INFO:CONSOLE(43)] "Could not find master instance 1ca95de5-fd58-4f7a-ac1a-f7c26ed9ceb7 for linked instance "component4" - the linked instance will be removed.", source: ionp:/src/frameworks/common/definitions/LinkedInstance.js?0.1846633313689381 (43)
+[1016:2632:0424/145859:341517:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[1016:2632:0424/145859:341517:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\Deuanz\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\Deuanz\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[1016:2632:0424/145859:341517:ERROR:backend_impl.cc(221)] Unable to create cache
+[1016:2136:0424/145906:348553:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
