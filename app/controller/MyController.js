@@ -38,10 +38,54 @@ Ext.define('MyApp.controller.MyController', {
     },
 
     onBtnSearch: function(button, e, eOpts) {
+        //***
+        var valueSearch=Ext.getCmp('txtSearch').getValue();
+
+        var store=Ext.getStore('cultData');
+
+        //console.log(valueSearch.attr);
+
+
+        store.filterBy(function(rec, id) {
+
+            if(rec.get('bookBank').indexOf(valueSearch)>-1) {     
+
+                console.log('true');
+
+                return true;
+            }
+            else {
+
+                //   console.log([valueSearch]);
+                return false;
+            }
+        });
 
     },
 
     onBtnReset: function(button, e, eOpts) {
+        var valueSearch="";
+
+        var store=Ext.getStore('cultData');
+
+        console.log(valueSearch.attr);
+
+
+        store.filterBy(function(rec, id) {
+            //  if(rec.get('BankAccount') === valueSearch) {
+            if(rec.get('bookBank').indexOf(valueSearch)>-1) {     
+                Ext.getCmp('txtSearch').setValue('');
+
+                console.log('true');
+
+                return true;
+            }
+            else {
+
+                //   console.log([valueSearch]);
+                return false;
+            }
+        });
 
     },
 

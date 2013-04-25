@@ -235,6 +235,7 @@
                         "designer|userClassName": "MyComboBox1",
                         "fieldLabel": "ชื่อธนาคาร",
                         "name": "bookBank",
+                        "editable": false,
                         "displayField": "bookBank",
                         "store": "BankAccountStore"
                     },

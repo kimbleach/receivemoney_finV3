@@ -22,7 +22,6 @@ Ext.define('MyApp.view.MyPanel2', {
     ],
 
     height: 250,
-    width: 400,
     title: 'My Panel',
 
     initComponent: function() {
@@ -39,6 +38,10 @@ Ext.define('MyApp.view.MyPanel2', {
                     xtype: 'toolbar',
                     dock: 'top',
                     items: [
+                        {
+                            xtype: 'tbtext',
+                            text: 'ค้นหาจากชื่อธนาคาร  :  '
+                        },
                         {
                             xtype: 'textfield',
                             id: 'txtSearch',

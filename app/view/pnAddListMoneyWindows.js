@@ -132,6 +132,7 @@ false,
                             width: 254,
                             fieldLabel: 'ชื่อธนาคาร',
                             name: 'bookBank',
+                            editable: false,
                             displayField: 'bookBank',
                             store: 'BankAccountStore'
                         },

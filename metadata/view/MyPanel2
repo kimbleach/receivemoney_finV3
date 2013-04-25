@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "height": 250,
-        "width": 400,
+        "width": null,
         "designer|userClassName": "MyPanel2",
         "designer|userAlias": "mypanel2",
         "title": "My Panel"
@@ -37,6 +37,20 @@
             },
             "designerId": "5e482583-5cf0-4d22-9319-2ce55a503c30",
             "cn": [
+                {
+                    "type": "Ext.toolbar.TextItem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyTextItem",
+                        "text": "ค้นหาจากชื่อธนาคาร  :  "
+                    },
+                    "designerId": "f5b399d3-f21b-4636-94f1-f1d5b093840b"
+                },
                 {
                     "type": "Ext.form.field.Text",
                     "reference": {

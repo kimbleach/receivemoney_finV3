@@ -26,7 +26,7 @@ Ext.define('MyApp.store.cultData', {
         me.callParent([Ext.apply({
             autoLoad: false,
             model: 'MyApp.model.cultData',
-            storeId: 'MyJsonStore5',
+            storeId: 'cultData',
             proxy: {
                 type: 'ajax',
                 reader: {

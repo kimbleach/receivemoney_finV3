@@ -47,7 +47,7 @@ Ext.define('MyApp.store.depositType', {
     onJsonstoreLoad: function(store, records, successful, eOpts) {
         console.log("Deuanz ^^");
         var combo = Ext.getCmp('transaction');
-        combo.setValue("ฝาก");
+        //combo.setValue("ฝาก");
     }
 
 });
