@@ -79,6 +79,32 @@
                 "designer|userClassName": "MyField27"
             },
             "designerId": "6a3e412c-f4e9-435a-af20-e0808174f06f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "bookBank",
+                "designer|userClassName": "MyField24"
+            },
+            "designerId": "6e8d2009-633b-413c-8032-7f61c1b48083"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "accountNumber",
+                "designer|userClassName": "MyField25"
+            },
+            "designerId": "b3048457-7d7c-4b51-90a5-ab3f30ef3ab5"
         }
     ]
 }
