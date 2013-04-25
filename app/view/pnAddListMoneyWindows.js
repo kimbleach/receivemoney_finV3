@@ -18,7 +18,7 @@ Ext.define('MyApp.view.pnAddListMoneyWindows', {
     alias: 'widget.pnAddListMoneyWindows',
 
     draggable: false,
-    height: 327,
+    height: 401,
     width: 685,
     resizable: //true
 false,
@@ -90,20 +90,6 @@ false,
                                     msgTarget: 'side',
                                     name: 'tellerId',
                                     emptyText: ''
-                                },
-                                {
-                                    xtype: 'combobox',
-                                    id: 'bookBank',
-                                    fieldLabel: 'ชื่อธนาคาร',
-                                    name: 'bookBank',
-                                    displayField: 'bookBank',
-                                    store: 'BankAccountStore'
-                                },
-                                {
-                                    xtype: 'numberfield',
-                                    id: 'accountNumber',
-                                    fieldLabel: 'เลขที่บัญชี:',
-                                    name: 'accountNumber'
                                 }
                             ]
                         },
@@ -128,6 +114,33 @@ false,
                             margin: '0 0 0 10',
                             width: 100,
                             text: 'ล้างข้อมูล'
+                        }
+                    ]
+                },
+                {
+                    xtype: 'form',
+                    margins: ' 0 0 0 10',
+                    region: 'north',
+                    height: 83,
+                    id: 'pnBankForm',
+                    bodyPadding: 10,
+                    items: [
+                        {
+                            xtype: 'combobox',
+                            id: 'bookBanks',
+                            margin: '0 0 0 10',
+                            width: 254,
+                            fieldLabel: 'ชื่อธนาคาร',
+                            name: 'bookBank',
+                            displayField: 'bookBank',
+                            store: 'BankAccountStore'
+                        },
+                        {
+                            xtype: 'numberfield',
+                            id: 'accountNumber',
+                            margin: '10 0 0 10',
+                            fieldLabel: 'เลขที่บัญชี:',
+                            name: 'accountNumber'
                         }
                     ]
                 }

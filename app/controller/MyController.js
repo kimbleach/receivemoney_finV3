@@ -24,6 +24,10 @@ Ext.define('MyApp.controller.MyController', {
         {
             ref: 'wdForm',
             selector: 'wnDelete'
+        },
+        {
+            ref: 'bankName',
+            selector: '#pnBankForm #bookbanks'
         }
     ],
 
@@ -39,27 +43,54 @@ Ext.define('MyApp.controller.MyController', {
         //console.log(Ext.getCmp('pnAddListMoney').getForm().isValid());
         if(Ext.getCmp('pnAddListMoney').getForm().isValid())
         {
+            var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,
+                bankacc = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,
+                addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();
+            addMoney.bookBank = bankname;
+            addMoney.accountNumber = bankacc;
 
-            Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());
-            Ext.getCmp('pnAddListMoney').getForm().reset;
+            console.log(addMoney);
+            //Ext.getCmp('bookBank').value
+            //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());
+            Ext.getStore('cultData').add(addMoney);
+            Ext.getCmp('pnAddListMoney').getForm().reset();
 
             console.log('pnWindow');
-            this.getPnAddListMoneyWindows().destroy();
+            //this.getPnAddListMoneyWindows().destroy();
 
         }
 
     },
 
     clickSubmitEdit: function(button, e, eOpts) {
+        //var Ext.getCmp('pnAddListMoney').getForm().getValues()
 
-        rec.set(Ext.getCmp('pnAddListMoney').getForm().getValues());
+
         //console.log(rec);
         //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());
-        console.log("Store ^^",Ext.getStore('cultData').data);
+
+
+        //console.log("Store ^^",Ext.getStore('cultData').data);
+
+
+
+        var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,
+            bankacc = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,
+            addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();
+        addMoney.bookBank = bankname;
+        addMoney.accountNumber = bankacc;
+
+        rec.set(addMoney);
+
         Ext.getCmp('mygridpanel2').getView().refresh();
 
         this.getPnAddListMoneyWindows().destroy();
-
+        /*    
+        console.log(addMoney);
+        //Ext.getCmp('bookBank').value
+        //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());
+        Ext.getStore('cultData').add(addMoney);
+        */
     },
 
     clickEdit: function(o2,text, view, rowIndex, colIndex, item, e,record,row,column) {
@@ -158,7 +189,7 @@ Ext.define('MyApp.controller.MyController', {
 
     var rstore=Ext.getStore('cultData').getAt(rowIndex);
     Ext.getCmp('pnAddListMoney').getForm().loadRecord(rstore);
-
+    Ext.getCmp('pnBankForm').getForm().loadRecord(rstore);
     },
 
     rowDelete: function(rowinfo) {
