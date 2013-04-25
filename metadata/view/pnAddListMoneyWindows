@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "draggable": false,
-        "height": 327,
+        "height": 401,
         "width": 685,
         "designer|userClassName": "pnAddListMoneyWindows",
         "designer|userAlias": "pnAddListMoneyWindows",
@@ -147,46 +147,6 @@
                                 "vtype": null
                             },
                             "designerId": "befc0d42-467b-4c5a-a85a-3a1e4c5d37bc"
-                        },
-                        {
-                            "type": "Ext.form.field.ComboBox",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "layout|anchor": null,
-                                "id": "bookBank",
-                                "designer|userClassName": "MyComboBox1",
-                                "fieldLabel": "ชื่อธนาคาร",
-                                "name": "bookBank",
-                                "displayField": "bookBank",
-                                "store": "BankAccountStore"
-                            },
-                            "designerId": "81de0961-19a5-48a6-a8e3-96813f1c5a11"
-                        },
-                        {
-                            "type": "Ext.form.field.Number",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "formBind": null,
-                                "id": "accountNumber",
-                                "designer|userClassName": "MyNumberField",
-                                "fieldLabel": "เลขที่บัญชี:",
-                                "msgTarget": null,
-                                "name": "accountNumber",
-                                "allowBlank": null,
-                                "emptyText": null,
-                                "regexText": null,
-                                "vtype": null,
-                                "hideTrigger": null
-                            },
-                            "designerId": "6d47e37d-a574-4261-8e7b-b0ef6e353dd8"
                         }
                     ]
                 },
@@ -238,6 +198,70 @@
                         "text": "ล้างข้อมูล"
                     },
                     "designerId": "79cbd7fa-8fa8-4dfb-ad6b-770ff783816a"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "layout|margins": " 0 0 0 10",
+                "layout|region": "north",
+                "height": 83,
+                "id": "pnBankForm",
+                "designer|userClassName": "MyForm1",
+                "bodyPadding": 10,
+                "title": null
+            },
+            "designerId": "a8c97e34-506d-4ff2-bba5-2c02c7dd2140",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": null,
+                        "id": "bookBanks",
+                        "margin": "0 0 0 10",
+                        "width": 254,
+                        "designer|userClassName": "MyComboBox1",
+                        "fieldLabel": "ชื่อธนาคาร",
+                        "name": "bookBank",
+                        "displayField": "bookBank",
+                        "store": "BankAccountStore"
+                    },
+                    "designerId": "81de0961-19a5-48a6-a8e3-96813f1c5a11"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "formBind": null,
+                        "id": "accountNumber",
+                        "margin": "10 0 0 10",
+                        "designer|userClassName": "MyNumberField",
+                        "fieldLabel": "เลขที่บัญชี:",
+                        "msgTarget": null,
+                        "name": "accountNumber",
+                        "allowBlank": null,
+                        "emptyText": null,
+                        "regexText": null,
+                        "vtype": null,
+                        "hideTrigger": null
+                    },
+                    "designerId": "6d47e37d-a574-4261-8e7b-b0ef6e353dd8"
                 }
             ]
         }

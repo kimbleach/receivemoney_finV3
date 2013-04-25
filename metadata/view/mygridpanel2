@@ -111,6 +111,21 @@
             ]
         },
         {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": null,
+                "designer|userClassName": "MyColumn8",
+                "dataIndex": "id",
+                "text": "รายการที่"
+            },
+            "designerId": "4853784e-df93-4d1d-8458-0901b83afa29"
+        },
+        {
             "type": "Ext.grid.column.Date",
             "reference": {
                 "name": "columns",
@@ -176,20 +191,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyColumn8",
-                "dataIndex": "id",
-                "text": "รายการที่"
-            },
-            "designerId": "4853784e-df93-4d1d-8458-0901b83afa29"
-        },
-        {
-            "type": "Ext.grid.column.Column",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
+                "width": 166,
                 "designer|userClassName": "MyColumn4",
                 "dataIndex": "bookBank",
                 "text": "ชื่อธนาคาร"

@@ -48,12 +48,20 @@
                     "//console.log(Ext.getCmp('pnAddListMoney').getForm().isValid());\r",
                     "if(Ext.getCmp('pnAddListMoney').getForm().isValid())\r",
                     "{\r",
-                    "\r",
-                    "    Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
-                    "    Ext.getCmp('pnAddListMoney').getForm().reset;\r",
+                    "    var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,\r",
+                    "        bankacc = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,\r",
+                    "        addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();\r",
+                    "    \taddMoney.bookBank = bankname;\r",
+                    "    \taddMoney.accountNumber = bankacc;\r",
+                    "    \r",
+                    "    console.log(addMoney);\r",
+                    "    //Ext.getCmp('bookBank').value\r",
+                    "    //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
+                    "    Ext.getStore('cultData').add(addMoney);\r",
+                    "    Ext.getCmp('pnAddListMoney').getForm().reset();\r",
                     "\r",
                     "    console.log('pnWindow');\r",
-                    "    this.getPnAddListMoneyWindows().destroy();\r",
+                    "    //this.getPnAddListMoneyWindows().destroy();\r",
                     "\r",
                     "}\r",
                     ""
@@ -76,15 +84,34 @@
                 "designer|userClassName": "clickSubmitEdit",
                 "fn": "clickSubmitEdit",
                 "implHandler": [
+                    "//var Ext.getCmp('pnAddListMoney').getForm().getValues()\r",
                     "\r",
-                    "rec.set(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
+                    "\r",
                     "//console.log(rec);\r",
                     "//Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
-                    "console.log(\"Store ^^\",Ext.getStore('cultData').data);\r",
+                    "\r",
+                    "\r",
+                    "//console.log(\"Store ^^\",Ext.getStore('cultData').data);\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,\r",
+                    "        bankacc = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,\r",
+                    "        addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();\r",
+                    "    \taddMoney.bookBank = bankname;\r",
+                    "    \taddMoney.accountNumber = bankacc;\r",
+                    "\r",
+                    "\t\trec.set(addMoney);\r",
+                    "\r",
                     "Ext.getCmp('mygridpanel2').getView().refresh();\r",
                     "\r",
                     "this.getPnAddListMoneyWindows().destroy();\r",
-                    ""
+                    "/*    \r",
+                    "    console.log(addMoney);\r",
+                    "    //Ext.getCmp('bookBank').value\r",
+                    "    //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
+                    "    Ext.getStore('cultData').add(addMoney);\r",
+                    "*/"
                 ],
                 "name": "click",
                 "scope": "me",
@@ -254,11 +281,11 @@
                 "implHandler": [
                     "\r",
                     "var pnWindow = Ext.getCmp('pnAddListMoneyWindows');\r",
-                    "    \r",
+                    "\r",
                     "if(!pnWindow){\r",
-                    "\t\r",
+                    "\r",
                     "    pnWindow = Ext.create('MyApp.view.pnAddListMoneyWindows');\r",
-                    "//    console.log(pnWindow);\r",
+                    "    //    console.log(pnWindow);\r",
                     "    Ext.getCmp('btnEdit').hidden = true;\r",
                     "\r",
                     "}\r",
@@ -309,7 +336,7 @@
                     "\r",
                     "var rstore=Ext.getStore('cultData').getAt(rowIndex);\r",
                     "Ext.getCmp('pnAddListMoney').getForm().loadRecord(rstore);\r",
-                    ""
+                    "Ext.getCmp('pnBankForm').getForm().loadRecord(rstore);"
                 ]
             },
             "designerId": "3d792f3f-e5a7-4a5c-a252-6afdd57caa57"
@@ -334,6 +361,20 @@
                 ]
             },
             "designerId": "41da3e95-1f2e-4a08-82f5-2dfa9774c7a4"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "bankName",
+                "ref": "bankName",
+                "selector": "#pnBankForm #bookbanks"
+            },
+            "designerId": "74cbc021-49ec-46f1-a3e5-7ed1eac4ae78"
         }
     ]
 }
