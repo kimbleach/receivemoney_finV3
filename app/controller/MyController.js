@@ -37,6 +37,14 @@ Ext.define('MyApp.controller.MyController', {
         this.loadAdd();
     },
 
+    onBtnSearch: function(button, e, eOpts) {
+
+    },
+
+    onBtnReset: function(button, e, eOpts) {
+
+    },
+
     clickAddButton: function(button, e, eOpts) {
 
 
@@ -202,6 +210,12 @@ Ext.define('MyApp.controller.MyController', {
         this.control({
             "#btnAdd": {
                 click: this.clickAdd
+            },
+            "#btnSearch": {
+                click: this.onBtnSearch
+            },
+            "#btnReset": {
+                click: this.onBtnReset
             },
             "#btnSave": {
                 click: this.clickAddButton

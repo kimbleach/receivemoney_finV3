@@ -33,6 +33,37 @@ Ext.define('MyApp.view.MyPanel2', {
                 {
                     xtype: 'mygridpanel2'
                 }
+            ],
+            dockedItems: [
+                {
+                    xtype: 'toolbar',
+                    dock: 'top',
+                    items: [
+                        {
+                            xtype: 'textfield',
+                            id: 'txtSearch',
+                            itemId: 'txtSearch',
+                            width: 221,
+                            fieldLabel: ''
+                        },
+                        {
+                            xtype: 'button',
+                            height: 25,
+                            id: 'btnSearch',
+                            itemId: 'btnSearch',
+                            width: 59,
+                            text: 'ค้นหา'
+                        },
+                        {
+                            xtype: 'button',
+                            height: 25,
+                            id: 'btnReset',
+                            itemId: 'btnReset',
+                            width: 59,
+                            text: 'คืนค่า'
+                        }
+                    ]
+                }
             ]
         });
 

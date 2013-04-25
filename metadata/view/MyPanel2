@@ -23,6 +23,75 @@
             "codeClass": null,
             "designerId": "bec40217-920a-403e-887e-5c8ad379685b",
             "masterInstanceId": "fbc0b5b6-c6cc-4e1a-8a9a-6fee818c735e"
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "designer|userClassName": "MyToolbar1"
+            },
+            "designerId": "5e482583-5cf0-4d22-9319-2ce55a503c30",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "id": "txtSearch",
+                        "itemId": "txtSearch",
+                        "width": 221,
+                        "designer|userClassName": "MyTextField",
+                        "designer|displayName": null,
+                        "fieldLabel": ""
+                    },
+                    "designerId": "f8717822-ca11-4ff8-8dcc-d42761b95f66"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "height": 25,
+                        "id": "btnSearch",
+                        "itemId": "btnSearch",
+                        "width": 59,
+                        "designer|userClassName": "MyButton",
+                        "text": "ค้นหา"
+                    },
+                    "designerId": "4245bc7a-0382-46ab-bb49-fa6db82b2423"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "height": 25,
+                        "id": "btnReset",
+                        "itemId": "btnReset",
+                        "width": 59,
+                        "designer|userClassName": "MyButton",
+                        "text": "คืนค่า"
+                    },
+                    "designerId": "71a691e7-85dd-4f57-b1a8-3db602782fbf"
+                }
+            ]
         }
     ]
 }
