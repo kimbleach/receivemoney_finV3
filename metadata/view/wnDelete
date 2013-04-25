@@ -7,11 +7,15 @@
     "codeClass": null,
     "userConfig": {
         "designer|snapToGrid": 10,
+        "draggable": false,
         "height": 165,
         "id": "wnDelete",
         "width": 289,
         "designer|userClassName": "wnDelete",
         "designer|userAlias": "wnDelete",
+        "resizable": [
+            "false"
+        ],
         "layout": "absolute",
         "icon": "http://www.dhl.co.th/content/dam/General%20DHL%20pictures/Icons/ImportantInfo_teaser_29x29/white_icon_teaser_1_29x29.jpg",
         "iconCls": "",

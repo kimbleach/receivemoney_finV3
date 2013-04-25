@@ -26,7 +26,8 @@ Ext.application({
         'cultMemberS5',
         'cultMemberS12',
         'cultData',
-        'depositTypeModel'
+        'depositTypeModel',
+        'bank'
     ],
     stores: [
         'cultMemberStore',
@@ -35,7 +36,8 @@ Ext.application({
         'cultMemberS5Store',
         'cultMemberS12Store',
         'cultData',
-        'depositType'
+        'depositType',
+        'BankAccountStore'
     ],
     views: [
         'pnAll',
