@@ -6,10 +6,15 @@
     },
     "codeClass": null,
     "userConfig": {
-        "height": 269,
-        "width": 687,
+        "draggable": false,
+        "height": 327,
+        "width": 685,
         "designer|userClassName": "pnAddListMoneyWindows",
         "designer|userAlias": "pnAddListMoneyWindows",
+        "resizable": [
+            "//true\r",
+            "false"
+        ],
         "layout": "border",
         "title": "เพิ่มข้อมูลรับเงิน"
     },
@@ -111,6 +116,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "formBind": false,
                                 "id": "deposit",
                                 "designer|userClassName": "MyNumberField",
                                 "fieldLabel": "ยอดเงิน",
@@ -125,7 +131,7 @@
                             "designerId": "29bf4af9-c8da-40ad-8aae-7818a797ba83"
                         },
                         {
-                            "type": "Ext.form.field.Number",
+                            "type": "Ext.form.field.Text",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
@@ -133,7 +139,7 @@
                             "codeClass": null,
                             "userConfig": {
                                 "id": "tellerId",
-                                "designer|userClassName": "MyNumberField2",
+                                "designer|userClassName": "MyTextField1",
                                 "fieldLabel": "หมายเลขกำกับ",
                                 "msgTarget": "side",
                                 "name": "tellerId",
@@ -141,6 +147,46 @@
                                 "vtype": null
                             },
                             "designerId": "befc0d42-467b-4c5a-a85a-3a1e4c5d37bc"
+                        },
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|anchor": null,
+                                "id": "bookBank",
+                                "designer|userClassName": "MyComboBox1",
+                                "fieldLabel": "ชื่อธนาคาร",
+                                "name": "bookBank",
+                                "displayField": "bookBank",
+                                "store": "BankAccountStore"
+                            },
+                            "designerId": "81de0961-19a5-48a6-a8e3-96813f1c5a11"
+                        },
+                        {
+                            "type": "Ext.form.field.Number",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "formBind": null,
+                                "id": "accountNumber",
+                                "designer|userClassName": "MyNumberField",
+                                "fieldLabel": "เลขที่บัญชี:",
+                                "msgTarget": null,
+                                "name": "accountNumber",
+                                "allowBlank": null,
+                                "emptyText": null,
+                                "regexText": null,
+                                "vtype": null,
+                                "hideTrigger": null
+                            },
+                            "designerId": "6d47e37d-a574-4261-8e7b-b0ef6e353dd8"
                         }
                     ]
                 },

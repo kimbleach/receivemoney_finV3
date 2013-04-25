@@ -17,9 +17,11 @@ Ext.define('MyApp.view.wnDelete', {
     extend: 'Ext.window.Window',
     alias: 'widget.wnDelete',
 
+    draggable: false,
     height: 165,
     id: 'wnDelete',
     width: 289,
+    resizable: false,
     layout: {
         type: 'absolute'
     },

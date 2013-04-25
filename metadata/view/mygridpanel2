@@ -111,20 +111,6 @@
             ]
         },
         {
-            "type": "Ext.grid.column.Column",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyColumn8",
-                "dataIndex": "id",
-                "text": "รายการที่"
-            },
-            "designerId": "4853784e-df93-4d1d-8458-0901b83afa29"
-        },
-        {
             "type": "Ext.grid.column.Date",
             "reference": {
                 "name": "columns",
@@ -181,6 +167,48 @@
                 "text": "หมายเลขผู้ทำรายการ"
             },
             "designerId": "fa71119d-64f3-4437-b192-341a23372efd"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn8",
+                "dataIndex": "id",
+                "text": "รายการที่"
+            },
+            "designerId": "4853784e-df93-4d1d-8458-0901b83afa29"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn4",
+                "dataIndex": "bookBank",
+                "text": "ชื่อธนาคาร"
+            },
+            "designerId": "f0f27de9-673c-40d3-9221-215c11843455"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn5",
+                "dataIndex": "accountNumber",
+                "text": "เลขที่บัญชี"
+            },
+            "designerId": "3e6ae009-026d-41fd-8981-68dec5076b63"
         },
         {
             "type": "Ext.grid.column.Action",

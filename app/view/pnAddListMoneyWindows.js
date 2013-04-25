@@ -17,8 +17,11 @@ Ext.define('MyApp.view.pnAddListMoneyWindows', {
     extend: 'Ext.window.Window',
     alias: 'widget.pnAddListMoneyWindows',
 
-    height: 269,
-    width: 687,
+    draggable: false,
+    height: 327,
+    width: 685,
+    resizable: //true
+false,
     layout: {
         type: 'border'
     },
@@ -70,6 +73,7 @@ Ext.define('MyApp.view.pnAddListMoneyWindows', {
                                 },
                                 {
                                     xtype: 'numberfield',
+                                    formBind: false,
                                     id: 'deposit',
                                     fieldLabel: 'ยอดเงิน',
                                     msgTarget: 'side',
@@ -80,12 +84,26 @@ Ext.define('MyApp.view.pnAddListMoneyWindows', {
                                     hideTrigger: true
                                 },
                                 {
-                                    xtype: 'numberfield',
+                                    xtype: 'textfield',
                                     id: 'tellerId',
                                     fieldLabel: 'หมายเลขกำกับ',
                                     msgTarget: 'side',
                                     name: 'tellerId',
                                     emptyText: ''
+                                },
+                                {
+                                    xtype: 'combobox',
+                                    id: 'bookBank',
+                                    fieldLabel: 'ชื่อธนาคาร',
+                                    name: 'bookBank',
+                                    displayField: 'bookBank',
+                                    store: 'BankAccountStore'
+                                },
+                                {
+                                    xtype: 'numberfield',
+                                    id: 'accountNumber',
+                                    fieldLabel: 'เลขที่บัญชี:',
+                                    name: 'accountNumber'
                                 }
                             ]
                         },

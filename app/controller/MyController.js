@@ -123,7 +123,9 @@ Ext.define('MyApp.controller.MyController', {
         if(!pnWindow){
 
             pnWindow = Ext.create('MyApp.view.pnAddListMoneyWindows');
+            //    console.log(pnWindow);
             Ext.getCmp('btnEdit').hidden = true;
+
         }
 
         pnWindow.show();
