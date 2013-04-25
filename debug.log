@@ -31,3 +31,4 @@
 [1016:2136:0424/145906:348553:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
 [4816:1936:0424/163430:6072432:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
 [4844:6228:0424/184924:14166169:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[5996:6004:0425/122748:13448253:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
