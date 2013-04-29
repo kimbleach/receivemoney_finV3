@@ -39,3 +39,4 @@
 [6548:3072:0425/180622:32130137:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
 [6548:3072:0425/180622:32130137:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
 [6548:3072:0425/180622:32130137:ERROR:backend_impl.cc(221)] Unable to create cache
+[6548:6036:0425/184535:34483412:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412

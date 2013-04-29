@@ -47,7 +47,7 @@
                     "userConfig": {
                         "layout|flex": null,
                         "designer|userClassName": "MyTextItem",
-                        "text": "ค้นหาจากชื่อธนาคาร  :  "
+                        "text": "ค้นหา  :  "
                     },
                     "designerId": "f5b399d3-f21b-4636-94f1-f1d5b093840b"
                 },
@@ -65,7 +65,8 @@
                         "width": 221,
                         "designer|userClassName": "MyTextField",
                         "designer|displayName": null,
-                        "fieldLabel": ""
+                        "fieldLabel": "",
+                        "emptyText": "ค้นหาจากชื่อธนาคาร"
                     },
                     "designerId": "f8717822-ca11-4ff8-8dcc-d42761b95f66"
                 },

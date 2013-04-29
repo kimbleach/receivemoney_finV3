@@ -40,14 +40,15 @@ Ext.define('MyApp.view.MyPanel2', {
                     items: [
                         {
                             xtype: 'tbtext',
-                            text: 'ค้นหาจากชื่อธนาคาร  :  '
+                            text: 'ค้นหา  :  '
                         },
                         {
                             xtype: 'textfield',
                             id: 'txtSearch',
                             itemId: 'txtSearch',
                             width: 221,
-                            fieldLabel: ''
+                            fieldLabel: '',
+                            emptyText: 'ค้นหาจากชื่อธนาคาร'
                         },
                         {
                             xtype: 'button',

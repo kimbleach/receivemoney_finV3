@@ -27,6 +27,7 @@ Ext.define('MyApp.store.cultData', {
             autoLoad: false,
             model: 'MyApp.model.cultData',
             storeId: 'cultData',
+            groupField: 'date',
             proxy: {
                 type: 'ajax',
                 reader: {

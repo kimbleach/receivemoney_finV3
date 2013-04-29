@@ -28,7 +28,7 @@ Ext.define('MyApp.view.mygridpanel2', {
                 {
                     ftype: 'grouping',
                     groupHeaderTpl: Ext.create('Ext.XTemplate', 
-                        '{columnName}: {name}',
+                        '{groupValue:this.renderDueDate}',
                         {
                             Date: function(data) {
                                 var today = Ext.Date.clearTime(new Date()),
@@ -39,30 +39,36 @@ Ext.define('MyApp.view.mygridpanel2', {
                                     return '(No Date)';
                                 }
                                 dueDateTime = Ext.Date.clearTime(date).getTime();
+
+                                console.log(dueDateTime);
+
                                 if(dueDateTime === todayTime) {
-                                    return 'Today';
+                                    return '<span style="color:blue;">Today</span>';
                                 }
                                 if(dueDateTime > todayTime) {
                                     if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, 1).getTime()) {
-                                        // due date is current date + 1 day
                                         return 'Tomorrow';
                                     }
                                     if(dueDateTime < Ext.Date.add(today, Ext.Date.DAY, 7).getTime()) {
-                                        // if the due date is less than one week in the future, return the day of the week.
                                         return Ext.Date.format(date, 'l');
+
                                     }
+                                    var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');
+                                    return '<span style="color:green;">'+date2+'</span>'
                                 } else {
+
+
                                     if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, -1).getTime()) {
-                                        // due date is current date - 1 day.
-                                        return 'Yesterday';
+
+                                        return '<span style="color:red;">Yesterday</span>';
+
                                     }
                                     if(dueDateTime > Ext.Date.add(today, Ext.Date.DAY, -7).getTime()) {
-                                        // if the due date is less than one week past, return 'Last' + the day of the week.
-                                        return 'Last '+ Ext.Date.format(date, 'l');
+                                        return '<span style="color:red;">Last '+ Ext.Date.format(date, 'l')+'</span>';
                                     }
+                                    var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');
+                                    return '<span style="color:red;">'+date2+'</span>'
                                 }
-                                return date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');
-
                             }
                         }
                     )

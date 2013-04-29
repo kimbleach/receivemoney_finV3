@@ -50,7 +50,7 @@
                     "userConfig": {
                         "designer|userClassName": "groupHeaderTpl",
                         "implHandler": [
-                            "{columnName}: {name}"
+                            "{groupValue:this.renderDueDate}"
                         ],
                         "designer|displayName": "groupHeaderTpl"
                     },
@@ -78,30 +78,36 @@
                                     "    return '(No Date)';\r",
                                     "}\r",
                                     "dueDateTime = Ext.Date.clearTime(date).getTime();\r",
+                                    "\r",
+                                    "console.log(dueDateTime);\r",
+                                    "\r",
                                     "if(dueDateTime === todayTime) {\r",
-                                    "    return 'Today';\r",
+                                    "    return '<span style=\"color:blue;\">Today</span>';\r",
                                     "}\r",
                                     "if(dueDateTime > todayTime) {\r",
                                     "    if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, 1).getTime()) {\r",
-                                    "        // due date is current date + 1 day\r",
                                     "        return 'Tomorrow';\r",
                                     "    }\r",
                                     "    if(dueDateTime < Ext.Date.add(today, Ext.Date.DAY, 7).getTime()) {\r",
-                                    "        // if the due date is less than one week in the future, return the day of the week.\r",
                                     "        return Ext.Date.format(date, 'l');\r",
+                                    "\r",
                                     "    }\r",
+                                    "    var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');\r",
+                                    "    return '<span style=\"color:green;\">'+date2+'</span>'\r",
                                     "} else {\r",
+                                    "\r",
+                                    "\r",
                                     "    if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, -1).getTime()) {\r",
-                                    "        // due date is current date - 1 day.\r",
-                                    "        return 'Yesterday';\r",
+                                    "\r",
+                                    "        return '<span style=\"color:red;\">Yesterday</span>';\r",
+                                    "\r",
                                     "    }\r",
                                     "    if(dueDateTime > Ext.Date.add(today, Ext.Date.DAY, -7).getTime()) {\r",
-                                    "        // if the due date is less than one week past, return 'Last' + the day of the week.\r",
-                                    "        return 'Last '+ Ext.Date.format(date, 'l');\r",
+                                    "        return '<span style=\"color:red;\">Last '+ Ext.Date.format(date, 'l')+'</span>';\r",
                                     "    }\r",
-                                    "}\r",
-                                    "return date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');\r",
-                                    ""
+                                    "    var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');\r",
+                                    "    return '<span style=\"color:red;\">'+date2+'</span>'\r",
+                                    "}"
                                 ]
                             },
                             "designerId": "1ccd5113-c0d2-4399-a85c-b48e30aa8d71"
