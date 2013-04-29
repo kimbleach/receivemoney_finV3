@@ -79,8 +79,8 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "onIdBoxReady",
-                                        "fn": "onIdBoxReady",
+                                        "designer|userClassName": "onIdAfterRender",
+                                        "fn": "onIdAfterRender",
                                         "implHandler": [
                                             "Ext.tip.QuickTipManager.register({\r",
                                             "    target: 'id',\r",
@@ -90,7 +90,7 @@
                                             "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
                                             "});"
                                         ],
-                                        "name": "boxready",
+                                        "name": "afterrender",
                                         "scope": "me"
                                     },
                                     "designerId": "8e6522a5-a2ee-465d-b34a-c90077c2aa99"
@@ -125,8 +125,8 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "onTransactionBoxReady",
-                                        "fn": "onTransactionBoxReady",
+                                        "designer|userClassName": "onTransactionAfterRender",
+                                        "fn": "onTransactionAfterRender",
                                         "implHandler": [
                                             "Ext.tip.QuickTipManager.register({\r",
                                             "    target: 'transaction',\r",
@@ -136,7 +136,7 @@
                                             "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
                                             "});"
                                         ],
-                                        "name": "boxready",
+                                        "name": "afterrender",
                                         "scope": "me"
                                     },
                                     "designerId": "f3b49583-d0bf-4ecb-8195-0fbac0a3bb3d"
@@ -180,8 +180,8 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "onDepositBoxReady",
-                                        "fn": "onDepositBoxReady",
+                                        "designer|userClassName": "onDepositAfterRender",
+                                        "fn": "onDepositAfterRender",
                                         "implHandler": [
                                             "Ext.tip.QuickTipManager.register({\r",
                                             "    target: 'deposit',\r",
@@ -191,7 +191,7 @@
                                             "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
                                             "});"
                                         ],
-                                        "name": "boxready",
+                                        "name": "afterrender",
                                         "scope": "me"
                                     },
                                     "designerId": "6c28e814-2175-412c-ba70-acbb90f8fe82"
@@ -224,8 +224,8 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "onTellerIdBoxReady",
-                                        "fn": "onTellerIdBoxReady",
+                                        "designer|userClassName": "onTellerIdAfterRender",
+                                        "fn": "onTellerIdAfterRender",
                                         "implHandler": [
                                             "Ext.tip.QuickTipManager.register({\r",
                                             "    target: 'tellerId',\r",
@@ -235,7 +235,7 @@
                                             "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
                                             "});"
                                         ],
-                                        "name": "boxready",
+                                        "name": "afterrender",
                                         "scope": "me"
                                     },
                                     "designerId": "9e88e831-6308-4ec7-a84b-1b755620c651"

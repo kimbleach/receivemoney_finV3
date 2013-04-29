@@ -54,8 +54,8 @@ false,
                                     emptyText: 'รหัสข้อมูล',
                                     hideTrigger: true,
                                     listeners: {
-                                        boxready: {
-                                            fn: me.onIdBoxReady,
+                                        afterrender: {
+                                            fn: me.onIdAfterRender,
                                             scope: me
                                         }
                                     }
@@ -69,8 +69,8 @@ false,
                                     displayField: 'Type',
                                     store: 'depositType',
                                     listeners: {
-                                        boxready: {
-                                            fn: me.onTransactionBoxReady,
+                                        afterrender: {
+                                            fn: me.onTransactionAfterRender,
                                             scope: me
                                         }
                                     }
@@ -87,8 +87,8 @@ false,
                                     regexText: 'โปรดใส่ข้อมูล จำนวนเงินที่ถอน',
                                     hideTrigger: true,
                                     listeners: {
-                                        boxready: {
-                                            fn: me.onDepositBoxReady,
+                                        afterrender: {
+                                            fn: me.onDepositAfterRender,
                                             scope: me
                                         }
                                     }
@@ -101,8 +101,8 @@ false,
                                     name: 'tellerId',
                                     emptyText: '',
                                     listeners: {
-                                        boxready: {
-                                            fn: me.onTellerIdBoxReady,
+                                        afterrender: {
+                                            fn: me.onTellerIdAfterRender,
                                             scope: me
                                         }
                                     }
@@ -279,7 +279,7 @@ false,
         me.callParent(arguments);
     },
 
-    onIdBoxReady: function(component, width, height, eOpts) {
+    onIdAfterRender: function(component, eOpts) {
         Ext.tip.QuickTipManager.register({
             target: 'id',
             //title: 'รหัสช้อมูล',
@@ -289,7 +289,7 @@ false,
         });
     },
 
-    onTransactionBoxReady: function(component, width, height, eOpts) {
+    onTransactionAfterRender: function(component, eOpts) {
         Ext.tip.QuickTipManager.register({
             target: 'transaction',
             //title: 'รหัสช้อมูล',
@@ -299,7 +299,7 @@ false,
         });
     },
 
-    onDepositBoxReady: function(component, width, height, eOpts) {
+    onDepositAfterRender: function(component, eOpts) {
         Ext.tip.QuickTipManager.register({
             target: 'deposit',
             //title: 'รหัสช้อมูล',
@@ -309,7 +309,7 @@ false,
         });
     },
 
-    onTellerIdBoxReady: function(component, width, height, eOpts) {
+    onTellerIdAfterRender: function(component, eOpts) {
         Ext.tip.QuickTipManager.register({
             target: 'tellerId',
             //title: 'รหัสช้อมูล',
