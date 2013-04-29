@@ -139,12 +139,9 @@
                     "    addMoney.bookBank = bankname;\r",
                     "    addMoney.accountNumber = bankacc;\r",
                     "\r",
-<<<<<<< HEAD
                     "    console.log(addMoney);\r",
                     "    //Ext.getCmp('bookBank').value\r",
                     "    //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
-=======
->>>>>>> refs/heads/deuanz_comatooltip
                     "    Ext.getStore('cultData').add(addMoney);\r",
                     "    Ext.getCmp('pnAddListMoney').getForm().reset();\r",
                     "\r",

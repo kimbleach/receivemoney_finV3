@@ -45,3 +45,41 @@
 [6028:3504:0426/111558:9721841:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
 [3464:5856:0429/103751:5724721:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
 >>>>>>> refs/heads/deuanz_comatooltip
+[3864:6512:0429/115829:11139173:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[3864:6512:0429/115829:11139188:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[3864:6492:0429/115829:11139220:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[3864:6684:0429/115830:11140998:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[3864:6684:0429/115921:11191792:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[3864:6684:0429/115923:11193524:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[3864:2304:0429/115923:11193773:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[5592:6888:0429/115932:11202306:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[5592:3640:0429/115952:11222899:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12167
+[5836:7152:0429/115959:11229435:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[5836:7152:0429/115959:11229435:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\GG\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\GG\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[5836:7152:0429/115959:11229435:ERROR:backend_impl.cc(221)] Unable to create cache
+[5592:6888:0429/120002:11232337:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12002
+[6492:6580:0429/120007:11238046:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[6492:6580:0429/120007:11238046:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\GG\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\GG\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[6492:6580:0429/120007:11238046:ERROR:backend_impl.cc(221)] Unable to create cache
+[6964:6892:0429/120009:11240043:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[6964:6892:0429/120009:11240043:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\GG\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\GG\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[6964:6892:0429/120009:11240043:ERROR:backend_impl.cc(221)] Unable to create cache
+[6492:6484:0429/120009:11240074:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[1792:6468:0429/120010:11240745:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[1792:6468:0429/120010:11240745:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\GG\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\GG\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[1792:6468:0429/120010:11240745:ERROR:backend_impl.cc(221)] Unable to create cache
+[5836:3944:0429/120013:11243475:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[5836:7056:0429/120014:11245020:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[5592:6848:0429/120015:11246065:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[6964:5700:0429/120033:11264036:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[1792:6636:0429/120033:11264036:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[1792:6916:0429/120033:11264083:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[6964:7088:0429/120033:11264083:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[1792:6916:0429/120034:11264566:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[1792:6916:0429/120034:11264582:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[1792:6044:0429/120034:11264582:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[6964:5480:0429/120034:11264598:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[6964:7088:0429/120034:11264598:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[6964:6328:0429/120034:11264598:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[1792:6916:0429/120036:11266579:ERROR:proxy_resolver_winhttp.cc(94)] WinHttpGetProxyForUrl failed: 12006
+[1792:4200:0429/120036:11266797:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
