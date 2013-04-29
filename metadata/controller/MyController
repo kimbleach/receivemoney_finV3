@@ -41,6 +41,90 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onBtnSearch",
+                "fn": "onBtnSearch",
+                "implHandler": [
+                    "//***\r",
+                    "var valueSearch=Ext.getCmp('txtSearch').getValue();\r",
+                    "\r",
+                    "var store=Ext.getStore('cultData');\r",
+                    "\r",
+                    "//console.log(valueSearch.attr);\r",
+                    "\r",
+                    "\r",
+                    "store.filterBy(function(rec, id) {\r",
+                    "\r",
+                    "    if(rec.get('bookBank').indexOf(valueSearch)>-1) {     \r",
+                    "\r",
+                    "        console.log('true');\r",
+                    "\r",
+                    "        return true;\r",
+                    "    }\r",
+                    "    else {\r",
+                    "\r",
+                    "        //   console.log([valueSearch]);\r",
+                    "        return false;\r",
+                    "    }\r",
+                    "});\r",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#btnSearch"
+            },
+            "designerId": "4b394fdd-f38f-4332-9605-0ceabc214316"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBtnReset",
+                "fn": "onBtnReset",
+                "implHandler": [
+                    "var valueSearch=\"\";\r",
+                    "\r",
+                    "var store=Ext.getStore('cultData');\r",
+                    "\r",
+                    "console.log(valueSearch.attr);\r",
+                    "\r",
+                    "\r",
+                    "store.filterBy(function(rec, id) {\r",
+                    "    //  if(rec.get('BankAccount') === valueSearch) {\r",
+                    "    if(rec.get('bookBank').indexOf(valueSearch)>-1) {     \r",
+                    "        Ext.getCmp('txtSearch').setValue('');\r",
+                    "\r",
+                    "        console.log('true');\r",
+                    "\r",
+                    "        return true;\r",
+                    "    }\r",
+                    "    else {\r",
+                    "\r",
+                    "        //   console.log([valueSearch]);\r",
+                    "        return false;\r",
+                    "    }\r",
+                    "});\r",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#btnReset"
+            },
+            "designerId": "3370f9f0-95d0-4587-82a9-2679891d8e45"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
                 "designer|userClassName": "clickAddButton",
                 "fn": "clickAddButton",
                 "implHandler": [
@@ -55,6 +139,9 @@
                     "    addMoney.bookBank = bankname;\r",
                     "    addMoney.accountNumber = bankacc;\r",
                     "\r",
+                    "    console.log(addMoney);\r",
+                    "    //Ext.getCmp('bookBank').value\r",
+                    "    //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
                     "    Ext.getStore('cultData').add(addMoney);\r",
                     "    Ext.getCmp('pnAddListMoney').getForm().reset();\r",
                     "\r",

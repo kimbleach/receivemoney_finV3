@@ -17,27 +17,12 @@ Ext.define('MyApp.view.pnSearch', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.mypanel',
 
-    height: 176,
+    height: 141,
     width: 700,
     title: 'รายการค้นหา',
 
     initComponent: function() {
         var me = this;
-
-        Ext.applyIf(me, {
-            items: [
-                {
-                    xtype: 'textfield',
-                    fieldLabel: ''
-                },
-                {
-                    xtype: 'button',
-                    height: 25,
-                    width: 59,
-                    text: 'ค้นหา'
-                }
-            ]
-        });
 
         me.callParent(arguments);
     }

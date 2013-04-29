@@ -22,7 +22,6 @@ Ext.define('MyApp.view.MyPanel2', {
     ],
 
     height: 250,
-    width: 400,
     title: 'My Panel',
 
     initComponent: function() {
@@ -32,6 +31,42 @@ Ext.define('MyApp.view.MyPanel2', {
             items: [
                 {
                     xtype: 'mygridpanel2'
+                }
+            ],
+            dockedItems: [
+                {
+                    xtype: 'toolbar',
+                    dock: 'top',
+                    items: [
+                        {
+                            xtype: 'tbtext',
+                            text: 'ค้นหา  :  '
+                        },
+                        {
+                            xtype: 'textfield',
+                            id: 'txtSearch',
+                            itemId: 'txtSearch',
+                            width: 221,
+                            fieldLabel: '',
+                            emptyText: 'ค้นหาจากชื่อธนาคาร'
+                        },
+                        {
+                            xtype: 'button',
+                            height: 25,
+                            id: 'btnSearch',
+                            itemId: 'btnSearch',
+                            width: 59,
+                            text: 'ค้นหา'
+                        },
+                        {
+                            xtype: 'button',
+                            height: 25,
+                            id: 'btnReset',
+                            itemId: 'btnReset',
+                            width: 59,
+                            text: 'คืนค่า'
+                        }
+                    ]
                 }
             ]
         });

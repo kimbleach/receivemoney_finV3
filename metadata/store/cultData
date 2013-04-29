@@ -8,8 +8,9 @@
     "userConfig": {
         "autoLoad": false,
         "model": "cultData",
-        "storeId": "MyJsonStore5",
-        "designer|userClassName": "cultData"
+        "storeId": "cultData",
+        "designer|userClassName": "cultData",
+        "groupField": "date"
     },
     "designerId": "5028e83a-0414-405b-8e3f-3ae7864f9637",
     "cn": [

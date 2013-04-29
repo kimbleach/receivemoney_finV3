@@ -38,6 +38,58 @@ Ext.define('MyApp.controller.MyController', {
         this.loadAdd();
     },
 
+    onBtnSearch: function(button, e, eOpts) {
+        //***
+        var valueSearch=Ext.getCmp('txtSearch').getValue();
+
+        var store=Ext.getStore('cultData');
+
+        //console.log(valueSearch.attr);
+
+
+        store.filterBy(function(rec, id) {
+
+            if(rec.get('bookBank').indexOf(valueSearch)>-1) {     
+
+                console.log('true');
+
+                return true;
+            }
+            else {
+
+                //   console.log([valueSearch]);
+                return false;
+            }
+        });
+
+    },
+
+    onBtnReset: function(button, e, eOpts) {
+        var valueSearch="";
+
+        var store=Ext.getStore('cultData');
+
+        console.log(valueSearch.attr);
+
+
+        store.filterBy(function(rec, id) {
+            //  if(rec.get('BankAccount') === valueSearch) {
+            if(rec.get('bookBank').indexOf(valueSearch)>-1) {     
+                Ext.getCmp('txtSearch').setValue('');
+
+                console.log('true');
+
+                return true;
+            }
+            else {
+
+                //   console.log([valueSearch]);
+                return false;
+            }
+        });
+
+    },
+
     clickAddButton: function(button, e, eOpts) {
 
 
@@ -182,6 +234,12 @@ Ext.define('MyApp.controller.MyController', {
         this.control({
             "#btnAdd": {
                 click: this.clickAdd
+            },
+            "#btnSearch": {
+                click: this.onBtnSearch
+            },
+            "#btnReset": {
+                click: this.onBtnReset
             },
             "#btnSave": {
                 click: this.clickAddButton

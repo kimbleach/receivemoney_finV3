@@ -28,9 +28,9 @@ Ext.define('MyApp.view.mygridpanel2', {
                 {
                     ftype: 'grouping',
                     groupHeaderTpl: Ext.create('Ext.XTemplate', 
-                        '{columnName}: {name}',
+                        '{groupValue:this.renderDueDate}',
                         {
-                            Date: function(data) {
+                            renderDueDate: function(date) {
                                 var today = Ext.Date.clearTime(new Date()),
                                     todayTime = today.getTime(),
                                     dueDateTime;
@@ -39,30 +39,36 @@ Ext.define('MyApp.view.mygridpanel2', {
                                     return '(No Date)';
                                 }
                                 dueDateTime = Ext.Date.clearTime(date).getTime();
+                                console.log('funtion group ');
+                                console.log(dueDateTime);
+
                                 if(dueDateTime === todayTime) {
-                                    return 'Today';
+                                    return '<span style="color:blue;">Today</span>';
                                 }
                                 if(dueDateTime > todayTime) {
                                     if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, 1).getTime()) {
-                                        // due date is current date + 1 day
-                                        return 'Tomorrow';
+                                        return '<span style="color:green;">Tomorrow</span>';
                                     }
                                     if(dueDateTime < Ext.Date.add(today, Ext.Date.DAY, 7).getTime()) {
-                                        // if the due date is less than one week in the future, return the day of the week.
-                                        return Ext.Date.format(date, 'l');
+                                        return '<span style="color:green;">'+Ext.Date.format(date, 'l')+'</span>';
+
                                     }
+                                    var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');
+                                    return '<span style="color:green;">'+date2+'</span>'
                                 } else {
+
+
                                     if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, -1).getTime()) {
-                                        // due date is current date - 1 day.
-                                        return 'Yesterday';
+
+                                        return '<span style="color:red;">Yesterday</span>';
+
                                     }
                                     if(dueDateTime > Ext.Date.add(today, Ext.Date.DAY, -7).getTime()) {
-                                        // if the due date is less than one week past, return 'Last' + the day of the week.
-                                        return 'Last '+ Ext.Date.format(date, 'l');
+                                        return '<span style="color:red;">Last '+ Ext.Date.format(date, 'l')+'</span>';
                                     }
+                                    var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');
+                                    return '<span style="color:red;">'+date2+'</span>'
                                 }
-                                return date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');
-
                             }
                         }
                     )
@@ -70,14 +76,44 @@ Ext.define('MyApp.view.mygridpanel2', {
             ],
             columns: [
                 {
+                    xtype: 'datecolumn',
+                    width: 90,
+                    dataIndex: 'date',
+                    text: 'วันที่'
+                },
+                {
                     xtype: 'gridcolumn',
                     dataIndex: 'id',
                     text: 'รายการที่'
                 },
                 {
-                    xtype: 'datecolumn',
-                    dataIndex: 'date',
-                    text: 'วันที่'
+                    xtype: 'gridcolumn',
+                    width: 166,
+                    dataIndex: 'bookBank',
+                    text: 'ชื่อธนาคาร'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    text: 'ชื่อบัญชี'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    text: 'สาขาธนาคาร'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    text: 'ประเภทบัญชี'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'accountNumber',
+                    text: 'เลขที่บัญชี'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    width: 146,
+                    dataIndex: 'tellerId',
+                    text: 'หมายเลขผู้ทำรายการ'
                 },
                 {
                     xtype: 'gridcolumn',
@@ -89,23 +125,6 @@ Ext.define('MyApp.view.mygridpanel2', {
                     xtype: 'gridcolumn',
                     dataIndex: 'deposit',
                     text: 'ยอดเงิน'
-                },
-                {
-                    xtype: 'gridcolumn',
-                    width: 146,
-                    dataIndex: 'tellerId',
-                    text: 'หมายเลขผู้ทำรายการ'
-                },
-                {
-                    xtype: 'gridcolumn',
-                    width: 166,
-                    dataIndex: 'bookBank',
-                    text: 'ชื่อธนาคาร'
-                },
-                {
-                    xtype: 'gridcolumn',
-                    dataIndex: 'accountNumber',
-                    text: 'เลขที่บัญชี'
                 },
                 {
                     xtype: 'actioncolumn',

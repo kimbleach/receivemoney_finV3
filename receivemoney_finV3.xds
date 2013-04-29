@@ -121,14 +121,6 @@
             ],
             "className": "cultMemberS12"
         },
-        "5206848e-bfe9-4732-bde7-aa654445b989": {
-            "paths": [
-                "metadata/controller/MyController",
-                "app/controller/override/MyController.js",
-                "app/controller/MyController.js"
-            ],
-            "className": "MyController"
-        },
         "2a76f874-bf40-49d7-be57-4c49ccee5c09": {
             "paths": [
                 "metadata/model/cultData",
@@ -216,6 +208,14 @@
                 "app/model/bank.js"
             ],
             "className": "bank"
+        },
+        "5206848e-bfe9-4732-bde7-aa654445b989": {
+            "paths": [
+                "metadata/controller/MyController",
+                "app/controller/override/MyController.js",
+                "app/controller/MyController.js"
+            ],
+            "className": "MyController"
         }
     },
     "viewOrderMap": {
