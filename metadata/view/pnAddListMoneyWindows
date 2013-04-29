@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "draggable": false,
-        "height": 401,
+        "height": 416,
         "width": 685,
         "designer|userClassName": "pnAddListMoneyWindows",
         "designer|userAlias": "pnAddListMoneyWindows",
@@ -43,6 +43,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "height": 148,
                         "margin": "10 10 10 10",
                         "padding": 10,
                         "designer|userClassName": "MyFieldSet",
@@ -69,24 +70,6 @@
                                 "hideTrigger": true
                             },
                             "designerId": "b314e7e4-3c8b-4b61-84b2-6ad5f57922e8"
-                        },
-                        {
-                            "type": "Ext.form.field.Date",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "id": "date",
-                                "designer|userClassName": "MyDateField",
-                                "fieldLabel": "วันที่โอน",
-                                "msgTarget": "side",
-                                "name": "date",
-                                "emptyText": "",
-                                "editable": false
-                            },
-                            "designerId": "368181a6-a167-465e-b81a-2388ff66b51a"
                         },
                         {
                             "type": "Ext.form.field.ComboBox",
@@ -219,9 +202,11 @@
                 "layout|flex": null,
                 "layout|margins": " 0 0 0 10",
                 "layout|region": "north",
-                "height": 83,
+                "designer|snapToGrid": 10,
+                "height": 164,
                 "id": "pnBankForm",
                 "designer|userClassName": "MyForm1",
+                "layout": "absolute",
                 "bodyPadding": 10,
                 "title": null
             },
@@ -236,9 +221,11 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|anchor": null,
-                        "id": "bookBanks",
+                        "layout|x": 10,
+                        "layout|y": 10,
+                        "id": "bookBank",
                         "margin": "0 0 0 10",
-                        "width": 254,
+                        "width": 250,
                         "designer|userClassName": "MyComboBox1",
                         "fieldLabel": "ชื่อธนาคาร",
                         "name": "bookBank",
@@ -249,17 +236,20 @@
                     "designerId": "81de0961-19a5-48a6-a8e3-96813f1c5a11"
                 },
                 {
-                    "type": "Ext.form.field.Number",
+                    "type": "Ext.form.field.ComboBox",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "layout|x": 10,
+                        "layout|y": 50,
                         "formBind": null,
-                        "id": "accountNumber",
-                        "margin": "10 0 0 10",
-                        "designer|userClassName": "MyNumberField",
+                        "id": "accountNo",
+                        "margin": "0 0 0 10",
+                        "width": 250,
+                        "designer|userClassName": "MyComboBox1",
                         "fieldLabel": "เลขที่บัญชี:",
                         "msgTarget": null,
                         "name": "accountNumber",
@@ -270,6 +260,116 @@
                         "hideTrigger": null
                     },
                     "designerId": "6d47e37d-a574-4261-8e7b-b0ef6e353dd8"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 90,
+                        "id": "name",
+                        "margin": "0 0 0 10",
+                        "width": 250,
+                        "designer|userClassName": "MyComboBox1",
+                        "fieldLabel": "ชื่อบัญชี",
+                        "name": "name",
+                        "editable": false,
+                        "displayField": null,
+                        "store": null
+                    },
+                    "designerId": "356b8286-49f4-4e4a-a23e-79a9dea6fceb"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": null,
+                        "layout|x": 310,
+                        "layout|y": 50,
+                        "id": "branch",
+                        "margin": "0 0 0 10",
+                        "width": 254,
+                        "designer|userClassName": "MyComboBox1",
+                        "fieldLabel": "สาขา",
+                        "name": "branch",
+                        "editable": false,
+                        "displayField": null,
+                        "store": null
+                    },
+                    "designerId": "5a169880-cb2e-4263-a132-34ca830f7b79"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": null,
+                        "layout|x": 310,
+                        "layout|y": 10,
+                        "id": "type",
+                        "margin": "0 0 0 10",
+                        "width": 254,
+                        "designer|userClassName": "MyComboBox1",
+                        "fieldLabel": "ประเภท",
+                        "name": "type",
+                        "editable": false,
+                        "displayField": null,
+                        "store": null
+                    },
+                    "designerId": "71dbdd9b-76a2-4c03-820c-8a65d7725bed"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": null,
+                        "layout|x": 310,
+                        "layout|y": 90,
+                        "id": "date",
+                        "margin": "0 0 0 10",
+                        "width": 254,
+                        "designer|userClassName": "MyDateField1",
+                        "fieldLabel": "วันที่โอน",
+                        "name": "date",
+                        "editable": false
+                    },
+                    "designerId": "0a24bfd1-e00a-4b31-aac5-ff1ab445d668"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 130,
+                        "id": "bookBanks5",
+                        "margin": "0 0 0 10",
+                        "width": 254,
+                        "designer|userClassName": "MyTextField2",
+                        "fieldLabel": "TimeStamp",
+                        "name": "bookBank"
+                    },
+                    "designerId": "de59e700-10c1-4b53-960b-7284064e7bc1"
                 }
             ]
         }
