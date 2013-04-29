@@ -105,6 +105,45 @@
                 "designer|userClassName": "MyField25"
             },
             "designerId": "b3048457-7d7c-4b51-90a5-ab3f30ef3ab5"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "nameAcc",
+                "designer|userClassName": "MyField31"
+            },
+            "designerId": "9e5be13c-a7b5-41da-90c4-c62abf31a4bf"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "branch",
+                "designer|userClassName": "MyField32"
+            },
+            "designerId": "43fedb75-18a5-4d5f-8ac4-795a166f4fc0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "typeBank",
+                "designer|userClassName": "MyField33"
+            },
+            "designerId": "bbb256f0-57f7-4dea-9f26-7c901b9973f6"
         }
     ]
 }

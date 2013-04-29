@@ -31,10 +31,36 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "accountNumber",
-                "designer|userClassName": "MyField27"
+                "name": "name",
+                "designer|userClassName": "MyField29"
             },
-            "designerId": "76342063-7b92-4d41-b32a-9ad3f5d58115"
+            "designerId": "515866aa-4139-48c5-90e5-d8066f33cf79"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "branch",
+                "designer|userClassName": "MyField30"
+            },
+            "designerId": "9eb7a216-bbdb-41b0-a8ed-cbf69a58dc87"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "accountNo",
+                "designer|userClassName": "MyField8"
+            },
+            "designerId": "7610f4b3-fc39-4c34-b81d-d4fbf0534210"
         },
         {
             "type": "Ext.data.Field",
@@ -45,9 +71,9 @@
             "codeClass": null,
             "userConfig": {
                 "name": "type",
-                "designer|userClassName": "MyField28"
+                "designer|userClassName": "MyField9"
             },
-            "designerId": "9c6ef3fe-7195-446f-9bb9-79a1825019eb"
+            "designerId": "de82f80d-4144-4265-9cee-f6cc7c62596c"
         }
     ]
 }

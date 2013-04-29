@@ -22,7 +22,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyAjaxProxy7",
-                "url": "data/BankAccount.json"
+                "url": "data/bankaccount.json"
             },
             "designerId": "51ca77e8-b909-49b0-b447-e9fdc82b6d7f",
             "cn": [
