@@ -29,6 +29,7 @@
         },
         "fbc0b5b6-c6cc-4e1a-8a9a-6fee818c735e": {
             "id": "fbc0b5b6-c6cc-4e1a-8a9a-6fee818c735e",
+            "expanded": false,
             "cn": [
                 {
                     "id": "f4f24c9f-e37a-4deb-8763-9630dba0b59f"
@@ -413,6 +414,7 @@
         },
         "2a76f874-bf40-49d7-be57-4c49ccee5c09": {
             "id": "2a76f874-bf40-49d7-be57-4c49ccee5c09",
+            "expanded": false,
             "cn": [
                 {
                     "id": "4d70755f-dcfb-44fa-8cff-ef9172844e9f"
@@ -528,8 +530,13 @@
         "topInstance": null
     },
     "inspectorState": {
+<<<<<<< HEAD
         "topInstance": "fbc0b5b6-c6cc-4e1a-8a9a-6fee818c735e",
         "selectedInstance": "1ccd5113-c0d2-4399-a85c-b48e30aa8d71"
+=======
+        "topInstance": "5206848e-bfe9-4732-bde7-aa654445b989",
+        "selectedInstance": "ecbe3c10-037e-4c0a-a9ec-a9246aa5cbd4"
+>>>>>>> refs/heads/deuanz_comatooltip
     },
     "codeState": {
         "topInstance": "fbc0b5b6-c6cc-4e1a-8a9a-6fee818c735e"

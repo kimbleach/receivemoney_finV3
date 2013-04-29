@@ -22,7 +22,8 @@
                 "fn": "clickAdd",
                 "implHandler": [
                     "//console.log('ooooooooooo');\r",
-                    "\r",
+                    "var pnWindow = Ext.getCmp('pnAddListMoneyWindows');\r",
+                    "//console.log(\"Windows : \", pnWindow);\r",
                     "this.loadAdd();"
                 ],
                 "name": "click",
@@ -138,13 +139,15 @@
                     "    addMoney.bookBank = bankname;\r",
                     "    addMoney.accountNumber = bankacc;\r",
                     "\r",
+<<<<<<< HEAD
                     "    console.log(addMoney);\r",
                     "    //Ext.getCmp('bookBank').value\r",
                     "    //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
+=======
+>>>>>>> refs/heads/deuanz_comatooltip
                     "    Ext.getStore('cultData').add(addMoney);\r",
                     "    Ext.getCmp('pnAddListMoney').getForm().reset();\r",
                     "\r",
-                    "    console.log('pnWindow');\r",
                     "    //this.getPnAddListMoneyWindows().destroy();\r",
                     "\r",
                     "}\r",
@@ -168,17 +171,6 @@
                 "designer|userClassName": "clickSubmitEdit",
                 "fn": "clickSubmitEdit",
                 "implHandler": [
-                    "//var Ext.getCmp('pnAddListMoney').getForm().getValues()\r",
-                    "\r",
-                    "\r",
-                    "//console.log(rec);\r",
-                    "//Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
-                    "\r",
-                    "\r",
-                    "//console.log(\"Store ^^\",Ext.getStore('cultData').data);\r",
-                    "\r",
-                    "\r",
-                    "\r",
                     "var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,\r",
                     "    bankacc = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,\r",
                     "    addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();\r",
@@ -364,19 +356,13 @@
                 "fn": "loadAdd",
                 "implHandler": [
                     "\r",
-                    "var pnWindow = Ext.getCmp('pnAddListMoneyWindows');\r",
+                    "var pnWindow = this.getPnAddListMoneyWindows();\r",
                     "\r",
                     "if(!pnWindow){\r",
-                    "\r",
                     "    pnWindow = Ext.create('MyApp.view.pnAddListMoneyWindows');\r",
-                    "    //    console.log(pnWindow);\r",
                     "    Ext.getCmp('btnEdit').hidden = true;\r",
-                    "\r",
-                    "}\r",
-                    "\r",
-                    "pnWindow.show();\r",
-                    "\r",
-                    ""
+                    "    pnWindow.show();\r",
+                    "}"
                 ]
             },
             "designerId": "ecbe3c10-037e-4c0a-a9ec-a9246aa5cbd4"

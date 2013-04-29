@@ -118,15 +118,22 @@
                             "userConfig": {
                                 "formBind": false,
                                 "id": "deposit",
+                                "style": null,
                                 "designer|userClassName": "MyNumberField",
+                                "constrain": null,
+                                "fixed": null,
                                 "fieldLabel": "ยอดเงิน",
                                 "msgTarget": "side",
                                 "name": "deposit",
+                                "value": null,
                                 "allowBlank": false,
                                 "emptyText": "จำนวนที่เงิน",
                                 "regexText": "โปรดใส่ข้อมูล จำนวนเงินที่ถอน",
                                 "vtype": null,
-                                "hideTrigger": true
+                                "hideTrigger": true,
+                                "autoStripChars": null,
+                                "decimalSeparator": null,
+                                "step": null
                             },
                             "designerId": "29bf4af9-c8da-40ad-8aae-7818a797ba83"
                         },
