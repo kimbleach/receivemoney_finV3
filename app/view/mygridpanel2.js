@@ -76,14 +76,44 @@ Ext.define('MyApp.view.mygridpanel2', {
             ],
             columns: [
                 {
+                    xtype: 'datecolumn',
+                    width: 90,
+                    dataIndex: 'date',
+                    text: 'วันที่'
+                },
+                {
                     xtype: 'gridcolumn',
                     dataIndex: 'id',
                     text: 'รายการที่'
                 },
                 {
-                    xtype: 'datecolumn',
-                    dataIndex: 'date',
-                    text: 'วันที่'
+                    xtype: 'gridcolumn',
+                    width: 166,
+                    dataIndex: 'bookBank',
+                    text: 'ชื่อธนาคาร'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    text: 'ชื่อบัญชี'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    text: 'สาขาธนาคาร'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    text: 'ประเภทบัญชี'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'accountNumber',
+                    text: 'เลขที่บัญชี'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    width: 146,
+                    dataIndex: 'tellerId',
+                    text: 'หมายเลขผู้ทำรายการ'
                 },
                 {
                     xtype: 'gridcolumn',
@@ -95,23 +125,6 @@ Ext.define('MyApp.view.mygridpanel2', {
                     xtype: 'gridcolumn',
                     dataIndex: 'deposit',
                     text: 'ยอดเงิน'
-                },
-                {
-                    xtype: 'gridcolumn',
-                    width: 146,
-                    dataIndex: 'tellerId',
-                    text: 'หมายเลขผู้ทำรายการ'
-                },
-                {
-                    xtype: 'gridcolumn',
-                    width: 166,
-                    dataIndex: 'bookBank',
-                    text: 'ชื่อธนาคาร'
-                },
-                {
-                    xtype: 'gridcolumn',
-                    dataIndex: 'accountNumber',
-                    text: 'เลขที่บัญชี'
                 },
                 {
                     xtype: 'actioncolumn',

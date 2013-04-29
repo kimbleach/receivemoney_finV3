@@ -93,7 +93,7 @@
                                     "\r",
                                     "    }\r",
                                     "    var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');\r",
-                                    "      return '<span style=\"color:green;\">'+date2+'</span>'\r",
+                                    "    return '<span style=\"color:green;\">'+date2+'</span>'\r",
                                     "} else {\r",
                                     "\r",
                                     "\r",
@@ -117,6 +117,21 @@
             ]
         },
         {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 90,
+                "designer|userClassName": "MyDateColumn2",
+                "dataIndex": "date",
+                "text": "วันที่"
+            },
+            "designerId": "4c3420b0-1f21-407d-99ec-7f901927a564"
+        },
+        {
             "type": "Ext.grid.column.Column",
             "reference": {
                 "name": "columns",
@@ -132,18 +147,90 @@
             "designerId": "4853784e-df93-4d1d-8458-0901b83afa29"
         },
         {
-            "type": "Ext.grid.column.Date",
+            "type": "Ext.grid.column.Column",
             "reference": {
                 "name": "columns",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyDateColumn2",
-                "dataIndex": "date",
-                "text": "วันที่"
+                "width": 166,
+                "designer|userClassName": "MyColumn4",
+                "dataIndex": "bookBank",
+                "text": "ชื่อธนาคาร"
             },
-            "designerId": "4c3420b0-1f21-407d-99ec-7f901927a564"
+            "designerId": "f0f27de9-673c-40d3-9221-215c11843455"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn6",
+                "designer|displayName": "nameAcc",
+                "text": "ชื่อบัญชี"
+            },
+            "designerId": "91304cbb-b5e6-43f0-a1b0-c5b9bab76124"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn7",
+                "designer|displayName": "branch",
+                "text": "สาขาธนาคาร"
+            },
+            "designerId": "6eaa7de0-f857-4ee9-a3f7-1842d98053e2"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn8",
+                "designer|displayName": "typeBank",
+                "text": "ประเภทบัญชี"
+            },
+            "designerId": "a3a444b8-a8a1-47e9-a8d6-c7cfbb82f9c8"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn5",
+                "dataIndex": "accountNumber",
+                "text": "เลขที่บัญชี"
+            },
+            "designerId": "3e6ae009-026d-41fd-8981-68dec5076b63"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 146,
+                "designer|userClassName": "MyColumn11",
+                "dataIndex": "tellerId",
+                "text": "หมายเลขผู้ทำรายการ"
+            },
+            "designerId": "fa71119d-64f3-4437-b192-341a23372efd"
         },
         {
             "type": "Ext.grid.column.Column",
@@ -173,50 +260,6 @@
                 "text": "ยอดเงิน"
             },
             "designerId": "067dd2b7-4f04-4796-932b-9336711c004c"
-        },
-        {
-            "type": "Ext.grid.column.Column",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "width": 146,
-                "designer|userClassName": "MyColumn11",
-                "dataIndex": "tellerId",
-                "text": "หมายเลขผู้ทำรายการ"
-            },
-            "designerId": "fa71119d-64f3-4437-b192-341a23372efd"
-        },
-        {
-            "type": "Ext.grid.column.Column",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "width": 166,
-                "designer|userClassName": "MyColumn4",
-                "dataIndex": "bookBank",
-                "text": "ชื่อธนาคาร"
-            },
-            "designerId": "f0f27de9-673c-40d3-9221-215c11843455"
-        },
-        {
-            "type": "Ext.grid.column.Column",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyColumn5",
-                "dataIndex": "accountNumber",
-                "text": "เลขที่บัญชี"
-            },
-            "designerId": "3e6ae009-026d-41fd-8981-68dec5076b63"
         },
         {
             "type": "Ext.grid.column.Action",
