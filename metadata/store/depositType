@@ -40,26 +40,6 @@
                     "designerId": "5bac0bd6-2bd7-487e-b206-7517e3be68f1"
                 }
             ]
-        },
-        {
-            "type": "basiceventbinding",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "onJsonstoreLoad",
-                "fn": "onJsonstoreLoad",
-                "implHandler": [
-                    "console.log(\"Deuanz ^^\");\r",
-                    "var combo = Ext.getCmp('transaction');\r",
-                    "combo.setValue(\"ฝาก\");"
-                ],
-                "name": "load",
-                "scope": "me"
-            },
-            "designerId": "5f5ee549-7d20-4e33-948c-6227410b4f55"
         }
     ]
 }

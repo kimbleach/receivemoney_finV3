@@ -64,10 +64,10 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "Date",
-                                "fn": "Date",
+                                "designer|userClassName": "renderDueDate",
+                                "fn": "renderDueDate",
                                 "designer|params": [
-                                    "data"
+                                    "date"
                                 ],
                                 "implHandler": [
                                     "var today = Ext.Date.clearTime(new Date()),\r",
@@ -78,7 +78,7 @@
                                     "    return '(No Date)';\r",
                                     "}\r",
                                     "dueDateTime = Ext.Date.clearTime(date).getTime();\r",
-                                    "\r",
+                                    "console.log('funtion group ');\r",
                                     "console.log(dueDateTime);\r",
                                     "\r",
                                     "if(dueDateTime === todayTime) {\r",
@@ -86,14 +86,14 @@
                                     "}\r",
                                     "if(dueDateTime > todayTime) {\r",
                                     "    if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, 1).getTime()) {\r",
-                                    "        return 'Tomorrow';\r",
+                                    "        return '<span style=\"color:green;\">Tomorrow</span>';\r",
                                     "    }\r",
                                     "    if(dueDateTime < Ext.Date.add(today, Ext.Date.DAY, 7).getTime()) {\r",
-                                    "        return Ext.Date.format(date, 'l');\r",
+                                    "        return '<span style=\"color:green;\">'+Ext.Date.format(date, 'l')+'</span>';\r",
                                     "\r",
                                     "    }\r",
                                     "    var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');\r",
-                                    "    return '<span style=\"color:green;\">'+date2+'</span>'\r",
+                                    "      return '<span style=\"color:green;\">'+date2+'</span>'\r",
                                     "} else {\r",
                                     "\r",
                                     "\r",

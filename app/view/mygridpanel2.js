@@ -30,7 +30,7 @@ Ext.define('MyApp.view.mygridpanel2', {
                     groupHeaderTpl: Ext.create('Ext.XTemplate', 
                         '{groupValue:this.renderDueDate}',
                         {
-                            Date: function(data) {
+                            renderDueDate: function(date) {
                                 var today = Ext.Date.clearTime(new Date()),
                                     todayTime = today.getTime(),
                                     dueDateTime;
@@ -39,7 +39,7 @@ Ext.define('MyApp.view.mygridpanel2', {
                                     return '(No Date)';
                                 }
                                 dueDateTime = Ext.Date.clearTime(date).getTime();
-
+                                console.log('funtion group ');
                                 console.log(dueDateTime);
 
                                 if(dueDateTime === todayTime) {
@@ -47,10 +47,10 @@ Ext.define('MyApp.view.mygridpanel2', {
                                 }
                                 if(dueDateTime > todayTime) {
                                     if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, 1).getTime()) {
-                                        return 'Tomorrow';
+                                        return '<span style="color:green;">Tomorrow</span>';
                                     }
                                     if(dueDateTime < Ext.Date.add(today, Ext.Date.DAY, 7).getTime()) {
-                                        return Ext.Date.format(date, 'l');
+                                        return '<span style="color:green;">'+Ext.Date.format(date, 'l')+'</span>';
 
                                     }
                                     var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');
