@@ -40,3 +40,19 @@
 [6548:3072:0425/180622:32130137:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
 [6548:3072:0425/180622:32130137:ERROR:backend_impl.cc(221)] Unable to create cache
 [6548:6036:0425/184535:34483412:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[616:3488:0429/122624:11937414:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[6900:7076:0429/134543:16696163:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134548:16701155:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134553:16706162:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134558:16711170:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134603:16716162:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134608:16721169:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134613:16726177:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134618:16731169:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134623:16736177:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134628:16741184:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134633:16746192:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134638:16751184:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134643:16756192:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134648:16761199:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:7076:0429/134653:16766191:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.

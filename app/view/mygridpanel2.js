@@ -30,45 +30,80 @@ Ext.define('MyApp.view.mygridpanel2', {
                     groupHeaderTpl: Ext.create('Ext.XTemplate', 
                         '{groupValue:this.renderDueDate}',
                         {
-                            renderDueDate: function(date) {
+                            renderDueDate: function(bookBank) {
+
+                                /*
                                 var today = Ext.Date.clearTime(new Date()),
-                                    todayTime = today.getTime(),
-                                    dueDateTime;
+                                todayTime = today.getTime(),
+                                dueDateTime;
 
                                 if(!date) {
-                                    return '(No Date)';
+                                return '(No Date)';
                                 }
                                 dueDateTime = Ext.Date.clearTime(date).getTime();
                                 console.log('funtion group ');
-                                console.log(dueDateTime);
+                                console.log(date);
 
                                 if(dueDateTime === todayTime) {
-                                    return '<span style="color:blue;">Today</span>';
+                                return '<span style="color:blue;">Today</span>';
                                 }
                                 if(dueDateTime > todayTime) {
-                                    if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, 1).getTime()) {
-                                        return '<span style="color:green;">Tomorrow</span>';
-                                    }
-                                    if(dueDateTime < Ext.Date.add(today, Ext.Date.DAY, 7).getTime()) {
-                                        return '<span style="color:green;">'+Ext.Date.format(date, 'l')+'</span>';
+                                if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, 1).getTime()) {
+                                return '<span style="color:green;">Tomorrow</span>';
+                                }
+                                if(dueDateTime < Ext.Date.add(today, Ext.Date.DAY, 7).getTime()) {
+                                return '<span style="color:green;">'+Ext.Date.format(date, 'l')+'</span>';
 
-                                    }
-                                    var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');
-                                    return '<span style="color:green;">'+date2+'</span>'
+                                }
+                                var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');
+                                return '<span style="color:green;">'+date2+'</span>'
                                 } else {
 
 
-                                    if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, -1).getTime()) {
+                                if(dueDateTime === Ext.Date.add(today, Ext.Date.DAY, -1).getTime()) {
 
-                                        return '<span style="color:red;">Yesterday</span>';
+                                return '<span style="color:red;">Yesterday</span>';
 
-                                    }
-                                    if(dueDateTime > Ext.Date.add(today, Ext.Date.DAY, -7).getTime()) {
-                                        return '<span style="color:red;">Last '+ Ext.Date.format(date, 'l')+'</span>';
-                                    }
-                                    var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');
-                                    return '<span style="color:red;">'+date2+'</span>'
                                 }
+                                if(dueDateTime > Ext.Date.add(today, Ext.Date.DAY, -7).getTime()) {
+                                return '<span style="color:red;">Last '+ Ext.Date.format(date, 'l')+'</span>';
+                                }
+                                var date2=date.getFullYear() === today.getFullYear() ? Ext.Date.format(date, 'D m/d') : Ext.Date.format(date, 'D m/d/Y');
+                                return '<span style="color:red;">'+date2+'</span>'
+                                }
+
+                                */
+
+                                switch(bookBank)
+                                {
+                                    case "ธนาคารกสิกร":
+                                    return "ธนาคารกสิกร";
+                                    break;
+                                    case "ธนาคารกรุงเทพ":
+                                    return "ธนาคารกรุงเทพ";
+                                    break;
+                                    case "ธนาคารออมสิน":
+                                    return "ธนาคารออมสิน";
+                                    break;
+                                    case "ธนาคารไทยพาณิช":
+                                    return "ธนาคารไทยพาณิช";
+                                    break;
+                                    case "ธนาคารกรุงศรีอยุธยา":
+                                    return "ธนาคารกรุงศรีอยุธยา";
+                                    break;
+                                    case "ธนาคารทหารไทย":
+                                    return "ธนาคารทหารไทย";
+                                    break;
+                                    case "ธนาคารเพื่อการเกษตรและสหกรณ์":
+                                    return "ธนาคารเพื่อการเกษตรและสหกรณ์";
+                                    break;
+                                    case "ธนาคารอิสลาม":
+                                    return "ธนาคารอิสลาม";
+                                    break;
+                                    default:
+                                    return "ธนาคารกรุงไทย"
+                                }
+
                             }
                         }
                     )
