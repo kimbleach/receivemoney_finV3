@@ -33,7 +33,8 @@ Ext.define('MyApp.controller.MyController', {
 
     clickAdd: function(button, e, eOpts) {
         //console.log('ooooooooooo');
-
+        var pnWindow = Ext.getCmp('pnAddListMoneyWindows');
+        //console.log("Windows : ", pnWindow);
         this.loadAdd();
     },
 
@@ -49,13 +50,9 @@ Ext.define('MyApp.controller.MyController', {
             addMoney.bookBank = bankname;
             addMoney.accountNumber = bankacc;
 
-            console.log(addMoney);
-            //Ext.getCmp('bookBank').value
-            //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());
             Ext.getStore('cultData').add(addMoney);
             Ext.getCmp('pnAddListMoney').getForm().reset();
 
-            console.log('pnWindow');
             //this.getPnAddListMoneyWindows().destroy();
 
         }
@@ -63,17 +60,6 @@ Ext.define('MyApp.controller.MyController', {
     },
 
     clickSubmitEdit: function(button, e, eOpts) {
-        //var Ext.getCmp('pnAddListMoney').getForm().getValues()
-
-
-        //console.log(rec);
-        //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());
-
-
-        //console.log("Store ^^",Ext.getStore('cultData').data);
-
-
-
         var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,
             bankacc = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,
             addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();
@@ -149,19 +135,13 @@ Ext.define('MyApp.controller.MyController', {
 
     loadAdd: function() {
 
-        var pnWindow = Ext.getCmp('pnAddListMoneyWindows');
+        var pnWindow = this.getPnAddListMoneyWindows();
 
         if(!pnWindow){
-
             pnWindow = Ext.create('MyApp.view.pnAddListMoneyWindows');
-            //    console.log(pnWindow);
             Ext.getCmp('btnEdit').hidden = true;
-
+            pnWindow.show();
         }
-
-        pnWindow.show();
-
-
     },
 
     loadEdit: function(loadInfo, rowIndex) {
