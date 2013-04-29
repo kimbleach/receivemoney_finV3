@@ -18,7 +18,7 @@ Ext.define('MyApp.view.pnAddListMoneyWindows', {
     alias: 'widget.pnAddListMoneyWindows',
 
     draggable: false,
-    height: 401,
+    height: 416,
     width: 685,
     resizable: //true
 false,
@@ -39,6 +39,7 @@ false,
                     items: [
                         {
                             xtype: 'fieldset',
+                            height: 148,
                             margin: '10 10 10 10',
                             padding: 10,
                             title: '',
@@ -52,15 +53,6 @@ false,
                                     allowBlank: false,
                                     emptyText: 'รหัสข้อมูล',
                                     hideTrigger: true
-                                },
-                                {
-                                    xtype: 'datefield',
-                                    id: 'date',
-                                    fieldLabel: 'วันที่โอน',
-                                    msgTarget: 'side',
-                                    name: 'date',
-                                    emptyText: '',
-                                    editable: false
                                 },
                                 {
                                     xtype: 'combobox',
@@ -121,15 +113,20 @@ false,
                     xtype: 'form',
                     margins: ' 0 0 0 10',
                     region: 'north',
-                    height: 83,
+                    height: 164,
                     id: 'pnBankForm',
+                    layout: {
+                        type: 'absolute'
+                    },
                     bodyPadding: 10,
                     items: [
                         {
                             xtype: 'combobox',
-                            id: 'bookBanks',
+                            x: 10,
+                            y: 10,
+                            id: 'bookBank',
                             margin: '0 0 0 10',
-                            width: 254,
+                            width: 250,
                             fieldLabel: 'ชื่อธนาคาร',
                             name: 'bookBank',
                             editable: false,
@@ -137,11 +134,68 @@ false,
                             store: 'BankAccountStore'
                         },
                         {
-                            xtype: 'numberfield',
-                            id: 'accountNumber',
-                            margin: '10 0 0 10',
+                            xtype: 'combobox',
+                            x: 10,
+                            y: 50,
+                            id: 'accountNo',
+                            margin: '0 0 0 10',
+                            width: 250,
                             fieldLabel: 'เลขที่บัญชี:',
                             name: 'accountNumber'
+                        },
+                        {
+                            xtype: 'combobox',
+                            x: 10,
+                            y: 90,
+                            id: 'name',
+                            margin: '0 0 0 10',
+                            width: 250,
+                            fieldLabel: 'ชื่อบัญชี',
+                            name: 'name',
+                            editable: false
+                        },
+                        {
+                            xtype: 'combobox',
+                            x: 310,
+                            y: 50,
+                            id: 'branch',
+                            margin: '0 0 0 10',
+                            width: 254,
+                            fieldLabel: 'สาขา',
+                            name: 'branch',
+                            editable: false
+                        },
+                        {
+                            xtype: 'combobox',
+                            x: 310,
+                            y: 10,
+                            id: 'type',
+                            margin: '0 0 0 10',
+                            width: 254,
+                            fieldLabel: 'ประเภท',
+                            name: 'type',
+                            editable: false
+                        },
+                        {
+                            xtype: 'datefield',
+                            x: 310,
+                            y: 90,
+                            id: 'date',
+                            margin: '0 0 0 10',
+                            width: 254,
+                            fieldLabel: 'วันที่โอน',
+                            name: 'date',
+                            editable: false
+                        },
+                        {
+                            xtype: 'textfield',
+                            x: 10,
+                            y: 130,
+                            id: 'bookBanks5',
+                            margin: '0 0 0 10',
+                            width: 254,
+                            fieldLabel: 'TimeStamp',
+                            name: 'bookBank'
                         }
                     ]
                 }
