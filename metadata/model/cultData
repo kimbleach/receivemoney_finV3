@@ -144,6 +144,19 @@
                 "designer|userClassName": "MyField33"
             },
             "designerId": "bbb256f0-57f7-4dea-9f26-7c901b9973f6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "timestamp",
+                "designer|userClassName": "MyField16"
+            },
+            "designerId": "0ae006ef-8f64-4d0a-b375-684bc655e335"
         }
     ]
 }

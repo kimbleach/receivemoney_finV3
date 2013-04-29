@@ -48,6 +48,9 @@ Ext.define('MyApp.model.cultData', {
         },
         {
             name: 'typeBank'
+        },
+        {
+            name: 'timestamp'
         }
     ]
 });

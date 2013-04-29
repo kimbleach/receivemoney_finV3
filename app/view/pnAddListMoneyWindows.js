@@ -52,7 +52,13 @@ false,
                                     name: 'id',
                                     allowBlank: false,
                                     emptyText: 'รหัสข้อมูล',
-                                    hideTrigger: true
+                                    hideTrigger: true,
+                                    listeners: {
+                                        afterrender: {
+                                            fn: me.onIdAfterRender,
+                                            scope: me
+                                        }
+                                    }
                                 },
                                 {
                                     xtype: 'combobox',
@@ -61,7 +67,13 @@ false,
                                     name: 'transaction',
                                     editable: false,
                                     displayField: 'Type',
-                                    store: 'depositType'
+                                    store: 'depositType',
+                                    listeners: {
+                                        afterrender: {
+                                            fn: me.onTransactionAfterRender,
+                                            scope: me
+                                        }
+                                    }
                                 },
                                 {
                                     xtype: 'numberfield',
@@ -73,7 +85,13 @@ false,
                                     allowBlank: false,
                                     emptyText: 'จำนวนที่เงิน',
                                     regexText: 'โปรดใส่ข้อมูล จำนวนเงินที่ถอน',
-                                    hideTrigger: true
+                                    hideTrigger: true,
+                                    listeners: {
+                                        afterrender: {
+                                            fn: me.onDepositAfterRender,
+                                            scope: me
+                                        }
+                                    }
                                 },
                                 {
                                     xtype: 'textfield',
@@ -81,7 +99,13 @@ false,
                                     fieldLabel: 'หมายเลขกำกับ',
                                     msgTarget: 'side',
                                     name: 'tellerId',
-                                    emptyText: ''
+                                    emptyText: '',
+                                    listeners: {
+                                        afterrender: {
+                                            fn: me.onTellerIdAfterRender,
+                                            scope: me
+                                        }
+                                    }
                                 }
                             ]
                         },
@@ -131,7 +155,13 @@ false,
                             name: 'bookBank',
                             editable: false,
                             displayField: 'bookBank',
-                            store: 'BankAccountStore'
+                            store: 'BankAccountStore',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onBookBankAfterRender,
+                                    scope: me
+                                }
+                            }
                         },
                         {
                             xtype: 'combobox',
@@ -141,7 +171,15 @@ false,
                             margin: '0 0 0 10',
                             width: 250,
                             fieldLabel: 'เลขที่บัญชี:',
-                            name: 'accountNumber'
+                            name: 'accountNumber',
+                            displayField: 'accountNo',
+                            store: 'BankAccountStore',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onAccountNoAfterRender,
+                                    scope: me
+                                }
+                            }
                         },
                         {
                             xtype: 'combobox',
@@ -151,8 +189,16 @@ false,
                             margin: '0 0 0 10',
                             width: 250,
                             fieldLabel: 'ชื่อบัญชี',
-                            name: 'name',
-                            editable: false
+                            name: 'nameAcc',
+                            editable: false,
+                            displayField: 'name',
+                            store: 'BankAccountStore',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onNameAfterRender,
+                                    scope: me
+                                }
+                            }
                         },
                         {
                             xtype: 'combobox',
@@ -163,7 +209,15 @@ false,
                             width: 254,
                             fieldLabel: 'สาขา',
                             name: 'branch',
-                            editable: false
+                            editable: false,
+                            displayField: 'branch',
+                            store: 'BankAccountStore',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onBranchAfterRender,
+                                    scope: me
+                                }
+                            }
                         },
                         {
                             xtype: 'combobox',
@@ -173,8 +227,16 @@ false,
                             margin: '0 0 0 10',
                             width: 254,
                             fieldLabel: 'ประเภท',
-                            name: 'type',
-                            editable: false
+                            name: 'typeBank',
+                            editable: false,
+                            displayField: 'type',
+                            store: 'BankAccountStore',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onTypeAfterRender,
+                                    scope: me
+                                }
+                            }
                         },
                         {
                             xtype: 'datefield',
@@ -185,17 +247,29 @@ false,
                             width: 254,
                             fieldLabel: 'วันที่โอน',
                             name: 'date',
-                            editable: false
+                            editable: false,
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onDateAfterRender,
+                                    scope: me
+                                }
+                            }
                         },
                         {
                             xtype: 'textfield',
                             x: 10,
                             y: 130,
-                            id: 'bookBanks5',
+                            id: 'timeStamp',
                             margin: '0 0 0 10',
                             width: 254,
                             fieldLabel: 'TimeStamp',
-                            name: 'bookBank'
+                            name: 'bookBank',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onBookBanks5AfterRender,
+                                    scope: me
+                                }
+                            }
                         }
                     ]
                 }
@@ -203,6 +277,116 @@ false,
         });
 
         me.callParent(arguments);
+    },
+
+    onIdAfterRender: function(component, eOpts) {
+        Ext.tip.QuickTipManager.register({
+            target: 'id',
+            //title: 'รหัสช้อมูล',
+            text: 'รหัสข้อมูล',
+            width: 100,
+            dismissDelay: 10000    // Hide after 10 seconds hover
+        });
+    },
+
+    onTransactionAfterRender: function(component, eOpts) {
+        Ext.tip.QuickTipManager.register({
+            target: 'transaction',
+            //title: 'รหัสช้อมูล',
+            text: 'ประเภทรายการ',
+            width: 100,
+            dismissDelay: 10000    // Hide after 10 seconds hover
+        });
+    },
+
+    onDepositAfterRender: function(component, eOpts) {
+        Ext.tip.QuickTipManager.register({
+            target: 'deposit',
+            //title: 'รหัสช้อมูล',
+            text: 'ยอดเงิน',
+            width: 100,
+            dismissDelay: 10000    // Hide after 10 seconds hover
+        });
+    },
+
+    onTellerIdAfterRender: function(component, eOpts) {
+        Ext.tip.QuickTipManager.register({
+            target: 'tellerId',
+            //title: 'รหัสช้อมูล',
+            text: 'หมายเลขกำกับ',
+            width: 100,
+            dismissDelay: 10000    // Hide after 10 seconds hover
+        });
+    },
+
+    onBookBankAfterRender: function(component, eOpts) {
+        Ext.tip.QuickTipManager.register({
+            target: 'bookBank',
+            //title: 'รหัสช้อมูล',
+            text: 'ชื่อธนาคาร',
+            width: 100,
+            dismissDelay: 10000    // Hide after 10 seconds hover
+        });
+    },
+
+    onAccountNoAfterRender: function(component, eOpts) {
+        Ext.tip.QuickTipManager.register({
+            target: 'accountNo',
+            //title: 'รหัสช้อมูล',
+            text: 'เลขที่บัญชี',
+            width: 100,
+            dismissDelay: 10000    // Hide after 10 seconds hover
+        });
+    },
+
+    onNameAfterRender: function(component, eOpts) {
+        Ext.tip.QuickTipManager.register({
+            target: 'name',
+            //title: 'รหัสช้อมูล',
+            text: 'ชื่อบัญชี',
+            width: 100,
+            dismissDelay: 10000    // Hide after 10 seconds hover
+        });
+    },
+
+    onBranchAfterRender: function(component, eOpts) {
+        Ext.tip.QuickTipManager.register({
+            target: 'branch',
+            //title: 'รหัสช้อมูล',
+            text: 'สาขา',
+            width: 100,
+            dismissDelay: 10000    // Hide after 10 seconds hover
+        });
+    },
+
+    onTypeAfterRender: function(component, eOpts) {
+        Ext.tip.QuickTipManager.register({
+            target: 'type',
+            //title: 'รหัสช้อมูล',
+            text: 'ประเภท',
+            width: 100,
+            dismissDelay: 10000    // Hide after 10 seconds hover
+        });
+    },
+
+    onDateAfterRender: function(component, eOpts) {
+        Ext.tip.QuickTipManager.register({
+            target: 'date',
+            //title: 'รหัสช้อมูล',
+            text: 'วันที่โอน',
+            width: 100,
+            dismissDelay: 10000    // Hide after 10 seconds hover
+        });
+    },
+
+    onBookBanks5AfterRender: function(component, eOpts) {
+        Ext.tip.QuickTipManager.register({
+            target: 'timeStamp',
+            //title: 'รหัสช้อมูล',
+            text: 'วันที่ปัจจุบัน',
+            width: 100,
+            dismissDelay: 10000    // Hide after 10 seconds hover
+        });
     }
 
 });

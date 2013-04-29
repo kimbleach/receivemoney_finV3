@@ -117,6 +117,20 @@
             ]
         },
         {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn9",
+                "dataIndex": "timestamp",
+                "text": "วันที่กรอกข้อมูล"
+            },
+            "designerId": "92335726-d366-4a0f-a516-ee659412e8e3"
+        },
+        {
             "type": "Ext.grid.column.Date",
             "reference": {
                 "name": "columns",
@@ -171,6 +185,7 @@
             "userConfig": {
                 "designer|userClassName": "MyColumn6",
                 "designer|displayName": "nameAcc",
+                "dataIndex": "nameAcc",
                 "text": "ชื่อบัญชี"
             },
             "designerId": "91304cbb-b5e6-43f0-a1b0-c5b9bab76124"
@@ -185,6 +200,7 @@
             "userConfig": {
                 "designer|userClassName": "MyColumn7",
                 "designer|displayName": "branch",
+                "dataIndex": "branch",
                 "text": "สาขาธนาคาร"
             },
             "designerId": "6eaa7de0-f857-4ee9-a3f7-1842d98053e2"
@@ -199,6 +215,7 @@
             "userConfig": {
                 "designer|userClassName": "MyColumn8",
                 "designer|displayName": "typeBank",
+                "dataIndex": "typeBank",
                 "text": "ประเภทบัญชี"
             },
             "designerId": "a3a444b8-a8a1-47e9-a8d6-c7cfbb82f9c8"
