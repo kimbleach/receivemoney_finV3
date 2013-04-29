@@ -243,9 +243,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "formBind": null,
                         "layout|x": 10,
                         "layout|y": 50,
+                        "formBind": null,
                         "id": "accountNo",
                         "margin": "0 0 0 10",
                         "width": 250,
