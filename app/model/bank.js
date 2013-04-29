@@ -21,7 +21,13 @@ Ext.define('MyApp.model.bank', {
             name: 'bookBank'
         },
         {
-            name: 'accountNumber'
+            name: 'name'
+        },
+        {
+            name: 'branch'
+        },
+        {
+            name: 'accountNo'
         },
         {
             name: 'type'

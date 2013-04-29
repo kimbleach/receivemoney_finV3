@@ -29,7 +29,7 @@ Ext.define('MyApp.store.BankAccountStore', {
             storeId: 'Bank',
             proxy: {
                 type: 'ajax',
-                url: 'data/BankAccount.json',
+                url: 'data/bankaccount.json',
                 reader: {
                     type: 'json',
                     root: 'BankAccount'

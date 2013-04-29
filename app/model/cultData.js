@@ -39,6 +39,15 @@ Ext.define('MyApp.model.cultData', {
         },
         {
             name: 'accountNumber'
+        },
+        {
+            name: 'nameAcc'
+        },
+        {
+            name: 'branch'
+        },
+        {
+            name: 'typeBank'
         }
     ]
 });
