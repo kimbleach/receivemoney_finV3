@@ -69,7 +69,33 @@
                                 "vtype": null,
                                 "hideTrigger": true
                             },
-                            "designerId": "b314e7e4-3c8b-4b61-84b2-6ad5f57922e8"
+                            "designerId": "b314e7e4-3c8b-4b61-84b2-6ad5f57922e8",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "onIdBoxReady",
+                                        "fn": "onIdBoxReady",
+                                        "implHandler": [
+                                            "Ext.tip.QuickTipManager.register({\r",
+                                            "    target: 'id',\r",
+                                            "    //title: 'รหัสช้อมูล',\r",
+                                            "    text: 'รหัสข้อมูล',\r",
+                                            "    width: 100,\r",
+                                            "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                            "});"
+                                        ],
+                                        "name": "boxready",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "8e6522a5-a2ee-465d-b34a-c90077c2aa99"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.form.field.ComboBox",
@@ -89,7 +115,33 @@
                                 "displayField": "Type",
                                 "store": "depositType"
                             },
-                            "designerId": "3e61dae2-9bae-4bff-8c58-b5099c0d8e01"
+                            "designerId": "3e61dae2-9bae-4bff-8c58-b5099c0d8e01",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "onTransactionBoxReady",
+                                        "fn": "onTransactionBoxReady",
+                                        "implHandler": [
+                                            "Ext.tip.QuickTipManager.register({\r",
+                                            "    target: 'transaction',\r",
+                                            "    //title: 'รหัสช้อมูล',\r",
+                                            "    text: 'ประเภทรายการ',\r",
+                                            "    width: 100,\r",
+                                            "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                            "});"
+                                        ],
+                                        "name": "boxready",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "f3b49583-d0bf-4ecb-8195-0fbac0a3bb3d"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.form.field.Number",
@@ -118,7 +170,33 @@
                                 "decimalSeparator": null,
                                 "step": null
                             },
-                            "designerId": "29bf4af9-c8da-40ad-8aae-7818a797ba83"
+                            "designerId": "29bf4af9-c8da-40ad-8aae-7818a797ba83",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "onDepositBoxReady",
+                                        "fn": "onDepositBoxReady",
+                                        "implHandler": [
+                                            "Ext.tip.QuickTipManager.register({\r",
+                                            "    target: 'deposit',\r",
+                                            "    //title: 'รหัสช้อมูล',\r",
+                                            "    text: 'ยอดเงิน',\r",
+                                            "    width: 100,\r",
+                                            "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                            "});"
+                                        ],
+                                        "name": "boxready",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "6c28e814-2175-412c-ba70-acbb90f8fe82"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.form.field.Text",
@@ -136,7 +214,33 @@
                                 "emptyText": "",
                                 "vtype": null
                             },
-                            "designerId": "befc0d42-467b-4c5a-a85a-3a1e4c5d37bc"
+                            "designerId": "befc0d42-467b-4c5a-a85a-3a1e4c5d37bc",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "onTellerIdBoxReady",
+                                        "fn": "onTellerIdBoxReady",
+                                        "implHandler": [
+                                            "Ext.tip.QuickTipManager.register({\r",
+                                            "    target: 'tellerId',\r",
+                                            "    //title: 'รหัสช้อมูล',\r",
+                                            "    text: 'หมายเลขกำกับ',\r",
+                                            "    width: 100,\r",
+                                            "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                            "});"
+                                        ],
+                                        "name": "boxready",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "9e88e831-6308-4ec7-a84b-1b755620c651"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -233,7 +337,33 @@
                         "displayField": "bookBank",
                         "store": "BankAccountStore"
                     },
-                    "designerId": "81de0961-19a5-48a6-a8e3-96813f1c5a11"
+                    "designerId": "81de0961-19a5-48a6-a8e3-96813f1c5a11",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onBookBankAfterRender",
+                                "fn": "onBookBankAfterRender",
+                                "implHandler": [
+                                    "Ext.tip.QuickTipManager.register({\r",
+                                    "    target: 'bookBank',\r",
+                                    "    //title: 'รหัสช้อมูล',\r",
+                                    "    text: 'ชื่อธนาคาร',\r",
+                                    "    width: 100,\r",
+                                    "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                    "});"
+                                ],
+                                "name": "afterrender",
+                                "scope": "me"
+                            },
+                            "designerId": "6f772db6-4f5d-4882-8a2d-6b1df15b1d87"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.form.field.ComboBox",
@@ -257,9 +387,37 @@
                         "emptyText": null,
                         "regexText": null,
                         "vtype": null,
-                        "hideTrigger": null
+                        "hideTrigger": null,
+                        "displayField": "accountNo",
+                        "store": "BankAccountStore"
                     },
-                    "designerId": "6d47e37d-a574-4261-8e7b-b0ef6e353dd8"
+                    "designerId": "6d47e37d-a574-4261-8e7b-b0ef6e353dd8",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onAccountNoAfterRender",
+                                "fn": "onAccountNoAfterRender",
+                                "implHandler": [
+                                    "Ext.tip.QuickTipManager.register({\r",
+                                    "    target: 'accountNo',\r",
+                                    "    //title: 'รหัสช้อมูล',\r",
+                                    "    text: 'เลขที่บัญชี',\r",
+                                    "    width: 100,\r",
+                                    "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                    "});"
+                                ],
+                                "name": "afterrender",
+                                "scope": "me"
+                            },
+                            "designerId": "87c7d52a-e48f-491b-8cea-779735505597"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.form.field.ComboBox",
@@ -277,12 +435,38 @@
                         "width": 250,
                         "designer|userClassName": "MyComboBox1",
                         "fieldLabel": "ชื่อบัญชี",
-                        "name": "name",
+                        "name": "nameAcc",
                         "editable": false,
-                        "displayField": null,
-                        "store": null
+                        "displayField": "name",
+                        "store": "BankAccountStore"
                     },
-                    "designerId": "356b8286-49f4-4e4a-a23e-79a9dea6fceb"
+                    "designerId": "356b8286-49f4-4e4a-a23e-79a9dea6fceb",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onNameAfterRender",
+                                "fn": "onNameAfterRender",
+                                "implHandler": [
+                                    "Ext.tip.QuickTipManager.register({\r",
+                                    "    target: 'name',\r",
+                                    "    //title: 'รหัสช้อมูล',\r",
+                                    "    text: 'ชื่อบัญชี',\r",
+                                    "    width: 100,\r",
+                                    "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                    "});"
+                                ],
+                                "name": "afterrender",
+                                "scope": "me"
+                            },
+                            "designerId": "ba275537-36ad-4bd3-8b9a-953d0a81666e"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.form.field.ComboBox",
@@ -302,10 +486,36 @@
                         "fieldLabel": "สาขา",
                         "name": "branch",
                         "editable": false,
-                        "displayField": null,
-                        "store": null
+                        "displayField": "branch",
+                        "store": "BankAccountStore"
                     },
-                    "designerId": "5a169880-cb2e-4263-a132-34ca830f7b79"
+                    "designerId": "5a169880-cb2e-4263-a132-34ca830f7b79",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onBranchAfterRender",
+                                "fn": "onBranchAfterRender",
+                                "implHandler": [
+                                    "Ext.tip.QuickTipManager.register({\r",
+                                    "    target: 'branch',\r",
+                                    "    //title: 'รหัสช้อมูล',\r",
+                                    "    text: 'สาขา',\r",
+                                    "    width: 100,\r",
+                                    "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                    "});"
+                                ],
+                                "name": "afterrender",
+                                "scope": "me"
+                            },
+                            "designerId": "0221c18a-db1e-46ab-a4db-2f0ae471332c"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.form.field.ComboBox",
@@ -323,12 +533,38 @@
                         "width": 254,
                         "designer|userClassName": "MyComboBox1",
                         "fieldLabel": "ประเภท",
-                        "name": "type",
+                        "name": "typeBank",
                         "editable": false,
-                        "displayField": null,
-                        "store": null
+                        "displayField": "type",
+                        "store": "BankAccountStore"
                     },
-                    "designerId": "71dbdd9b-76a2-4c03-820c-8a65d7725bed"
+                    "designerId": "71dbdd9b-76a2-4c03-820c-8a65d7725bed",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onTypeAfterRender",
+                                "fn": "onTypeAfterRender",
+                                "implHandler": [
+                                    "Ext.tip.QuickTipManager.register({\r",
+                                    "    target: 'type',\r",
+                                    "    //title: 'รหัสช้อมูล',\r",
+                                    "    text: 'ประเภท',\r",
+                                    "    width: 100,\r",
+                                    "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                    "});"
+                                ],
+                                "name": "afterrender",
+                                "scope": "me"
+                            },
+                            "designerId": "5f15b057-c743-4c41-982c-26eb07bea853"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.form.field.Date",
@@ -349,7 +585,33 @@
                         "name": "date",
                         "editable": false
                     },
-                    "designerId": "0a24bfd1-e00a-4b31-aac5-ff1ab445d668"
+                    "designerId": "0a24bfd1-e00a-4b31-aac5-ff1ab445d668",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onDateAfterRender",
+                                "fn": "onDateAfterRender",
+                                "implHandler": [
+                                    "Ext.tip.QuickTipManager.register({\r",
+                                    "    target: 'date',\r",
+                                    "    //title: 'รหัสช้อมูล',\r",
+                                    "    text: 'วันที่โอน',\r",
+                                    "    width: 100,\r",
+                                    "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                    "});"
+                                ],
+                                "name": "afterrender",
+                                "scope": "me"
+                            },
+                            "designerId": "06ae2d6a-d249-4d3f-a5c7-369dbf245111"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.form.field.Text",
@@ -362,14 +624,40 @@
                         "layout|anchor": null,
                         "layout|x": 10,
                         "layout|y": 130,
-                        "id": "bookBanks5",
+                        "id": "timeStamp",
                         "margin": "0 0 0 10",
                         "width": 254,
                         "designer|userClassName": "MyTextField2",
                         "fieldLabel": "TimeStamp",
                         "name": "bookBank"
                     },
-                    "designerId": "de59e700-10c1-4b53-960b-7284064e7bc1"
+                    "designerId": "de59e700-10c1-4b53-960b-7284064e7bc1",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onBookBanks5AfterRender",
+                                "fn": "onBookBanks5AfterRender",
+                                "implHandler": [
+                                    "Ext.tip.QuickTipManager.register({\r",
+                                    "    target: 'timeStamp',\r",
+                                    "    //title: 'รหัสช้อมูล',\r",
+                                    "    text: 'วันที่ปัจจุบัน',\r",
+                                    "    width: 100,\r",
+                                    "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                    "});"
+                                ],
+                                "name": "afterrender",
+                                "scope": "me"
+                            },
+                            "designerId": "26cafb32-ab24-4455-844e-7d10f5d7740f"
+                        }
+                    ]
                 }
             ]
         }

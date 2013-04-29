@@ -91,17 +91,28 @@ Ext.define('MyApp.controller.MyController', {
     },
 
     clickAddButton: function(button, e, eOpts) {
-
-
-        //console.log(Ext.getCmp('pnAddListMoney').getForm().isValid());
         if(Ext.getCmp('pnAddListMoney').getForm().isValid())
         {
             var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,
-                bankacc = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,
+                bankno = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,
+                namebank = Ext.getCmp('pnBankForm').getForm().getValues().nameAcc,
+                typebank = Ext.getCmp('pnBankForm').getForm().getValues().typeBank,
+                branchbank = Ext.getCmp('pnBankForm').getForm().getValues().branch,
+                datebank = Ext.getCmp('pnBankForm').getForm().getValues().date,
                 addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();
-            addMoney.bookBank = bankname;
-            addMoney.accountNumber = bankacc;
 
+            addMoney.bookBank = bankname;
+            addMoney.accountNumber = bankno;
+            addMoney.nameAcc = namebank;
+            addMoney.typeBank = typebank;
+            addMoney.branch = branchbank;
+            addMoney.date = datebank;
+
+
+
+            console.log(addMoney);
+            //Ext.getCmp('bookBank').value
+            //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());
             Ext.getStore('cultData').add(addMoney);
             Ext.getCmp('pnAddListMoney').getForm().reset();
 
@@ -113,10 +124,20 @@ Ext.define('MyApp.controller.MyController', {
 
     clickSubmitEdit: function(button, e, eOpts) {
         var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,
-            bankacc = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,
+            bankno = Ext.getCmp('pnBankForm').getForm().getValues().accountNo,
+            namebank = Ext.getCmp('pnBankForm').getForm().getValues().name,
+            typebank = Ext.getCmp('pnBankForm').getForm().getValues().type,
+            branchbank = Ext.getCmp('pnBankForm').getForm().getValues().branch,
+            datebank = Ext.getCmp('pnBankForm').getForm().getValues().date,
             addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();
         addMoney.bookBank = bankname;
-        addMoney.accountNumber = bankacc;
+        addMoney.accountNo = bankno;
+        addMoney.name = namebank;
+        addMoney.type = typebank;
+        addMoney.branch = branchbank;
+        addMoney.date = datebank;
+
+
 
         rec.set(addMoney);
 
