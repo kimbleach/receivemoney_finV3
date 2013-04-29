@@ -32,3 +32,11 @@
 [4816:1936:0424/163430:6072432:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
 [4844:6228:0424/184924:14166169:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
 [5996:6004:0425/122748:13448253:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[6072:4484:0425/180456:32044492:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[6072:4484:0425/180456:32044492:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[6072:4484:0425/180456:32044492:ERROR:backend_impl.cc(221)] Unable to create cache
+[6072:7704:0425/180500:32049095:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[6548:3072:0425/180622:32130137:ERROR:cache_util_win.cc(43)] Unable to move the cache: 5
+[6548:3072:0425/180622:32130137:ERROR:backend_impl.cc(134)] Unable to move cache folder C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\Cache to C:\Users\NookNook\AppData\Local\Sencha\Sencha Architect 2.2\old_Cache_000
+[6548:3072:0425/180622:32130137:ERROR:backend_impl.cc(221)] Unable to create cache
+[6548:6036:0425/184535:34483412:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
