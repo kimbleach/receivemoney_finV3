@@ -56,3 +56,4 @@
 [6900:7076:0429/134643:16756192:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
 [6900:7076:0429/134648:16761199:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
 [6900:7076:0429/134653:16766191:WARNING:dns_config_service_win.cc(484)] Failed to read DnsConfig.
+[6900:6916:0429/182918:33711379:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412

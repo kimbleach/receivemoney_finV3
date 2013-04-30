@@ -353,6 +353,20 @@
             "designerId": "9086aee3-aefd-4fa8-a72f-a06de556ae41"
         },
         {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "bankName",
+                "ref": "bankName",
+                "selector": "#pnBankForm #bookbanks"
+            },
+            "designerId": "74cbc021-49ec-46f1-a3e5-7ed1eac4ae78"
+        },
+        {
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -445,20 +459,6 @@
                 ]
             },
             "designerId": "41da3e95-1f2e-4a08-82f5-2dfa9774c7a4"
-        },
-        {
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "bankName",
-                "ref": "bankName",
-                "selector": "#pnBankForm #bookbanks"
-            },
-            "designerId": "74cbc021-49ec-46f1-a3e5-7ed1eac4ae78"
         }
     ]
 }
