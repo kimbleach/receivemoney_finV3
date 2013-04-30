@@ -270,6 +270,15 @@ false,
                                     scope: me
                                 }
                             }
+                        },
+                        {
+                            xtype: 'displayfield',
+                            x: 320,
+                            y: 130,
+                            id: 'numClick',
+                            width: 250,
+                            fieldLabel: 'จำนวนข้อมูล',
+                            value: 'ยังไม่ได้ทำการบันทึกข้อมูล'
                         }
                     ]
                 }

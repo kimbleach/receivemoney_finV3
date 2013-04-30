@@ -46,3 +46,7 @@
 [3464:5856:0429/103751:5724721:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
 >>>>>>> refs/heads/deuanz_comatooltip
 [4272:6984:0429/142442:19336121:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[5156:6068:0429/164525:27778770:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[6780:5816:0429/164548:27801983:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[3532:6868:0429/180848:32781940:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412
+[4200:5960:0430/095809:3592765:ERROR:window_impl.cc(55)] Failed to unregister class Chrome_WidgetWin_0. Error = 1412

@@ -658,6 +658,26 @@
                             "designerId": "26cafb32-ab24-4455-844e-7d10f5d7740f"
                         }
                     ]
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 320,
+                        "layout|y": 130,
+                        "id": "numClick",
+                        "width": 250,
+                        "designer|userClassName": "MyDisplayField",
+                        "fieldLabel": "จำนวนข้อมูล",
+                        "value": [
+                            "ยังไม่ได้ทำการบันทึกข้อมูล"
+                        ]
+                    },
+                    "designerId": "11a1d41f-c91c-42ec-b1f6-17b68a50f361"
                 }
             ]
         }

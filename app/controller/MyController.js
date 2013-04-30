@@ -36,6 +36,7 @@ Ext.define('MyApp.controller.MyController', {
         var pnWindow = Ext.getCmp('pnAddListMoneyWindows');
         //console.log("Windows : ", pnWindow);
         this.loadAdd();
+        numberClick = 0;
     },
 
     onBtnSearch: function(button, e, eOpts) {
@@ -110,7 +111,7 @@ Ext.define('MyApp.controller.MyController', {
 
 
 
-            console.log(addMoney);
+            //console.log(addMoney);
             //Ext.getCmp('bookBank').value
             //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());
             Ext.getStore('cultData').add(addMoney);
@@ -118,7 +119,12 @@ Ext.define('MyApp.controller.MyController', {
 
             //this.getPnAddListMoneyWindows().destroy();
 
+            numberClick = numberClick+1;
+            console.log(numberClick);
+            Ext.getCmp('numClick').setValue(numberClick);
+
         }
+
 
     },
 
