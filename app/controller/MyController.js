@@ -134,26 +134,30 @@ Ext.define('MyApp.controller.MyController', {
 
     clickSubmitEdit: function(button, e, eOpts) {
         var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,
-            bankno = Ext.getCmp('pnBankForm').getForm().getValues().accountNo,
-            namebank = Ext.getCmp('pnBankForm').getForm().getValues().name,
-            typebank = Ext.getCmp('pnBankForm').getForm().getValues().type,
+            bankno = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,
+            namebank = Ext.getCmp('pnBankForm').getForm().getValues().nameAcc,
+            typebank = Ext.getCmp('pnBankForm').getForm().getValues().typeBank,
             branchbank = Ext.getCmp('pnBankForm').getForm().getValues().branch,
             datebank = Ext.getCmp('pnBankForm').getForm().getValues().date,
+            //timestamp = Ext.getCmp('pnBankForm').getForm().getValues().timeStamp,
             addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();
+        //console.log(timestamp);
+
         addMoney.bookBank = bankname;
-        addMoney.accountNo = bankno;
-        addMoney.name = namebank;
-        addMoney.type = typebank;
+        addMoney.accountNumber = bankno;
+        addMoney.nameAcc = namebank;
+        addMoney.typeBank = typebank;
         addMoney.branch = branchbank;
         addMoney.date = datebank;
-
-
+        //addMoney.timeStamp = timestamp;
+        console.log("Deuanz")
 
         rec.set(addMoney);
 
         Ext.getCmp('mygridpanel2').getView().refresh();
 
         this.getPnAddListMoneyWindows().destroy();
+
         /*    
         console.log(addMoney);
         //Ext.getCmp('bookBank').value
