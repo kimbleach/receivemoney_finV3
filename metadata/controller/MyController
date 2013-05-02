@@ -18,14 +18,16 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "clickAdd",
                 "fn": "clickAdd",
                 "implHandler": [
                     "//console.log('ooooooooooo');\r",
                     "var pnWindow = Ext.getCmp('pnAddListMoneyWindows');\r",
                     "//console.log(\"Windows : \", pnWindow);\r",
+                    "\r",
                     "this.loadAdd();\r",
-                    "numberClick = 0;"
+                    "numberClick = 0;\r",
+                    "\r",
+                    "Ext.getCmp('timeStamp').setValue(new Date());"
                 ],
                 "name": "click",
                 "scope": "me",
@@ -42,7 +44,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onBtnSearch",
                 "fn": "onBtnSearch",
                 "implHandler": [
                     "//***\r",
@@ -84,7 +85,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onBtnReset",
                 "fn": "onBtnReset",
                 "implHandler": [
                     "var valueSearch=\"\";\r",
@@ -126,7 +126,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "clickAddButton",
                 "fn": "clickAddButton",
                 "implHandler": [
                     "if(Ext.getCmp('pnAddListMoney').getForm().isValid())\r",
@@ -137,27 +136,28 @@
                     "        typebank = Ext.getCmp('pnBankForm').getForm().getValues().typeBank,\r",
                     "        branchbank = Ext.getCmp('pnBankForm').getForm().getValues().branch,\r",
                     "        datebank = Ext.getCmp('pnBankForm').getForm().getValues().date,\r",
+                    "        timestamp = Ext.getCmp('pnBankForm').getForm().getValues().timeStamp,\r",
                     "        addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();\r",
-                    "\r",
+                    "\tconsole.log(timestamp);\r",
+                    "    \r",
                     "    addMoney.bookBank = bankname;\r",
                     "    addMoney.accountNumber = bankno;\r",
                     "    addMoney.nameAcc = namebank;\r",
                     "    addMoney.typeBank = typebank;\r",
                     "    addMoney.branch = branchbank;\r",
                     "    addMoney.date = datebank;\r",
+                    "    addMoney.timeStamp = timestamp;\r",
                     "\r",
-                    "\r",
-                    "\r",
-                    "    //console.log(addMoney);\r",
                     "    //Ext.getCmp('bookBank').value\r",
                     "    //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
                     "    Ext.getStore('cultData').add(addMoney);\r",
                     "    Ext.getCmp('pnAddListMoney').getForm().reset();\r",
                     "\r",
                     "    //this.getPnAddListMoneyWindows().destroy();\r",
-                    "    \r",
+                    "\r",
+                    "\r",
                     "    numberClick = numberClick+1;\r",
-                    "    console.log(numberClick);\r",
+                    "    //console.log(numberClick);\r",
                     "    Ext.getCmp('numClick').setValue(numberClick);\r",
                     "\r",
                     "}\r",
@@ -179,7 +179,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "clickSubmitEdit",
                 "fn": "clickSubmitEdit",
                 "implHandler": [
                     "var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,\r",
@@ -225,7 +224,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "clickEdit",
                 "fn": "clickEdit",
                 "designer|params": [
                     "o2,text, view, rowIndex, colIndex, item, e,record,row,column"
@@ -280,7 +278,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "clickYes",
                 "fn": "clickYes",
                 "implHandler": [
                     "console.log('sfhsdjkfhs');\r",
@@ -305,7 +302,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "clickNo",
                 "fn": "clickNo",
                 "implHandler": [
                     "this.getWdForm().destroy();"
@@ -325,7 +321,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "clickClear",
                 "fn": "clickClear",
                 "implHandler": [
                     "Ext.getCmp('pnAddListMoney').getForm().reset();"
@@ -345,7 +340,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "pnAddListMoneyWindows",
                 "ref": "pnAddListMoneyWindows",
                 "selector": "pnAddListMoneyWindows"
             },
@@ -359,7 +353,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "wdForm",
                 "ref": "wdForm",
                 "selector": "wnDelete"
             },
@@ -373,7 +366,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "loadAdd",
                 "fn": "loadAdd",
                 "implHandler": [
                     "\r",
@@ -396,7 +388,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "loadEdit",
                 "fn": "loadEdit",
                 "designer|params": [
                     "loadInfo",
@@ -410,9 +401,11 @@
                     "});\r",
                     "\r",
                     "Ext.getCmp('btnSave').hidden = true;\r",
+                    "Ext.getCmp('numClick').hidden = true;\r",
+                    "Ext.getCmp('timeStamp').hidden = true;\r",
                     "pnWindow.show();\r",
                     "\r",
-                    "\r",
+                    "numClick\r",
                     "\r",
                     "/*\r",
                     "for (prop in loadInfo.data){\r",
@@ -440,7 +433,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "rowDelete",
                 "fn": "rowDelete",
                 "designer|params": [
                     "rowinfo"
@@ -461,7 +453,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "bankName",
                 "ref": "bankName",
                 "selector": "#pnBankForm #bookbanks"
             },

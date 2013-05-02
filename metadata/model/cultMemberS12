@@ -18,8 +18,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "id",
-                "designer|userClassName": "MyField19"
+                "name": "id"
             },
             "designerId": "6e1694a0-6663-4b83-bc0e-70cfd69cfe42"
         },
@@ -31,8 +30,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "lastS1",
-                "designer|userClassName": "MyField20"
+                "name": "lastS1"
             },
             "designerId": "bb12daa4-093f-4fba-a76f-da4f990f0034"
         },
@@ -44,8 +42,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "lastS2",
-                "designer|userClassName": "MyField21"
+                "name": "lastS2"
             },
             "designerId": "3c6b4afb-844c-4001-8ae9-f6dbcab7f06b"
         },
@@ -57,8 +54,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "memberId",
-                "designer|userClassName": "MyField22"
+                "name": "memberId"
             },
             "designerId": "0931c4f4-654e-402e-abc6-4c8300e3ca34"
         },
@@ -71,7 +67,6 @@
             "codeClass": null,
             "userConfig": {
                 "model": "cultMember",
-                "designer|userClassName": "MyHasOneAssociation3",
                 "designer|displayName": "hasOnecultMember"
             },
             "designerId": "828638a0-4fb9-4b4e-9152-cbdf922d5113"

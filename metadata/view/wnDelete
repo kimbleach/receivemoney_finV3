@@ -37,7 +37,6 @@
                 "id": "btnYes",
                 "margin": "50 0 0 50",
                 "width": 70,
-                "designer|userClassName": "MyButton4",
                 "icon": "http://anonmails.de/img/icon_ok.gif",
                 "text": "ใช่"
             },
@@ -57,7 +56,6 @@
                 "id": "btnNo",
                 "margin": "50 0 0 50",
                 "width": 70,
-                "designer|userClassName": "MyButton5",
                 "icon": "http://www.qcm.ch/typo3conf/ext/qcm_courses/res/icons/icon_no.png",
                 "text": "ไม่"
             },
@@ -76,7 +74,6 @@
                 "height": 20,
                 "html": "",
                 "width": 160,
-                "designer|userClassName": "MyLabel",
                 "text": "คุณต้องการลบข้อมูลใช่หรือไม่"
             },
             "designerId": "149e70a1-80bf-4aff-82d8-34d832b42fff"
@@ -93,7 +90,6 @@
                 "layout|y": 20,
                 "height": 50,
                 "width": 50,
-                "designer|userClassName": "MyImg",
                 "src": "http://mblog.manager.co.th/uploads/4576/images/alert.gif"
             },
             "designerId": "28a34556-9c4b-4189-9386-1a44bf3cc613"

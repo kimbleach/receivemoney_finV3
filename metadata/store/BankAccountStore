@@ -21,7 +21,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyAjaxProxy7",
                 "url": "data/bankaccount.json"
             },
             "designerId": "51ca77e8-b909-49b0-b447-e9fdc82b6d7f",
@@ -34,8 +33,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "root": "BankAccount",
-                        "designer|userClassName": "MyJsonReader7"
+                        "root": "BankAccount"
                     },
                     "designerId": "66ab73a4-4db4-4065-8a1f-81a41d2a1c5f"
                 }

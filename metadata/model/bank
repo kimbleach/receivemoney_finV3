@@ -18,8 +18,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "bookBank",
-                "designer|userClassName": "MyField26"
+                "name": "bookBank"
             },
             "designerId": "7734a07d-d9eb-41b1-818c-f65c7a978829"
         },
@@ -31,8 +30,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "name",
-                "designer|userClassName": "MyField29"
+                "name": "name"
             },
             "designerId": "515866aa-4139-48c5-90e5-d8066f33cf79"
         },
@@ -44,8 +42,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "branch",
-                "designer|userClassName": "MyField30"
+                "name": "branch"
             },
             "designerId": "9eb7a216-bbdb-41b0-a8ed-cbf69a58dc87"
         },
@@ -57,8 +54,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "accountNo",
-                "designer|userClassName": "MyField8"
+                "name": "accountNo"
             },
             "designerId": "7610f4b3-fc39-4c34-b81d-d4fbf0534210"
         },
@@ -70,8 +66,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "type",
-                "designer|userClassName": "MyField9"
+                "name": "type"
             },
             "designerId": "de82f80d-4144-4265-9cee-f6cc7c62596c"
         }

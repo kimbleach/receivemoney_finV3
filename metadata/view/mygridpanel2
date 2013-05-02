@@ -23,9 +23,6 @@
                 "type": "object"
             },
             "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyGridView"
-            },
             "designerId": "f4f24c9f-e37a-4deb-8763-9630dba0b59f"
         },
         {
@@ -35,9 +32,6 @@
                 "type": "array"
             },
             "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyGroupingFeature"
-            },
             "designerId": "1283748e-58b2-444d-873b-63cbae8f1e54",
             "cn": [
                 {
@@ -48,7 +42,6 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "groupHeaderTpl",
                         "implHandler": [
                             "{groupValue:this.renderDueDate}"
                         ],
@@ -64,7 +57,6 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "renderDueDate",
                                 "fn": "renderDueDate",
                                 "designer|params": [
                                     "date"
@@ -124,8 +116,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyColumn9",
-                "dataIndex": "timestamp",
+                "dataIndex": "timeStamp",
                 "text": "วันที่กรอกข้อมูล"
             },
             "designerId": "92335726-d366-4a0f-a516-ee659412e8e3"
@@ -139,7 +130,6 @@
             "codeClass": null,
             "userConfig": {
                 "width": 90,
-                "designer|userClassName": "MyDateColumn2",
                 "dataIndex": "date",
                 "text": "วันที่"
             },
@@ -154,7 +144,6 @@
             "codeClass": null,
             "userConfig": {
                 "id": null,
-                "designer|userClassName": "MyColumn8",
                 "dataIndex": "id",
                 "text": "รายการที่"
             },
@@ -169,7 +158,6 @@
             "codeClass": null,
             "userConfig": {
                 "width": 166,
-                "designer|userClassName": "MyColumn4",
                 "dataIndex": "bookBank",
                 "text": "ชื่อธนาคาร"
             },
@@ -183,7 +171,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyColumn6",
                 "designer|displayName": "nameAcc",
                 "dataIndex": "nameAcc",
                 "text": "ชื่อบัญชี"
@@ -198,7 +185,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyColumn7",
                 "designer|displayName": "branch",
                 "dataIndex": "branch",
                 "text": "สาขาธนาคาร"
@@ -213,7 +199,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyColumn8",
                 "designer|displayName": "typeBank",
                 "dataIndex": "typeBank",
                 "text": "ประเภทบัญชี"
@@ -228,7 +213,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyColumn5",
                 "dataIndex": "accountNumber",
                 "text": "เลขที่บัญชี"
             },
@@ -243,7 +227,6 @@
             "codeClass": null,
             "userConfig": {
                 "width": 146,
-                "designer|userClassName": "MyColumn11",
                 "dataIndex": "tellerId",
                 "text": "หมายเลขผู้ทำรายการ"
             },
@@ -258,7 +241,6 @@
             "codeClass": null,
             "userConfig": {
                 "width": 118,
-                "designer|userClassName": "MyColumn9",
                 "dataIndex": "transaction",
                 "text": "ประเภทรายการ"
             },
@@ -272,7 +254,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyColumn10",
                 "dataIndex": "deposit",
                 "text": "ยอดเงิน"
             },
@@ -286,9 +267,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyActionColumn",
                 "designer|displayName": "Edit",
-                "sortable": true,
                 "menuText": null,
                 "altText": ""
             },
@@ -302,7 +281,6 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyActionColumnItem1",
                         "designer|displayName": "edit",
                         "icon": "http://b.dryicons.com/images/icon_sets/luna_blue_icons/png/128x128/edit.png",
                         "tooltip": "edit"
@@ -317,7 +295,6 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "handler",
                                 "fn": "handler",
                                 "designer|params": [
                                     "view",
@@ -349,7 +326,6 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyActionColumnItem",
                         "designer|displayName": "delete",
                         "icon": "http://a.dryicons.com/images/icon_sets/luna_blue_icons/png/128x128/delete.png",
                         "tooltip": "detete"
@@ -364,7 +340,6 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "handler",
                                 "fn": "handler",
                                 "designer|params": [
                                     "view",

@@ -19,8 +19,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "id",
-                "type": null,
-                "designer|userClassName": "MyField18"
+                "type": null
             },
             "designerId": "4d70755f-dcfb-44fa-8cff-ef9172844e9f"
         },
@@ -33,8 +32,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "date",
-                "type": "date",
-                "designer|userClassName": "MyField19"
+                "type": "date"
             },
             "designerId": "2c2b1348-9b4d-4beb-a9ce-f75141fb7809"
         },
@@ -47,8 +45,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "transaction",
-                "type": "auto",
-                "designer|userClassName": "MyField26"
+                "type": "auto"
             },
             "designerId": "c2370ed2-c746-49aa-a702-9d1bb1621861"
         },
@@ -61,8 +58,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "deposit",
-                "type": null,
-                "designer|userClassName": "MyField23"
+                "type": null
             },
             "designerId": "ac07c6f5-ff28-46a4-938a-d1c0b13df308"
         },
@@ -75,8 +71,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "tellerId",
-                "type": null,
-                "designer|userClassName": "MyField27"
+                "type": null
             },
             "designerId": "6a3e412c-f4e9-435a-af20-e0808174f06f"
         },
@@ -88,8 +83,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "bookBank",
-                "designer|userClassName": "MyField24"
+                "name": "bookBank"
             },
             "designerId": "6e8d2009-633b-413c-8032-7f61c1b48083"
         },
@@ -101,8 +95,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "accountNumber",
-                "designer|userClassName": "MyField25"
+                "name": "accountNumber"
             },
             "designerId": "b3048457-7d7c-4b51-90a5-ab3f30ef3ab5"
         },
@@ -114,8 +107,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "nameAcc",
-                "designer|userClassName": "MyField31"
+                "name": "nameAcc"
             },
             "designerId": "9e5be13c-a7b5-41da-90c4-c62abf31a4bf"
         },
@@ -127,8 +119,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "branch",
-                "designer|userClassName": "MyField32"
+                "name": "branch"
             },
             "designerId": "43fedb75-18a5-4d5f-8ac4-795a166f4fc0"
         },
@@ -140,8 +131,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "typeBank",
-                "designer|userClassName": "MyField33"
+                "name": "typeBank"
             },
             "designerId": "bbb256f0-57f7-4dea-9f26-7c901b9973f6"
         },
@@ -153,8 +143,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "timestamp",
-                "designer|userClassName": "MyField16"
+                "name": "timeStamp"
             },
             "designerId": "0ae006ef-8f64-4d0a-b375-684bc655e335"
         }
