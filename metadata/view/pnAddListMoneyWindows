@@ -30,7 +30,6 @@
             "userConfig": {
                 "layout|region": "center",
                 "id": "pnAddListMoney",
-                "designer|userClassName": "pnAddListMoney",
                 "title": null
             },
             "designerId": "ebd27d31-4d0a-4d42-9208-9e2083b35438",
@@ -46,7 +45,6 @@
                         "height": 148,
                         "margin": "10 10 10 10",
                         "padding": 10,
-                        "designer|userClassName": "MyFieldSet",
                         "title": ""
                     },
                     "designerId": "c64b9475-1af5-4766-9c22-4bb543fda34a",
@@ -60,7 +58,6 @@
                             "codeClass": null,
                             "userConfig": {
                                 "id": "id",
-                                "designer|userClassName": "MyNumberField3",
                                 "fieldLabel": "รหัส",
                                 "msgTarget": "side",
                                 "name": "id",
@@ -79,7 +76,6 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "onIdAfterRender",
                                         "fn": "onIdAfterRender",
                                         "implHandler": [
                                             "Ext.tip.QuickTipManager.register({\r",
@@ -108,7 +104,6 @@
                                 "layout|anchor": null,
                                 "id": "transaction",
                                 "width": null,
-                                "designer|userClassName": "MyComboBox",
                                 "fieldLabel": "ประเภทรายการ",
                                 "name": "transaction",
                                 "editable": false,
@@ -125,7 +120,6 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "onTransactionAfterRender",
                                         "fn": "onTransactionAfterRender",
                                         "implHandler": [
                                             "Ext.tip.QuickTipManager.register({\r",
@@ -154,7 +148,6 @@
                                 "formBind": false,
                                 "id": "deposit",
                                 "style": null,
-                                "designer|userClassName": "MyNumberField",
                                 "constrain": null,
                                 "fixed": null,
                                 "fieldLabel": "ยอดเงิน",
@@ -180,7 +173,6 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "onDepositAfterRender",
                                         "fn": "onDepositAfterRender",
                                         "implHandler": [
                                             "Ext.tip.QuickTipManager.register({\r",
@@ -207,7 +199,6 @@
                             "codeClass": null,
                             "userConfig": {
                                 "id": "tellerId",
-                                "designer|userClassName": "MyTextField1",
                                 "fieldLabel": "หมายเลขกำกับ",
                                 "msgTarget": "side",
                                 "name": "tellerId",
@@ -224,7 +215,6 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "onTellerIdAfterRender",
                                         "fn": "onTellerIdAfterRender",
                                         "implHandler": [
                                             "Ext.tip.QuickTipManager.register({\r",
@@ -256,7 +246,6 @@
                         "itemId": "btnSave",
                         "margin": "0 0 0 10",
                         "width": 100,
-                        "designer|userClassName": "MyButton2",
                         "text": "บันทึก"
                     },
                     "designerId": "601d22de-2f31-41e0-81fb-6150b893b767"
@@ -272,7 +261,6 @@
                         "id": "btnEdit",
                         "margin": "0 0 0 10",
                         "width": 100,
-                        "designer|userClassName": "MyButton6",
                         "text": "แก้ไขข้อมูล"
                     },
                     "designerId": "905c7c20-1198-4ab1-812a-adbdc44a70b1"
@@ -288,7 +276,6 @@
                         "id": "btnClear",
                         "margin": "0 0 0 10",
                         "width": 100,
-                        "designer|userClassName": "MyButton2",
                         "text": "ล้างข้อมูล"
                     },
                     "designerId": "79cbd7fa-8fa8-4dfb-ad6b-770ff783816a"
@@ -309,7 +296,6 @@
                 "designer|snapToGrid": 10,
                 "height": 164,
                 "id": "pnBankForm",
-                "designer|userClassName": "MyForm1",
                 "layout": "absolute",
                 "bodyPadding": 10,
                 "title": null
@@ -330,7 +316,6 @@
                         "id": "bookBank",
                         "margin": "0 0 0 10",
                         "width": 250,
-                        "designer|userClassName": "MyComboBox1",
                         "fieldLabel": "ชื่อธนาคาร",
                         "name": "bookBank",
                         "editable": false,
@@ -347,7 +332,6 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "onBookBankAfterRender",
                                 "fn": "onBookBankAfterRender",
                                 "implHandler": [
                                     "Ext.tip.QuickTipManager.register({\r",
@@ -379,7 +363,6 @@
                         "id": "accountNo",
                         "margin": "0 0 0 10",
                         "width": 250,
-                        "designer|userClassName": "MyComboBox1",
                         "fieldLabel": "เลขที่บัญชี:",
                         "msgTarget": null,
                         "name": "accountNumber",
@@ -401,7 +384,6 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "onAccountNoAfterRender",
                                 "fn": "onAccountNoAfterRender",
                                 "implHandler": [
                                     "Ext.tip.QuickTipManager.register({\r",
@@ -433,7 +415,6 @@
                         "id": "name",
                         "margin": "0 0 0 10",
                         "width": 250,
-                        "designer|userClassName": "MyComboBox1",
                         "fieldLabel": "ชื่อบัญชี",
                         "name": "nameAcc",
                         "editable": false,
@@ -450,7 +431,6 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "onNameAfterRender",
                                 "fn": "onNameAfterRender",
                                 "implHandler": [
                                     "Ext.tip.QuickTipManager.register({\r",
@@ -482,7 +462,6 @@
                         "id": "branch",
                         "margin": "0 0 0 10",
                         "width": 254,
-                        "designer|userClassName": "MyComboBox1",
                         "fieldLabel": "สาขา",
                         "name": "branch",
                         "editable": false,
@@ -499,7 +478,6 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "onBranchAfterRender",
                                 "fn": "onBranchAfterRender",
                                 "implHandler": [
                                     "Ext.tip.QuickTipManager.register({\r",
@@ -531,7 +509,6 @@
                         "id": "type",
                         "margin": "0 0 0 10",
                         "width": 254,
-                        "designer|userClassName": "MyComboBox1",
                         "fieldLabel": "ประเภท",
                         "name": "typeBank",
                         "editable": false,
@@ -548,7 +525,6 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "onTypeAfterRender",
                                 "fn": "onTypeAfterRender",
                                 "implHandler": [
                                     "Ext.tip.QuickTipManager.register({\r",
@@ -580,7 +556,6 @@
                         "id": "date",
                         "margin": "0 0 0 10",
                         "width": 254,
-                        "designer|userClassName": "MyDateField1",
                         "fieldLabel": "วันที่โอน",
                         "name": "date",
                         "editable": false
@@ -595,7 +570,6 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "onDateAfterRender",
                                 "fn": "onDateAfterRender",
                                 "implHandler": [
                                     "Ext.tip.QuickTipManager.register({\r",
@@ -614,7 +588,7 @@
                     ]
                 },
                 {
-                    "type": "Ext.form.field.Text",
+                    "type": "Ext.form.field.Date",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -627,9 +601,9 @@
                         "id": "timeStamp",
                         "margin": "0 0 0 10",
                         "width": 254,
-                        "designer|userClassName": "MyTextField2",
                         "fieldLabel": "TimeStamp",
-                        "name": "bookBank"
+                        "name": "timeStamp",
+                        "readOnly": true
                     },
                     "designerId": "de59e700-10c1-4b53-960b-7284064e7bc1",
                     "cn": [
@@ -641,8 +615,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "onBookBanks5AfterRender",
-                                "fn": "onBookBanks5AfterRender",
+                                "fn": "onTimeStanp",
                                 "implHandler": [
                                     "Ext.tip.QuickTipManager.register({\r",
                                     "    target: 'timeStamp',\r",
@@ -671,7 +644,6 @@
                         "layout|y": 130,
                         "id": "numClick",
                         "width": 250,
-                        "designer|userClassName": "MyDisplayField",
                         "fieldLabel": "จำนวนข้อมูล",
                         "value": [
                             "ยังไม่ได้ทำการบันทึกข้อมูล"

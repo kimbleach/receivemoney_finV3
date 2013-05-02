@@ -22,7 +22,6 @@
             "userConfig": {
                 "layout|flex": null,
                 "id": "btnAdd",
-                "designer|userClassName": "MyButton3",
                 "text": "รับเงิน"
             },
             "designerId": "cce87f4b-ade1-442a-8b59-f6122069d500"

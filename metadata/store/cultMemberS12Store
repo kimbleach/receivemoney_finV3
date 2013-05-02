@@ -21,7 +21,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyAjaxProxy4",
                 "url": "../receivemoney_finV3/data/cult_member_s12.json"
             },
             "designerId": "6438ad74-99bf-4b35-a838-a52fcdd03d39",
@@ -33,9 +32,6 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyJsonReader4"
-                    },
                     "designerId": "6d465c1d-da0b-43fb-bb97-28239d69ae06"
                 }
             ]

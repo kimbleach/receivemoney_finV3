@@ -21,7 +21,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyAjaxProxy6",
                 "url": "data/depositType.json"
             },
             "designerId": "d32eb531-663b-4fdb-b990-c03de36023d2",
@@ -34,8 +33,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "root": "depositType",
-                        "designer|userClassName": "MyJsonReader6"
+                        "root": "depositType"
                     },
                     "designerId": "5bac0bd6-2bd7-487e-b206-7517e3be68f1"
                 }

@@ -32,8 +32,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "dock": "top",
-                "designer|userClassName": "MyToolbar1"
+                "dock": "top"
             },
             "designerId": "5e482583-5cf0-4d22-9319-2ce55a503c30",
             "cn": [
@@ -46,7 +45,6 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|flex": null,
-                        "designer|userClassName": "MyTextItem",
                         "text": "ค้นหา  :  "
                     },
                     "designerId": "f5b399d3-f21b-4636-94f1-f1d5b093840b"
@@ -63,7 +61,6 @@
                         "id": "txtSearch",
                         "itemId": "txtSearch",
                         "width": 221,
-                        "designer|userClassName": "MyTextField",
                         "designer|displayName": null,
                         "fieldLabel": "",
                         "emptyText": "ค้นหาจากชื่อธนาคาร"
@@ -83,7 +80,6 @@
                         "id": "btnSearch",
                         "itemId": "btnSearch",
                         "width": 59,
-                        "designer|userClassName": "MyButton",
                         "text": "ค้นหา"
                     },
                     "designerId": "4245bc7a-0382-46ab-bb49-fa6db82b2423"
@@ -101,7 +97,6 @@
                         "id": "btnReset",
                         "itemId": "btnReset",
                         "width": 59,
-                        "designer|userClassName": "MyButton",
                         "text": "คืนค่า"
                     },
                     "designerId": "71a691e7-85dd-4f57-b1a8-3db602782fbf"

@@ -18,8 +18,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "id",
-                "designer|userClassName": "MyField"
+                "name": "id"
             },
             "designerId": "71c5c1bc-c8ad-490b-8d59-efd771516f88"
         },
@@ -31,8 +30,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "name",
-                "designer|userClassName": "MyField1"
+                "name": "name"
             },
             "designerId": "c490801e-8276-4918-a33c-3a7de8a79c5f"
         },
@@ -44,8 +42,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "mobilePhone",
-                "designer|userClassName": "MyField2"
+                "name": "mobilePhone"
             },
             "designerId": "3913c703-bc57-4cc1-8d06-a1c61720958b"
         },
@@ -58,7 +55,6 @@
             "codeClass": null,
             "userConfig": {
                 "model": "cultMemberBalance",
-                "designer|userClassName": "MyHasManyAssociation",
                 "designer|displayName": "hasManycultMemberBalance",
                 "autoLoad": true,
                 "foreignKey": "memberId"
@@ -74,7 +70,6 @@
             "codeClass": null,
             "userConfig": {
                 "model": "cultMemberLoanBalance",
-                "designer|userClassName": "MyHasManyAssociation1",
                 "designer|displayName": "hasManycultMemberLoanBalance",
                 "foreignKey": "memberId"
             },
@@ -89,7 +84,6 @@
             "codeClass": null,
             "userConfig": {
                 "model": "cultMemberS5",
-                "designer|userClassName": "MyHasManyAssociation2",
                 "designer|displayName": "hasManycultMemberS5",
                 "foreignKey": "memberId"
             },
@@ -104,7 +98,6 @@
             "codeClass": null,
             "userConfig": {
                 "model": "cultMemberS12",
-                "designer|userClassName": "MyHasManyAssociation3",
                 "designer|displayName": "hasManycultMemberS12",
                 "foreignKey": "memberId"
             },
