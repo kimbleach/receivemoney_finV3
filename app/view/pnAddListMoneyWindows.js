@@ -156,7 +156,7 @@ false,
                             editable: false,
                             displayField: 'Bank',
                             store: 'bankStore',
-                            valueField: 'id',
+                            valueField: 'Bank',
                             listeners: {
                                 afterrender: {
                                     fn: me.onBookBankAfterRender,
@@ -176,7 +176,7 @@ false,
                             displayField: 'accountNo',
                             queryMode: 'local',
                             store: 'info4comboStore',
-                            valueField: 'id',
+                            valueField: 'accountNo',
                             listeners: {
                                 afterrender: {
                                     fn: me.onAccountNoAfterRender,

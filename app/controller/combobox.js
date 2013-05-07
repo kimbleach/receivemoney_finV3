@@ -17,7 +17,7 @@ Ext.define('MyApp.controller.combobox', {
     extend: 'Ext.app.Controller',
 
     onComboboxChange: function(field, newValue, oldValue, eOpts) {
-        this.loadBank(newValue);
+        this.loadBank(field);
     },
 
     onAccountNoChange: function(field, newValue, oldValue, eOpts) {
@@ -28,28 +28,33 @@ Ext.define('MyApp.controller.combobox', {
     loadBank: function(bank) {
         var bankStore = Ext.create(MyApp.store.bankStore),
             bankInfoStore = Ext.create(MyApp.store.bankInfoStore);
+
+        //Ext.getCmp('pnBankForm').getForm().getValues().bookBank
+
+
         Ext.data.StoreManager.get("info4comboStore").removeAll();
+
+        //Ext.getCmp('accountNo').setValue("");
 
         bankStore.on('load', function(store, record){
 
-            bankInfoStore.add(record[bank-1]);
+            bankInfoStore.add(record[bank.valueModels[0].data.id-1]);
 
             for(i=0; i<=bankInfoStore.data.length; i++){
 
                 var rec = bankInfoStore.data.items[0].raw.bankData[i];
-                console.log(rec);
-
+                //console.log("Rec :: ", rec);
                 Ext.data.StoreManager.get("info4comboStore").add(rec);
-
+                //console.log("Store :: ", Ext.data.StoreManager.get("info4comboStore"));
             }
 
         });
     },
 
     loadInfoCombo: function(rec,account) {
-        Ext.getCmp('name').setValue(rec.valueModels[0].raw.name);
-        Ext.getCmp('branch').setValue(rec.valueModels[0].raw.branch);
-        Ext.getCmp('type').setValue(rec.valueModels[0].raw.type);
+        Ext.getCmp('name').setValue(rec.valueModels[0].data.name);
+        Ext.getCmp('branch').setValue(rec.valueModels[0].data.branch);
+        Ext.getCmp('type').setValue(rec.valueModels[0].data.type);
     },
 
     init: function(application) {

@@ -105,7 +105,6 @@ Ext.define('MyApp.controller.MyController', {
                 datebank = Ext.getCmp('pnBankForm').getForm().getValues().date,
                 timestamp = Ext.getCmp('pnBankForm').getForm().getValues().timeStamp,
                 addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();
-            console.log(timestamp);
 
             addMoney.bookBank = bankname;
             addMoney.accountNumber = bankno;
@@ -167,27 +166,19 @@ Ext.define('MyApp.controller.MyController', {
     },
 
     clickEdit: function(o2,text, view, rowIndex, colIndex, item, e,record,row,column) {
-
-
         rec = record;
         var wnDel = Ext.create('MyApp.view.wnDelete');
         indexRow = rowIndex;
-        console.log(1);
-
-        console.log(rec);
 
         var getloadEdit = Ext.getStore('cultData').data.items[rowIndex];
 
         var store =  Ext.getStore('cultData');
 
-        //console.log('coming');
-        //console.log(text);
 
         if (text == 'delete'){
             wnDel.show();
 
-            console.log('coming2');
-            //store.removeAt(rowIndex); 
+
 
         }
         else{
@@ -232,7 +223,6 @@ Ext.define('MyApp.controller.MyController', {
     },
 
     loadEdit: function(loadInfo, rowIndex) {
-
         var pnWindow = Ext.create('MyApp.view.pnAddListMoneyWindows',{
             title:"แก้ไขข้อมูลรับเงิน"
 
@@ -243,7 +233,7 @@ Ext.define('MyApp.controller.MyController', {
         Ext.getCmp('timeStamp').hidden = true;
         pnWindow.show();
 
-        numClick
+        //numClick
 
         /*
         for (prop in loadInfo.data){
@@ -257,8 +247,16 @@ Ext.define('MyApp.controller.MyController', {
     */
 
     var rstore=Ext.getStore('cultData').getAt(rowIndex);
+
+    console.log("RStore :: ", rstore.data.nameAcc);
+
     Ext.getCmp('pnAddListMoney').getForm().loadRecord(rstore);
-    Ext.getCmp('pnBankForm').getForm().loadRecord(rstore);
+    //Ext.getCmp('pnBankForm').getForm().loadRecord(rstore);
+    Ext.getCmp('bookBank').setValue(rstore.data.bookBank);
+    Ext.getCmp('accountNo').setValue(rstore.data.accountNumber);
+    Ext.getCmp('name').setValue(rstore.data.nameAcc);
+
+
     },
 
     rowDelete: function(rowinfo) {

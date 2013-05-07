@@ -321,7 +321,7 @@
                         "editable": false,
                         "displayField": "Bank",
                         "store": "bankStore",
-                        "valueField": "id"
+                        "valueField": "Bank"
                     },
                     "designerId": "81de0961-19a5-48a6-a8e3-96813f1c5a11",
                     "cn": [
@@ -375,7 +375,7 @@
                         "displayField": "accountNo",
                         "queryMode": "local",
                         "store": "info4comboStore",
-                        "valueField": "id"
+                        "valueField": "accountNo"
                     },
                     "designerId": "6d47e37d-a574-4261-8e7b-b0ef6e353dd8",
                     "cn": [
