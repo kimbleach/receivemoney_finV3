@@ -8,7 +8,7 @@
     "userConfig": {
         "designer|userClassName": "bank"
     },
-    "designerId": "8523ab45-b852-420c-8b41-4bfe99f9b2fd",
+    "designerId": "1e86dbe8-646f-445b-8d10-705dbd17a59a",
     "cn": [
         {
             "type": "Ext.data.Field",
@@ -18,9 +18,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "bookBank"
+                "name": "id"
             },
-            "designerId": "7734a07d-d9eb-41b1-818c-f65c7a978829"
+            "designerId": "82b5f3aa-8bb4-4358-9eb6-d84034bc6680"
         },
         {
             "type": "Ext.data.Field",
@@ -30,45 +30,49 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "name"
+                "name": "Bank"
             },
-            "designerId": "515866aa-4139-48c5-90e5-d8066f33cf79"
+            "designerId": "2890878a-2b53-46e9-8e5e-353d21fd3b68"
         },
         {
-            "type": "Ext.data.Field",
+            "type": "Ext.data.association.HasMany",
             "reference": {
-                "name": "fields",
-                "type": "array"
+                "name": "hasMany",
+                "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "branch"
+                "associationKey": "bankData",
+                "model": "bankInfo",
+                "designer|displayName": "hasManybankInfo"
             },
-            "designerId": "9eb7a216-bbdb-41b0-a8ed-cbf69a58dc87"
+            "designerId": "c788b53a-f809-4773-826a-62520478a364"
         },
         {
-            "type": "Ext.data.Field",
+            "type": "Ext.data.proxy.Ajax",
             "reference": {
-                "name": "fields",
-                "type": "array"
+                "name": "proxy",
+                "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "accountNo"
+                "url": "data/bank.json"
             },
-            "designerId": "7610f4b3-fc39-4c34-b81d-d4fbf0534210"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "type"
-            },
-            "designerId": "de82f80d-4144-4265-9cee-f6cc7c62596c"
+            "designerId": "082d95b5-2ad7-46ef-8fbd-f7f3c04200fa",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "book"
+                    },
+                    "designerId": "193fb747-ad2e-4c9a-9a33-288dca632c52"
+                }
+            ]
         }
     ]
 }

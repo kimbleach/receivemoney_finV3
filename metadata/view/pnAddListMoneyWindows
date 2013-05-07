@@ -319,8 +319,9 @@
                         "fieldLabel": "ชื่อธนาคาร",
                         "name": "bookBank",
                         "editable": false,
-                        "displayField": "bookBank",
-                        "store": "BankAccountStore"
+                        "displayField": "Bank",
+                        "store": "bankStore",
+                        "valueField": "id"
                     },
                     "designerId": "81de0961-19a5-48a6-a8e3-96813f1c5a11",
                     "cn": [
@@ -372,7 +373,9 @@
                         "vtype": null,
                         "hideTrigger": null,
                         "displayField": "accountNo",
-                        "store": "BankAccountStore"
+                        "queryMode": "local",
+                        "store": "info4comboStore",
+                        "valueField": "id"
                     },
                     "designerId": "6d47e37d-a574-4261-8e7b-b0ef6e353dd8",
                     "cn": [
@@ -418,8 +421,8 @@
                         "fieldLabel": "ชื่อบัญชี",
                         "name": "nameAcc",
                         "editable": false,
-                        "displayField": "name",
-                        "store": "BankAccountStore"
+                        "displayField": null,
+                        "store": null
                     },
                     "designerId": "356b8286-49f4-4e4a-a23e-79a9dea6fceb",
                     "cn": [
@@ -465,8 +468,8 @@
                         "fieldLabel": "สาขา",
                         "name": "branch",
                         "editable": false,
-                        "displayField": "branch",
-                        "store": "BankAccountStore"
+                        "displayField": null,
+                        "store": null
                     },
                     "designerId": "5a169880-cb2e-4263-a132-34ca830f7b79",
                     "cn": [
@@ -512,8 +515,8 @@
                         "fieldLabel": "ประเภท",
                         "name": "typeBank",
                         "editable": false,
-                        "displayField": "type",
-                        "store": "BankAccountStore"
+                        "displayField": null,
+                        "store": null
                     },
                     "designerId": "71dbdd9b-76a2-4c03-820c-8a65d7725bed",
                     "cn": [
