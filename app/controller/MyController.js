@@ -223,10 +223,14 @@ Ext.define('MyApp.controller.MyController', {
     },
 
     loadEdit: function(loadInfo, rowIndex) {
-        var pnWindow = Ext.create('MyApp.view.pnAddListMoneyWindows',{
-            title:"แก้ไขข้อมูลรับเงิน"
 
-        });
+        var pnWindow = this.getPnAddListMoneyWindows();
+
+        if(!pnWindow){
+            var pnWindow = Ext.create('MyApp.view.pnAddListMoneyWindows',{
+                title:"แก้ไขข้อมูลรับเงิน"
+            });
+        }
 
         Ext.getCmp('btnSave').hidden = true;
         Ext.getCmp('numClick').hidden = true;
@@ -248,8 +252,12 @@ Ext.define('MyApp.controller.MyController', {
 
     var rstore=Ext.getStore('cultData').getAt(rowIndex);
 
+    console.log("RStore :: ", rstore.data.nameAcc);
+
     Ext.getCmp('pnAddListMoney').getForm().loadRecord(rstore);
     Ext.getCmp('pnBankForm').getForm().loadRecord(rstore);
+
+
     },
 
     rowDelete: function(rowinfo) {

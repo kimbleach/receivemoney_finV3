@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "autoLoad": false,
+        "autoLoad": true,
         "model": "cultData",
         "storeId": "cultData",
         "designer|userClassName": "cultData",
@@ -21,6 +21,9 @@
                 "type": "object"
             },
             "codeClass": null,
+            "userConfig": {
+                "url": "data/payment.json"
+            },
             "designerId": "d382eff4-4465-48a8-906b-d319089d2d17",
             "cn": [
                 {

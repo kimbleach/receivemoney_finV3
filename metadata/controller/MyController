@@ -244,7 +244,7 @@
                     "if (text == 'delete'){\r",
                     "    wnDel.show();\r",
                     "\r",
-                    "\r",
+                    " \r",
                     "\r",
                     "}\r",
                     "else{\r",
@@ -389,10 +389,14 @@
                     "rowIndex"
                 ],
                 "implHandler": [
-                    "var pnWindow = Ext.create('MyApp.view.pnAddListMoneyWindows',{\r",
-                    "    title:\"แก้ไขข้อมูลรับเงิน\"\r",
                     "\r",
-                    "});\r",
+                    "var pnWindow = this.getPnAddListMoneyWindows();\r",
+                    "\r",
+                    "if(!pnWindow){\r",
+                    "    var pnWindow = Ext.create('MyApp.view.pnAddListMoneyWindows',{\r",
+                    "        title:\"แก้ไขข้อมูลรับเงิน\"\r",
+                    "    });\r",
+                    "}\r",
                     "\r",
                     "Ext.getCmp('btnSave').hidden = true;\r",
                     "Ext.getCmp('numClick').hidden = true;\r",
@@ -414,8 +418,12 @@
                     "\r",
                     "var rstore=Ext.getStore('cultData').getAt(rowIndex);\r",
                     "\r",
+                    "console.log(\"RStore :: \", rstore.data.nameAcc);\r",
+                    "\r",
                     "Ext.getCmp('pnAddListMoney').getForm().loadRecord(rstore);\r",
-                    "Ext.getCmp('pnBankForm').getForm().loadRecord(rstore);"
+                    "Ext.getCmp('pnBankForm').getForm().loadRecord(rstore);\r",
+                    "\r",
+                    ""
                 ]
             },
             "designerId": "3d792f3f-e5a7-4a5c-a252-6afdd57caa57"
