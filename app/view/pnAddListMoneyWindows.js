@@ -154,8 +154,9 @@ false,
                             fieldLabel: 'ชื่อธนาคาร',
                             name: 'bookBank',
                             editable: false,
-                            displayField: 'bookBank',
-                            store: 'BankAccountStore',
+                            displayField: 'Bank',
+                            store: 'bankStore',
+                            valueField: 'id',
                             listeners: {
                                 afterrender: {
                                     fn: me.onBookBankAfterRender,
@@ -173,7 +174,9 @@ false,
                             fieldLabel: 'เลขที่บัญชี:',
                             name: 'accountNumber',
                             displayField: 'accountNo',
-                            store: 'BankAccountStore',
+                            queryMode: 'local',
+                            store: 'info4comboStore',
+                            valueField: 'id',
                             listeners: {
                                 afterrender: {
                                     fn: me.onAccountNoAfterRender,
@@ -191,8 +194,6 @@ false,
                             fieldLabel: 'ชื่อบัญชี',
                             name: 'nameAcc',
                             editable: false,
-                            displayField: 'name',
-                            store: 'BankAccountStore',
                             listeners: {
                                 afterrender: {
                                     fn: me.onNameAfterRender,
@@ -210,8 +211,6 @@ false,
                             fieldLabel: 'สาขา',
                             name: 'branch',
                             editable: false,
-                            displayField: 'branch',
-                            store: 'BankAccountStore',
                             listeners: {
                                 afterrender: {
                                     fn: me.onBranchAfterRender,
@@ -229,8 +228,6 @@ false,
                             fieldLabel: 'ประเภท',
                             name: 'typeBank',
                             editable: false,
-                            displayField: 'type',
-                            store: 'BankAccountStore',
                             listeners: {
                                 afterrender: {
                                     fn: me.onTypeAfterRender,

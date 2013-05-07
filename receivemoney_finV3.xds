@@ -193,22 +193,6 @@
             ],
             "className": "wnDelete"
         },
-        "9c63ac1c-f2ce-4cad-a185-b46a8290422b": {
-            "paths": [
-                "metadata/store/BankAccountStore",
-                "app/store/override/BankAccountStore.js",
-                "app/store/BankAccountStore.js"
-            ],
-            "className": "BankAccountStore"
-        },
-        "8523ab45-b852-420c-8b41-4bfe99f9b2fd": {
-            "paths": [
-                "metadata/model/bank",
-                "app/model/override/bank.js",
-                "app/model/bank.js"
-            ],
-            "className": "bank"
-        },
         "5206848e-bfe9-4732-bde7-aa654445b989": {
             "paths": [
                 "metadata/controller/MyController",
@@ -216,6 +200,62 @@
                 "app/controller/MyController.js"
             ],
             "className": "MyController"
+        },
+        "93955bc1-546b-409e-94f4-705dedbb2f57": {
+            "paths": [
+                "metadata/controller/combobox",
+                "app/controller/override/combobox.js",
+                "app/controller/combobox.js"
+            ],
+            "className": "combobox"
+        },
+        "1e86dbe8-646f-445b-8d10-705dbd17a59a": {
+            "paths": [
+                "metadata/model/bank",
+                "app/model/override/bank.js",
+                "app/model/bank.js"
+            ],
+            "className": "bank"
+        },
+        "d876644a-0d20-4588-8cc6-7e12fd2847c5": {
+            "paths": [
+                "metadata/model/bankInfo",
+                "app/model/override/bankInfo.js",
+                "app/model/bankInfo.js"
+            ],
+            "className": "bankInfo"
+        },
+        "8b27ad9f-9c84-4e54-a3ce-ccd501ca50f4": {
+            "paths": [
+                "metadata/store/bankStore",
+                "app/store/override/bankStore.js",
+                "app/store/bankStore.js"
+            ],
+            "className": "bankStore"
+        },
+        "c33abbe8-dab7-493a-85ff-03f087853b9d": {
+            "paths": [
+                "metadata/model/info4combo",
+                "app/model/override/info4combo.js",
+                "app/model/info4combo.js"
+            ],
+            "className": "info4combo"
+        },
+        "ef9e099a-5a83-44b6-abfc-0763c22ae60f": {
+            "paths": [
+                "metadata/store/bankInfoStore",
+                "app/store/override/bankInfoStore.js",
+                "app/store/bankInfoStore.js"
+            ],
+            "className": "bankInfoStore"
+        },
+        "1cb8e258-fd1c-435e-bff4-019def7bc22a": {
+            "paths": [
+                "metadata/store/info4comboStore",
+                "app/store/override/info4comboStore.js",
+                "app/store/info4comboStore.js"
+            ],
+            "className": "info4comboStore"
         }
     },
     "viewOrderMap": {
@@ -237,10 +277,13 @@
             "1e004b8f-6512-4d87-a874-287f9d6b32fd",
             "5028e83a-0414-405b-8e3f-3ae7864f9637",
             "4f0aad23-b2b2-4e0e-9e3c-22c0a855dea5",
-            "9c63ac1c-f2ce-4cad-a185-b46a8290422b"
+            "8b27ad9f-9c84-4e54-a3ce-ccd501ca50f4",
+            "ef9e099a-5a83-44b6-abfc-0763c22ae60f",
+            "1cb8e258-fd1c-435e-bff4-019def7bc22a"
         ],
         "controller": [
-            "5206848e-bfe9-4732-bde7-aa654445b989"
+            "5206848e-bfe9-4732-bde7-aa654445b989",
+            "93955bc1-546b-409e-94f4-705dedbb2f57"
         ],
         "model": [
             "a94671f8-c67f-4846-8c8e-b79ff15df248",
@@ -250,7 +293,9 @@
             "90d40d68-e8a8-4be6-94f8-8e9219b00aff",
             "2a76f874-bf40-49d7-be57-4c49ccee5c09",
             "4f716d20-f44a-41b6-b0f6-1a4fbe7e8468",
-            "8523ab45-b852-420c-8b41-4bfe99f9b2fd"
+            "1e86dbe8-646f-445b-8d10-705dbd17a59a",
+            "d876644a-0d20-4588-8cc6-7e12fd2847c5",
+            "c33abbe8-dab7-493a-85ff-03f087853b9d"
         ],
         "resource": [
             "5bb44bbe-f01f-43c4-afa5-48327f6e14d6"

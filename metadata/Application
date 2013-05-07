@@ -14,7 +14,9 @@
             "cultMemberS12",
             "cultData",
             "depositTypeModel",
-            "bank"
+            "bank",
+            "bankInfo",
+            "info4combo"
         ],
         "stores": [
             "cultMemberStore",
@@ -24,7 +26,9 @@
             "cultMemberS12Store",
             "cultData",
             "depositType",
-            "BankAccountStore"
+            "bankStore",
+            "bankInfoStore",
+            "info4comboStore"
         ],
         "views": [
             "pnAll",
@@ -38,7 +42,8 @@
         ],
         "autoCreateViewport": true,
         "controllers": [
-            "MyController"
+            "MyController",
+            "combobox"
         ],
         "name": "MyApp"
     },

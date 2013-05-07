@@ -1,0 +1,108 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "combobox"
+    },
+    "designerId": "93955bc1-546b-409e-94f4-705dedbb2f57",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onComboboxChange",
+                "implHandler": [
+                    "this.loadBank(newValue);"
+                ],
+                "name": "change",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.ComboBox",
+                "designer|controlQuery": "#bookBank"
+            },
+            "designerId": "23beaf53-5568-43d1-b303-763f9608b652"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loadBank",
+                "designer|params": [
+                    "bank"
+                ],
+                "implHandler": [
+                    "var bankStore = Ext.create(MyApp.store.bankStore),\r",
+                    "    bankInfoStore = Ext.create(MyApp.store.bankInfoStore);\r",
+                    "Ext.data.StoreManager.get(\"info4comboStore\").removeAll();\r",
+                    "\r",
+                    "bankStore.on('load', function(store, record){\r",
+                    "\r",
+                    "    bankInfoStore.add(record[bank-1]);\r",
+                    "\r",
+                    "    for(i=0; i<=bankInfoStore.data.length; i++){\r",
+                    "\r",
+                    "        var rec = bankInfoStore.data.items[0].raw.bankData[i];\r",
+                    "        console.log(rec);\r",
+                    "\r",
+                    "        Ext.data.StoreManager.get(\"info4comboStore\").add(rec);\r",
+                    "\r",
+                    "    }\r",
+                    "\r",
+                    "});"
+                ]
+            },
+            "designerId": "e0e7b5dd-8e14-4bc4-86d0-f1007e436ca6"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onAccountNoChange",
+                "implHandler": [
+                    "Ext.getStore('info4comboStore').removeAll();\r",
+                    "this.loadInfoCombo(field,newValue);"
+                ],
+                "name": "change",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.ComboBox",
+                "designer|controlQuery": "#accountNo"
+            },
+            "designerId": "7195ac8c-62c1-47a7-943e-339159e213a5"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loadInfoCombo",
+                "designer|params": [
+                    "rec,account"
+                ],
+                "implHandler": [
+                    "Ext.getCmp('name').setValue(rec.valueModels[0].raw.name);\r",
+                    "Ext.getCmp('branch').setValue(rec.valueModels[0].raw.branch);\r",
+                    "Ext.getCmp('type').setValue(rec.valueModels[0].raw.type);"
+                ]
+            },
+            "designerId": "e0ad4049-9ac3-480b-a9a3-2db89e2da3c8"
+        }
+    ]
+}

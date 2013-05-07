@@ -27,7 +27,9 @@ Ext.application({
         'cultMemberS12',
         'cultData',
         'depositTypeModel',
-        'bank'
+        'bank',
+        'bankInfo',
+        'info4combo'
     ],
     stores: [
         'cultMemberStore',
@@ -37,7 +39,9 @@ Ext.application({
         'cultMemberS12Store',
         'cultData',
         'depositType',
-        'BankAccountStore'
+        'bankStore',
+        'bankInfoStore',
+        'info4comboStore'
     ],
     views: [
         'pnAll',
@@ -51,7 +55,8 @@ Ext.application({
     ],
     autoCreateViewport: true,
     controllers: [
-        'MyController'
+        'MyController',
+        'combobox'
     ],
     name: 'MyApp'
 });
