@@ -244,7 +244,7 @@
                     "if (text == 'delete'){\r",
                     "    wnDel.show();\r",
                     "\r",
-                    " \r",
+                    "\r",
                     "\r",
                     "}\r",
                     "else{\r",
@@ -414,15 +414,8 @@
                     "\r",
                     "var rstore=Ext.getStore('cultData').getAt(rowIndex);\r",
                     "\r",
-                    "console.log(\"RStore :: \", rstore.data.nameAcc);\r",
-                    "\r",
                     "Ext.getCmp('pnAddListMoney').getForm().loadRecord(rstore);\r",
-                    "//Ext.getCmp('pnBankForm').getForm().loadRecord(rstore);\r",
-                    "Ext.getCmp('bookBank').setValue(rstore.data.bookBank);\r",
-                    "Ext.getCmp('accountNo').setValue(rstore.data.accountNumber);\r",
-                    "Ext.getCmp('name').setValue(rstore.data.nameAcc);\r",
-                    "\r",
-                    ""
+                    "Ext.getCmp('pnBankForm').getForm().loadRecord(rstore);"
                 ]
             },
             "designerId": "3d792f3f-e5a7-4a5c-a252-6afdd57caa57"

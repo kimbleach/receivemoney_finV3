@@ -16,13 +16,13 @@
 Ext.define('MyApp.controller.combobox', {
     extend: 'Ext.app.Controller',
 
-    onComboboxChange: function(field, newValue, oldValue, eOpts) {
-        this.loadBank(field);
+    onComboboxSelect: function(combo, records, eOpts) {
+        this.loadBank(combo);
     },
 
-    onAccountNoChange: function(field, newValue, oldValue, eOpts) {
+    onAccountNoChange: function(combo, records, eOpts) {
         Ext.getStore('info4comboStore').removeAll();
-        this.loadInfoCombo(field,newValue);
+        this.loadInfoCombo(combo);
     },
 
     loadBank: function(bank) {
@@ -60,10 +60,10 @@ Ext.define('MyApp.controller.combobox', {
     init: function(application) {
         this.control({
             "#bookBank": {
-                change: this.onComboboxChange
+                select: this.onComboboxSelect
             },
             "#accountNo": {
-                change: this.onAccountNoChange
+                select: this.onAccountNoChange
             }
         });
     }

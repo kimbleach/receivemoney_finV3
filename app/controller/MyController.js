@@ -248,15 +248,8 @@ Ext.define('MyApp.controller.MyController', {
 
     var rstore=Ext.getStore('cultData').getAt(rowIndex);
 
-    console.log("RStore :: ", rstore.data.nameAcc);
-
     Ext.getCmp('pnAddListMoney').getForm().loadRecord(rstore);
-    //Ext.getCmp('pnBankForm').getForm().loadRecord(rstore);
-    Ext.getCmp('bookBank').setValue(rstore.data.bookBank);
-    Ext.getCmp('accountNo').setValue(rstore.data.accountNumber);
-    Ext.getCmp('name').setValue(rstore.data.nameAcc);
-
-
+    Ext.getCmp('pnBankForm').getForm().loadRecord(rstore);
     },
 
     rowDelete: function(rowinfo) {

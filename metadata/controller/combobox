@@ -18,11 +18,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "onComboboxChange",
+                "fn": "onComboboxSelect",
                 "implHandler": [
-                    "this.loadBank(field);"
+                    "this.loadBank(combo);"
                 ],
-                "name": "change",
+                "name": "select",
                 "scope": "me",
                 "designer|targetType": "Ext.form.field.ComboBox",
                 "designer|controlQuery": "#bookBank"
@@ -80,9 +80,9 @@
                 "fn": "onAccountNoChange",
                 "implHandler": [
                     "Ext.getStore('info4comboStore').removeAll();\r",
-                    "this.loadInfoCombo(field,newValue);"
+                    "this.loadInfoCombo(combo);"
                 ],
-                "name": "change",
+                "name": "select",
                 "scope": "me",
                 "designer|targetType": "Ext.form.field.ComboBox",
                 "designer|controlQuery": "#accountNo"
