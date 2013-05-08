@@ -24,12 +24,13 @@ Ext.define('MyApp.store.cultData', {
         var me = this;
         cfg = cfg || {};
         me.callParent([Ext.apply({
-            autoLoad: false,
+            autoLoad: true,
             model: 'MyApp.model.cultData',
             storeId: 'cultData',
             groupField: 'date',
             proxy: {
                 type: 'ajax',
+                url: 'data/payment.json',
                 reader: {
                     type: 'json'
                 }

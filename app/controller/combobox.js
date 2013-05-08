@@ -18,11 +18,19 @@ Ext.define('MyApp.controller.combobox', {
 
     onComboboxSelect: function(combo, records, eOpts) {
         this.loadBank(combo);
+
+        Ext.getCmp('accountNo').setValue("");
+        Ext.getCmp('name').setValue("");
+        Ext.getCmp('branch').setValue("");
+        Ext.getCmp('type').setValue("");
+
     },
 
     onAccountNoChange: function(combo, records, eOpts) {
         Ext.getStore('info4comboStore').removeAll();
         this.loadInfoCombo(combo);
+
+
     },
 
     loadBank: function(bank) {
@@ -34,7 +42,7 @@ Ext.define('MyApp.controller.combobox', {
 
         Ext.data.StoreManager.get("info4comboStore").removeAll();
 
-        //Ext.getCmp('accountNo').setValue("");
+
 
         bankStore.on('load', function(store, record){
 
@@ -55,6 +63,7 @@ Ext.define('MyApp.controller.combobox', {
         Ext.getCmp('name').setValue(rec.valueModels[0].data.name);
         Ext.getCmp('branch').setValue(rec.valueModels[0].data.branch);
         Ext.getCmp('type').setValue(rec.valueModels[0].data.type);
+
     },
 
     init: function(application) {

@@ -20,7 +20,13 @@
             "userConfig": {
                 "fn": "onComboboxSelect",
                 "implHandler": [
-                    "this.loadBank(combo);"
+                    "this.loadBank(combo);\r",
+                    "\r",
+                    "Ext.getCmp('accountNo').setValue(\"\");\r",
+                    "Ext.getCmp('name').setValue(\"\");\r",
+                    "Ext.getCmp('branch').setValue(\"\");\r",
+                    "Ext.getCmp('type').setValue(\"\");\r",
+                    ""
                 ],
                 "name": "select",
                 "scope": "me",
@@ -45,12 +51,12 @@
                     "var bankStore = Ext.create(MyApp.store.bankStore),\r",
                     "    bankInfoStore = Ext.create(MyApp.store.bankInfoStore);\r",
                     "\r",
-                    "\t//Ext.getCmp('pnBankForm').getForm().getValues().bookBank\r",
-                    "\t\r",
-                    "\t\r",
-                    "\tExt.data.StoreManager.get(\"info4comboStore\").removeAll();\r",
+                    "//Ext.getCmp('pnBankForm').getForm().getValues().bookBank\r",
                     "\r",
-                    "    //Ext.getCmp('accountNo').setValue(\"\");\r",
+                    "\r",
+                    "Ext.data.StoreManager.get(\"info4comboStore\").removeAll();\r",
+                    "\r",
+                    "\r",
                     "\r",
                     "bankStore.on('load', function(store, record){\r",
                     "\r",
@@ -80,7 +86,9 @@
                 "fn": "onAccountNoChange",
                 "implHandler": [
                     "Ext.getStore('info4comboStore').removeAll();\r",
-                    "this.loadInfoCombo(combo);"
+                    "this.loadInfoCombo(combo);\r",
+                    "\r",
+                    ""
                 ],
                 "name": "select",
                 "scope": "me",
@@ -104,7 +112,8 @@
                 "implHandler": [
                     "Ext.getCmp('name').setValue(rec.valueModels[0].data.name);\r",
                     "Ext.getCmp('branch').setValue(rec.valueModels[0].data.branch);\r",
-                    "Ext.getCmp('type').setValue(rec.valueModels[0].data.type);"
+                    "Ext.getCmp('type').setValue(rec.valueModels[0].data.type);\r",
+                    ""
                 ]
             },
             "designerId": "e0ad4049-9ac3-480b-a9a3-2db89e2da3c8"
