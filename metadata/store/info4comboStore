@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": false,
-        "model": "info4combo",
+        "model": "bankInfo",
         "storeId": "info4comboStore",
         "designer|userClassName": "info4comboStore"
     },

@@ -233,14 +233,6 @@
             ],
             "className": "bankStore"
         },
-        "c33abbe8-dab7-493a-85ff-03f087853b9d": {
-            "paths": [
-                "metadata/model/info4combo",
-                "app/model/override/info4combo.js",
-                "app/model/info4combo.js"
-            ],
-            "className": "info4combo"
-        },
         "ef9e099a-5a83-44b6-abfc-0763c22ae60f": {
             "paths": [
                 "metadata/store/bankInfoStore",
@@ -294,8 +286,7 @@
             "2a76f874-bf40-49d7-be57-4c49ccee5c09",
             "4f716d20-f44a-41b6-b0f6-1a4fbe7e8468",
             "1e86dbe8-646f-445b-8d10-705dbd17a59a",
-            "d876644a-0d20-4588-8cc6-7e12fd2847c5",
-            "c33abbe8-dab7-493a-85ff-03f087853b9d"
+            "d876644a-0d20-4588-8cc6-7e12fd2847c5"
         ],
         "resource": [
             "5bb44bbe-f01f-43c4-afa5-48327f6e14d6"

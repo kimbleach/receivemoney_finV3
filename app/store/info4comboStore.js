@@ -17,7 +17,7 @@ Ext.define('MyApp.store.info4comboStore', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyApp.model.info4combo'
+        'MyApp.model.bankInfo'
     ],
 
     constructor: function(cfg) {
@@ -25,7 +25,7 @@ Ext.define('MyApp.store.info4comboStore', {
         cfg = cfg || {};
         me.callParent([Ext.apply({
             autoLoad: false,
-            model: 'MyApp.model.info4combo',
+            model: 'MyApp.model.bankInfo',
             storeId: 'info4comboStore',
             fields: [
                 {

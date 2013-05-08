@@ -28,8 +28,7 @@ Ext.application({
         'cultData',
         'depositTypeModel',
         'bank',
-        'bankInfo',
-        'info4combo'
+        'bankInfo'
     ],
     stores: [
         'cultMemberStore',
