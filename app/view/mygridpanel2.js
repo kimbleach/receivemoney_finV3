@@ -39,8 +39,6 @@ Ext.define('MyApp.view.mygridpanel2', {
                                     return '(No Date)';
                                 }
                                 dueDateTime = Ext.Date.clearTime(date).getTime();
-                                console.log('funtion group ');
-                                console.log(dueDateTime);
 
                                 if(dueDateTime === todayTime) {
                                     return '<span style="color:blue;">Today</span>';

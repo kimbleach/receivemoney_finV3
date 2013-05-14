@@ -95,38 +95,43 @@ Ext.define('MyApp.controller.MyController', {
     },
 
     clickAddButton: function(button, e, eOpts) {
+
+        var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,
+            bankno = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,
+            namebank = Ext.getCmp('pnBankForm').getForm().getValues().nameAcc,
+            typebank = Ext.getCmp('pnBankForm').getForm().getValues().typeBank,
+            datebank = Ext.getCmp('pnBankForm').getForm().getValues().date,
+            timestamp = Ext.getCmp('pnBankForm').getForm().getValues().timeStamp,
+            addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();
+
+        addMoney.bookBank = bankname;
+        addMoney.accountNumber = bankno;
+        addMoney.nameAcc = namebank;
+        addMoney.typeBank = typebank;
+        addMoney.dateIn = datebank;
+        addMoney.timeStamp = timestamp;
+
         if(Ext.getCmp('pnAddListMoney').getForm().isValid())
         {
-            var bankname = Ext.getCmp('pnBankForm').getForm().getValues().bookBank,
-                bankno = Ext.getCmp('pnBankForm').getForm().getValues().accountNumber,
-                namebank = Ext.getCmp('pnBankForm').getForm().getValues().nameAcc,
-                typebank = Ext.getCmp('pnBankForm').getForm().getValues().typeBank,
-                branchbank = Ext.getCmp('pnBankForm').getForm().getValues().branch,
-                datebank = Ext.getCmp('pnBankForm').getForm().getValues().date,
-                timestamp = Ext.getCmp('pnBankForm').getForm().getValues().timeStamp,
-                addMoney = Ext.getCmp('pnAddListMoney').getForm().getValues();
+            //var record = Ext.getCmp('pnAddListMoney').getForm().getValues();
+            var output_json = Ext.JSON.encode(addMoney);
 
-            addMoney.bookBank = bankname;
-            addMoney.accountNumber = bankno;
-            addMoney.nameAcc = namebank;
-            addMoney.typeBank = typebank;
-            addMoney.branch = branchbank;
-            addMoney.date = datebank;
-            addMoney.timeStamp = timestamp;
+            Ext.Ajax.request({
+                url:'../receivemoney_finV3/data/insert.php',
+                waitMsg: 'Uploading your file...',
+                method: 'POST',
+                jsonData: output_json,
+                success: function(response) {
+                    //Ext.Msg.alert('ผลการบันทึกข้อมูล');
+                    Ext.getCmp('pnAddListMoney').getForm().reset();
+                },
+                failure: function(response) {
+                    Ext.Msg.alert('Error while submitting data');
+                },
+                headers: {'Content-Type' : 'text/html' , 'Accept' : 'application/json'}
+            });
+        } 
 
-            //Ext.getCmp('bookBank').value
-            //Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());
-            Ext.getStore('cultData').add(addMoney);
-            Ext.getCmp('pnAddListMoney').getForm().reset();
-
-            //this.getPnAddListMoneyWindows().destroy();
-
-
-            numberClick = numberClick+1;
-            //console.log(numberClick);
-            Ext.getCmp('numClick').setValue(numberClick);
-
-        }
 
 
     },
@@ -149,7 +154,7 @@ Ext.define('MyApp.controller.MyController', {
         addMoney.branch = branchbank;
         addMoney.date = datebank;
         //addMoney.timeStamp = timestamp;
-        console.log("Deuanz")
+        console.log("Deuanz");
 
         rec.set(addMoney);
 
@@ -178,8 +183,6 @@ Ext.define('MyApp.controller.MyController', {
         if (text == 'delete'){
             wnDel.show();
 
-
-
         }
         else{
 
@@ -195,9 +198,6 @@ Ext.define('MyApp.controller.MyController', {
     },
 
     clickYes: function(button, e, eOpts) {
-        console.log('sfhsdjkfhs');
-
-
         this.rowDelete(indexRow);
 
         this.getWdForm().destroy();

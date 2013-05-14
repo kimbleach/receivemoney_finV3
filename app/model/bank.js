@@ -17,7 +17,7 @@ Ext.define('MyApp.model.bank', {
     extend: 'Ext.data.Model',
 
     uses: [
-        'MyApp.model.bankInfo'
+        'MyApp.model.account'
     ],
 
     fields: [
@@ -25,21 +25,21 @@ Ext.define('MyApp.model.bank', {
             name: 'id'
         },
         {
-            name: 'Bank'
+            name: 'bank_name'
         }
     ],
 
     hasMany: {
         associationKey: 'bankData',
-        model: 'MyApp.model.bankInfo'
+        model: 'MyApp.model.account'
     },
 
     proxy: {
         type: 'ajax',
-        url: 'data/bank.json',
+        url: 'data/readRecordBank.php',
         reader: {
             type: 'json',
-            root: 'book'
+            root: 'bank'
         }
     }
 });

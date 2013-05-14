@@ -28,7 +28,9 @@ Ext.application({
         'cultData',
         'depositTypeModel',
         'bank',
-        'bankInfo'
+        'account',
+        'branch',
+        'bank_account'
     ],
     stores: [
         'cultMemberStore',
@@ -38,9 +40,9 @@ Ext.application({
         'cultMemberS12Store',
         'cultData',
         'depositType',
+        'branchStor',
         'bankStore',
-        'bankInfoStore',
-        'info4comboStore'
+        'accountStore'
     ],
     views: [
         'pnAll',

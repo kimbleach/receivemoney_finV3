@@ -313,116 +313,15 @@
                         "layout|anchor": null,
                         "layout|x": 10,
                         "layout|y": 10,
-                        "id": "bookBank",
-                        "margin": "0 0 0 10",
-                        "width": 250,
-                        "fieldLabel": "ชื่อธนาคาร",
-                        "name": "bookBank",
-                        "editable": false,
-                        "displayField": "Bank",
-                        "store": "bankStore",
-                        "valueField": "Bank"
-                    },
-                    "designerId": "81de0961-19a5-48a6-a8e3-96813f1c5a11",
-                    "cn": [
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "fn": "onBookBankAfterRender",
-                                "implHandler": [
-                                    "Ext.tip.QuickTipManager.register({\r",
-                                    "    target: 'bookBank',\r",
-                                    "    //title: 'รหัสช้อมูล',\r",
-                                    "    text: 'ชื่อธนาคาร',\r",
-                                    "    width: 100,\r",
-                                    "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
-                                    "});"
-                                ],
-                                "name": "afterrender",
-                                "scope": "me"
-                            },
-                            "designerId": "6f772db6-4f5d-4882-8a2d-6b1df15b1d87"
-                        }
-                    ]
-                },
-                {
-                    "type": "Ext.form.field.ComboBox",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "layout|x": 10,
-                        "layout|y": 50,
-                        "formBind": null,
-                        "id": "accountNo",
-                        "margin": "0 0 0 10",
-                        "width": 250,
-                        "fieldLabel": "เลขที่บัญชี:",
-                        "msgTarget": null,
-                        "name": "accountNumber",
-                        "allowBlank": null,
-                        "emptyText": null,
-                        "regexText": null,
-                        "vtype": null,
-                        "hideTrigger": null,
-                        "displayField": "accountNo",
-                        "queryMode": "local",
-                        "store": "info4comboStore",
-                        "valueField": "accountNo"
-                    },
-                    "designerId": "6d47e37d-a574-4261-8e7b-b0ef6e353dd8",
-                    "cn": [
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "fn": "onAccountNoAfterRender",
-                                "implHandler": [
-                                    "Ext.tip.QuickTipManager.register({\r",
-                                    "    target: 'accountNo',\r",
-                                    "    //title: 'รหัสช้อมูล',\r",
-                                    "    text: 'เลขที่บัญชี',\r",
-                                    "    width: 100,\r",
-                                    "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
-                                    "});"
-                                ],
-                                "name": "afterrender",
-                                "scope": "me"
-                            },
-                            "designerId": "87c7d52a-e48f-491b-8cea-779735505597"
-                        }
-                    ]
-                },
-                {
-                    "type": "Ext.form.field.ComboBox",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "layout|anchor": null,
-                        "layout|x": 10,
-                        "layout|y": 90,
                         "id": "name",
                         "margin": "0 0 0 10",
-                        "width": 250,
+                        "width": 290,
                         "fieldLabel": "ชื่อบัญชี",
                         "name": "nameAcc",
                         "editable": false,
-                        "displayField": null,
-                        "store": null
+                        "displayField": "name",
+                        "store": "branchStor",
+                        "valueField": "name"
                     },
                     "designerId": "356b8286-49f4-4e4a-a23e-79a9dea6fceb",
                     "cn": [
@@ -460,18 +359,19 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|anchor": null,
-                        "layout|x": 310,
+                        "layout|x": 10,
                         "layout|y": 50,
-                        "id": "branch",
+                        "id": "bookBank",
                         "margin": "0 0 0 10",
-                        "width": 254,
-                        "fieldLabel": "สาขา",
-                        "name": "branch",
+                        "width": 290,
+                        "fieldLabel": "ชื่อธนาคาร",
+                        "name": "bookBank",
                         "editable": false,
-                        "displayField": null,
-                        "store": null
+                        "displayField": "bank_name",
+                        "store": "bankStore",
+                        "valueField": "bank_name"
                     },
-                    "designerId": "5a169880-cb2e-4263-a132-34ca830f7b79",
+                    "designerId": "81de0961-19a5-48a6-a8e3-96813f1c5a11",
                     "cn": [
                         {
                             "type": "basiceventbinding",
@@ -481,12 +381,12 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "fn": "onBranchAfterRender",
+                                "fn": "onBookBankAfterRender",
                                 "implHandler": [
                                     "Ext.tip.QuickTipManager.register({\r",
-                                    "    target: 'branch',\r",
+                                    "    target: 'bookBank',\r",
                                     "    //title: 'รหัสช้อมูล',\r",
-                                    "    text: 'สาขา',\r",
+                                    "    text: 'ชื่อธนาคาร',\r",
                                     "    width: 100,\r",
                                     "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
                                     "});"
@@ -494,12 +394,62 @@
                                 "name": "afterrender",
                                 "scope": "me"
                             },
-                            "designerId": "0221c18a-db1e-46ab-a4db-2f0ae471332c"
+                            "designerId": "6f772db6-4f5d-4882-8a2d-6b1df15b1d87"
                         }
                     ]
                 },
                 {
-                    "type": "Ext.form.field.ComboBox",
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 330,
+                        "layout|y": 10,
+                        "formBind": null,
+                        "id": "accountNo",
+                        "margin": "0 0 0 10",
+                        "width": 310,
+                        "fieldLabel": "เลขที่บัญชี:",
+                        "msgTarget": null,
+                        "name": "accountNumber",
+                        "readOnly": true,
+                        "allowBlank": null,
+                        "emptyText": null,
+                        "regexText": null,
+                        "vtype": null
+                    },
+                    "designerId": "6d47e37d-a574-4261-8e7b-b0ef6e353dd8",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onAccountNoAfterRender",
+                                "implHandler": [
+                                    "Ext.tip.QuickTipManager.register({\r",
+                                    "    target: 'accountNo',\r",
+                                    "    //title: 'รหัสช้อมูล',\r",
+                                    "    text: 'เลขที่บัญชี',\r",
+                                    "    width: 100,\r",
+                                    "    dismissDelay: 10000    // Hide after 10 seconds hover\r",
+                                    "});"
+                                ],
+                                "name": "afterrender",
+                                "scope": "me"
+                            },
+                            "designerId": "87c7d52a-e48f-491b-8cea-779735505597"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -507,16 +457,14 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|anchor": null,
-                        "layout|x": 310,
-                        "layout|y": 10,
+                        "layout|x": 10,
+                        "layout|y": 90,
                         "id": "type",
                         "margin": "0 0 0 10",
-                        "width": 254,
+                        "width": 290,
                         "fieldLabel": "ประเภท",
                         "name": "typeBank",
-                        "editable": false,
-                        "displayField": null,
-                        "store": null
+                        "readOnly": true
                     },
                     "designerId": "71dbdd9b-76a2-4c03-820c-8a65d7725bed",
                     "cn": [
@@ -554,11 +502,11 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|anchor": null,
-                        "layout|x": 310,
-                        "layout|y": 90,
+                        "layout|x": 330,
+                        "layout|y": 50,
                         "id": "date",
                         "margin": "0 0 0 10",
-                        "width": 254,
+                        "width": 310,
                         "fieldLabel": "วันที่โอน",
                         "name": "date",
                         "editable": false
@@ -603,7 +551,7 @@
                         "layout|y": 130,
                         "id": "timeStamp",
                         "margin": "0 0 0 10",
-                        "width": 254,
+                        "width": 290,
                         "fieldLabel": "TimeStamp",
                         "name": "timeStamp",
                         "readOnly": true
@@ -643,7 +591,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|x": 320,
+                        "layout|x": 340,
                         "layout|y": 130,
                         "id": "numClick",
                         "width": 250,

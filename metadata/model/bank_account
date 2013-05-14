@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "bank"
+        "designer|userClassName": "bank_account"
     },
-    "designerId": "1e86dbe8-646f-445b-8d10-705dbd17a59a",
+    "designerId": "a0430e3c-b620-4731-b488-706e8f90185c",
     "cn": [
         {
             "type": "Ext.data.Field",
@@ -20,47 +20,7 @@
             "userConfig": {
                 "name": "id"
             },
-            "designerId": "82b5f3aa-8bb4-4358-9eb6-d84034bc6680"
-        },
-        {
-            "type": "Ext.data.association.HasMany",
-            "reference": {
-                "name": "hasMany",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "associationKey": "bankData",
-                "model": "account",
-                "designer|displayName": "hasManyaccount"
-            },
-            "designerId": "c788b53a-f809-4773-826a-62520478a364"
-        },
-        {
-            "type": "Ext.data.proxy.Ajax",
-            "reference": {
-                "name": "proxy",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "url": "data/readRecordBank.php"
-            },
-            "designerId": "082d95b5-2ad7-46ef-8fbd-f7f3c04200fa",
-            "cn": [
-                {
-                    "type": "Ext.data.reader.Json",
-                    "reference": {
-                        "name": "reader",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "root": "bank"
-                    },
-                    "designerId": "193fb747-ad2e-4c9a-9a33-288dca632c52"
-                }
-            ]
+            "designerId": "98b8c00a-2507-42e4-b6d6-6e180ad6fff2"
         },
         {
             "type": "Ext.data.Field",
@@ -70,9 +30,35 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "bank_name"
+                "name": "account_number"
             },
-            "designerId": "dc778841-ecf0-44f0-9113-7bcdb5960d56"
+            "designerId": "2aedc074-bb54-4854-86b9-ee5df0c1350c"
+        },
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/readRecordBank_account.php"
+            },
+            "designerId": "9a847126-dc32-4c69-ba40-2afb29a4735a",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "account"
+                    },
+                    "designerId": "f076889a-a15f-49ba-bb11-9569ee84b26f"
+                }
+            ]
         }
     ]
 }

@@ -17,62 +17,55 @@ Ext.define('MyApp.controller.combobox', {
     extend: 'Ext.app.Controller',
 
     onComboboxSelect: function(combo, records, eOpts) {
-        this.loadBank(combo);
+        var branchId = combo.valueModels[0].data.id,
+            urlBank = 'data/readRecordBank.php?idBranch='+branchId;
 
-        Ext.getCmp('accountNo').setValue("");
-        Ext.getCmp('name').setValue("");
-        Ext.getCmp('branch').setValue("");
-        Ext.getCmp('type').setValue("");
-
-    },
-
-    onAccountNoChange: function(combo, records, eOpts) {
-        Ext.getStore('info4comboStore').removeAll();
-        this.loadInfoCombo(combo);
-
-
-    },
-
-    loadBank: function(bank) {
-        var bankStore = Ext.create(MyApp.store.bankStore),
-            bankInfoStore = Ext.create(MyApp.store.bankInfoStore);
-
-        //Ext.getCmp('pnBankForm').getForm().getValues().bookBank
-
-
-        Ext.data.StoreManager.get("info4comboStore").removeAll();
-
-
-
-        bankStore.on('load', function(store, record){
-
-            bankInfoStore.add(record[bank.valueModels[0].data.id-1]);
-
-            for(i=0; i<=bankInfoStore.data.length; i++){
-
-                var rec = bankInfoStore.data.items[0].raw.bankData[i];
-                //console.log("Rec :: ", rec);
-                Ext.data.StoreManager.get("info4comboStore").add(rec);
-                //console.log("Store :: ", Ext.data.StoreManager.get("info4comboStore"));
+        var store = 'bankStore';
+        Ext.data.StoreManager.lookup(store);
+        Ext.data.StoreManager.lookup(store).getProxy().url = urlBank;
+        Ext.data.StoreManager.lookup(store).load({
+            scope: this,
+            callback: function(records, operation, success) {
+                if (success) {
+                    Ext.getCmp('bookBank').setValue('');
+                    Ext.getCmp('accountNo').setValue('');
+                } else {
+                    console.log('error');
+                }
             }
-
         });
     },
 
-    loadInfoCombo: function(rec,account) {
-        Ext.getCmp('name').setValue(rec.valueModels[0].data.name);
-        Ext.getCmp('branch').setValue(rec.valueModels[0].data.branch);
-        Ext.getCmp('type').setValue(rec.valueModels[0].data.type);
+    onComboboxSelect1: function(combo, records, eOpts) {
+        //console.log(combo.valueModels[0].data.id);
+        var branchId = combo.valueModels[0].data.id,
+            urlAccount = 'data/readRecordBank_account.php?idAccount='+branchId;
+
+        var store = 'accountStore';
+        Ext.data.StoreManager.lookup(store);
+        Ext.data.StoreManager.lookup(store).getProxy().url = urlAccount;
+        Ext.data.StoreManager.lookup(store).load({
+            scope: this,
+            callback: function(records, operation, success) {
+                if (success) {
+                    Ext.getCmp('accountNo').setValue(records[0].raw.account_number);
+                    Ext.getCmp('type').setValue(records[0].raw.type);
+                } else {
+                    console.log('error');
+                }
+            }
+        });
+
 
     },
 
     init: function(application) {
         this.control({
-            "#bookBank": {
+            "#name": {
                 select: this.onComboboxSelect
             },
-            "#accountNo": {
-                select: this.onAccountNoChange
+            "#bookBank": {
+                select: this.onComboboxSelect1
             }
         });
     }

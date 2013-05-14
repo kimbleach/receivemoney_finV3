@@ -119,18 +119,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "branch"
-            },
-            "designerId": "43fedb75-18a5-4d5f-8ac4-795a166f4fc0"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
                 "name": "typeBank"
             },
             "designerId": "bbb256f0-57f7-4dea-9f26-7c901b9973f6"
@@ -146,6 +134,41 @@
                 "name": "timeStamp"
             },
             "designerId": "0ae006ef-8f64-4d0a-b375-684bc655e335"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "branch"
+            },
+            "designerId": "fd860ecc-8122-47f9-ac7b-3e3ff5f9395d"
+        },
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/payment.json"
+            },
+            "designerId": "67723df3-03b3-4c34-bc50-71dba2f0ad11",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "8dca16df-c781-48a3-8b69-82b9cb22f220"
+                }
+            ]
         }
     ]
 }

@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "bank"
+        "designer|userClassName": "branch"
     },
-    "designerId": "1e86dbe8-646f-445b-8d10-705dbd17a59a",
+    "designerId": "8ff03d18-bf18-4135-8c49-4913696f60b6",
     "cn": [
         {
             "type": "Ext.data.Field",
@@ -20,47 +20,7 @@
             "userConfig": {
                 "name": "id"
             },
-            "designerId": "82b5f3aa-8bb4-4358-9eb6-d84034bc6680"
-        },
-        {
-            "type": "Ext.data.association.HasMany",
-            "reference": {
-                "name": "hasMany",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "associationKey": "bankData",
-                "model": "account",
-                "designer|displayName": "hasManyaccount"
-            },
-            "designerId": "c788b53a-f809-4773-826a-62520478a364"
-        },
-        {
-            "type": "Ext.data.proxy.Ajax",
-            "reference": {
-                "name": "proxy",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "url": "data/readRecordBank.php"
-            },
-            "designerId": "082d95b5-2ad7-46ef-8fbd-f7f3c04200fa",
-            "cn": [
-                {
-                    "type": "Ext.data.reader.Json",
-                    "reference": {
-                        "name": "reader",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "root": "bank"
-                    },
-                    "designerId": "193fb747-ad2e-4c9a-9a33-288dca632c52"
-                }
-            ]
+            "designerId": "bfc733fe-4af8-47a3-ab36-49810d2eb06a"
         },
         {
             "type": "Ext.data.Field",
@@ -70,9 +30,48 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "bank_name"
+                "name": "name"
             },
-            "designerId": "dc778841-ecf0-44f0-9113-7bcdb5960d56"
+            "designerId": "45cc8759-6bdb-4179-900b-4dce97bcaa66"
+        },
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "model": "bank",
+                "designer|displayName": "hasManybank"
+            },
+            "designerId": "36c9b077-e4e5-41d6-afe8-7963c5758b6e"
+        },
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/readRecordBranch.php"
+            },
+            "designerId": "87ac9bce-aaf6-4049-9813-cde1041a7d56",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "branch"
+                    },
+                    "designerId": "fbec5c6f-e520-4b63-9492-9bcfc2926d8f"
+                }
+            ]
         }
     ]
 }

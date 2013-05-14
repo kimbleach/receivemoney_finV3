@@ -24,9 +24,9 @@ Ext.define('MyApp.store.bankStore', {
         var me = this;
         cfg = cfg || {};
         me.callParent([Ext.apply({
-            autoLoad: true,
+            autoLoad: false,
             model: 'MyApp.model.bank',
-            storeId: 'MyStore'
+            storeId: 'bankStore'
         }, cfg)]);
     }
 });

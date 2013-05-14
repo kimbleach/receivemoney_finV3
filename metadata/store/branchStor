@@ -1,0 +1,15 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "branch",
+        "storeId": "branchStor",
+        "designer|userClassName": "branchStor"
+    },
+    "designerId": "043b9a97-35c5-4f5d-8729-ee0dbce4d8eb"
+}

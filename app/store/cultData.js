@@ -27,14 +27,7 @@ Ext.define('MyApp.store.cultData', {
             autoLoad: true,
             model: 'MyApp.model.cultData',
             storeId: 'cultData',
-            groupField: 'date',
-            proxy: {
-                type: 'ajax',
-                url: 'data/payment.json',
-                reader: {
-                    type: 'json'
-                }
-            }
+            groupField: 'date'
         }, cfg)]);
     }
 });

@@ -20,60 +20,30 @@
             "userConfig": {
                 "fn": "onComboboxSelect",
                 "implHandler": [
-                    "this.loadBank(combo);\r",
+                    "var branchId = combo.valueModels[0].data.id,\r",
+                    "    urlBank = 'data/readRecordBank.php?idBranch='+branchId;\r",
                     "\r",
-                    "Ext.getCmp('accountNo').setValue(\"\");\r",
-                    "Ext.getCmp('name').setValue(\"\");\r",
-                    "Ext.getCmp('branch').setValue(\"\");\r",
-                    "Ext.getCmp('type').setValue(\"\");\r",
-                    ""
+                    "var store = 'bankStore';\r",
+                    "Ext.data.StoreManager.lookup(store);\r",
+                    "Ext.data.StoreManager.lookup(store).getProxy().url = urlBank;\r",
+                    "Ext.data.StoreManager.lookup(store).load({\r",
+                    "    scope: this,\r",
+                    "    callback: function(records, operation, success) {\r",
+                    "        if (success) {\r",
+                    "            Ext.getCmp('bookBank').setValue('');\r",
+                    "            Ext.getCmp('accountNo').setValue('');\r",
+                    "        } else {\r",
+                    "            console.log('error');\r",
+                    "        }\r",
+                    "    }\r",
+                    "});"
                 ],
                 "name": "select",
                 "scope": "me",
                 "designer|targetType": "Ext.form.field.ComboBox",
-                "designer|controlQuery": "#bookBank"
+                "designer|controlQuery": "#name"
             },
-            "designerId": "23beaf53-5568-43d1-b303-763f9608b652"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "loadBank",
-                "designer|params": [
-                    "bank"
-                ],
-                "implHandler": [
-                    "var bankStore = Ext.create(MyApp.store.bankStore),\r",
-                    "    bankInfoStore = Ext.create(MyApp.store.bankInfoStore);\r",
-                    "\r",
-                    "//Ext.getCmp('pnBankForm').getForm().getValues().bookBank\r",
-                    "\r",
-                    "\r",
-                    "Ext.data.StoreManager.get(\"info4comboStore\").removeAll();\r",
-                    "\r",
-                    "\r",
-                    "\r",
-                    "bankStore.on('load', function(store, record){\r",
-                    "\r",
-                    "    bankInfoStore.add(record[bank.valueModels[0].data.id-1]);\r",
-                    "\r",
-                    "    for(i=0; i<=bankInfoStore.data.length; i++){\r",
-                    "\r",
-                    "        var rec = bankInfoStore.data.items[0].raw.bankData[i];\r",
-                    "        //console.log(\"Rec :: \", rec);\r",
-                    "        Ext.data.StoreManager.get(\"info4comboStore\").add(rec);\r",
-                    "        //console.log(\"Store :: \", Ext.data.StoreManager.get(\"info4comboStore\"));\r",
-                    "    }\r",
-                    "\r",
-                    "});"
-                ]
-            },
-            "designerId": "e0e7b5dd-8e14-4bc4-86d0-f1007e436ca6"
+            "designerId": "bc3f9ab0-931b-452b-8f7a-bba847d80aa6"
         },
         {
             "type": "controlleraction",
@@ -83,40 +53,35 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "onAccountNoChange",
+                "fn": "onComboboxSelect1",
                 "implHandler": [
-                    "Ext.getStore('info4comboStore').removeAll();\r",
-                    "this.loadInfoCombo(combo);\r",
+                    "//console.log(combo.valueModels[0].data.id);\r",
+                    "var branchId = combo.valueModels[0].data.id,\r",
+                    "    urlAccount = 'data/readRecordBank_account.php?idAccount='+branchId;\r",
+                    "\r",
+                    "var store = 'accountStore';\r",
+                    "Ext.data.StoreManager.lookup(store);\r",
+                    "Ext.data.StoreManager.lookup(store).getProxy().url = urlAccount;\r",
+                    "Ext.data.StoreManager.lookup(store).load({\r",
+                    "    scope: this,\r",
+                    "    callback: function(records, operation, success) {\r",
+                    "        if (success) {\r",
+                    "            Ext.getCmp('accountNo').setValue(records[0].raw.account_number);\r",
+                    "            Ext.getCmp('type').setValue(records[0].raw.type);\r",
+                    "        } else {\r",
+                    "            console.log('error');\r",
+                    "        }\r",
+                    "    }\r",
+                    "});\r",
                     "\r",
                     ""
                 ],
                 "name": "select",
                 "scope": "me",
                 "designer|targetType": "Ext.form.field.ComboBox",
-                "designer|controlQuery": "#accountNo"
+                "designer|controlQuery": "#bookBank"
             },
-            "designerId": "7195ac8c-62c1-47a7-943e-339159e213a5"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "loadInfoCombo",
-                "designer|params": [
-                    "rec,account"
-                ],
-                "implHandler": [
-                    "Ext.getCmp('name').setValue(rec.valueModels[0].data.name);\r",
-                    "Ext.getCmp('branch').setValue(rec.valueModels[0].data.branch);\r",
-                    "Ext.getCmp('type').setValue(rec.valueModels[0].data.type);\r",
-                    ""
-                ]
-            },
-            "designerId": "e0ad4049-9ac3-480b-a9a3-2db89e2da3c8"
+            "designerId": "d72351d0-296c-4ff7-91a0-794b671ca915"
         }
     ]
 }

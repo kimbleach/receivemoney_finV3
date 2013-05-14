@@ -219,13 +219,29 @@
         },
         "d876644a-0d20-4588-8cc6-7e12fd2847c5": {
             "paths": [
-                "metadata/model/bankInfo",
-                "app/model/override/bankInfo.js",
-                "app/model/bankInfo.js"
+                "metadata/model/account",
+                "app/model/override/account.js",
+                "app/model/account.js"
             ],
-            "className": "bankInfo"
+            "className": "account"
         },
-        "8b27ad9f-9c84-4e54-a3ce-ccd501ca50f4": {
+        "043b9a97-35c5-4f5d-8729-ee0dbce4d8eb": {
+            "paths": [
+                "metadata/store/branchStor",
+                "app/store/override/branchStor.js",
+                "app/store/branchStor.js"
+            ],
+            "className": "branchStor"
+        },
+        "8ff03d18-bf18-4135-8c49-4913696f60b6": {
+            "paths": [
+                "metadata/model/branch",
+                "app/model/override/branch.js",
+                "app/model/branch.js"
+            ],
+            "className": "branch"
+        },
+        "c2d7a2de-633c-415a-a529-c21aef172f81": {
             "paths": [
                 "metadata/store/bankStore",
                 "app/store/override/bankStore.js",
@@ -233,21 +249,21 @@
             ],
             "className": "bankStore"
         },
-        "ef9e099a-5a83-44b6-abfc-0763c22ae60f": {
+        "a0430e3c-b620-4731-b488-706e8f90185c": {
             "paths": [
-                "metadata/store/bankInfoStore",
-                "app/store/override/bankInfoStore.js",
-                "app/store/bankInfoStore.js"
+                "metadata/model/bank_account",
+                "app/model/override/bank_account.js",
+                "app/model/bank_account.js"
             ],
-            "className": "bankInfoStore"
+            "className": "bank_account"
         },
-        "1cb8e258-fd1c-435e-bff4-019def7bc22a": {
+        "ddf000e3-be1d-4e4f-97a8-2eae2c8ed048": {
             "paths": [
-                "metadata/store/info4comboStore",
-                "app/store/override/info4comboStore.js",
-                "app/store/info4comboStore.js"
+                "metadata/store/accountStore",
+                "app/store/override/accountStore.js",
+                "app/store/accountStore.js"
             ],
-            "className": "info4comboStore"
+            "className": "accountStore"
         }
     },
     "viewOrderMap": {
@@ -269,9 +285,9 @@
             "1e004b8f-6512-4d87-a874-287f9d6b32fd",
             "5028e83a-0414-405b-8e3f-3ae7864f9637",
             "4f0aad23-b2b2-4e0e-9e3c-22c0a855dea5",
-            "8b27ad9f-9c84-4e54-a3ce-ccd501ca50f4",
-            "ef9e099a-5a83-44b6-abfc-0763c22ae60f",
-            "1cb8e258-fd1c-435e-bff4-019def7bc22a"
+            "043b9a97-35c5-4f5d-8729-ee0dbce4d8eb",
+            "c2d7a2de-633c-415a-a529-c21aef172f81",
+            "ddf000e3-be1d-4e4f-97a8-2eae2c8ed048"
         ],
         "controller": [
             "5206848e-bfe9-4732-bde7-aa654445b989",
@@ -286,7 +302,9 @@
             "2a76f874-bf40-49d7-be57-4c49ccee5c09",
             "4f716d20-f44a-41b6-b0f6-1a4fbe7e8468",
             "1e86dbe8-646f-445b-8d10-705dbd17a59a",
-            "d876644a-0d20-4588-8cc6-7e12fd2847c5"
+            "8ff03d18-bf18-4135-8c49-4913696f60b6",
+            "d876644a-0d20-4588-8cc6-7e12fd2847c5",
+            "a0430e3c-b620-4731-b488-706e8f90185c"
         ],
         "resource": [
             "5bb44bbe-f01f-43c4-afa5-48327f6e14d6"

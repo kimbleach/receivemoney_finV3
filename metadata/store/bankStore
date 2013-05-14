@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "autoLoad": true,
+        "autoLoad": false,
         "model": "bank",
-        "storeId": "MyStore",
+        "storeId": "bankStore",
         "designer|userClassName": "bankStore"
     },
-    "designerId": "8b27ad9f-9c84-4e54-a3ce-ccd501ca50f4"
+    "designerId": "c2d7a2de-633c-415a-a529-c21aef172f81"
 }

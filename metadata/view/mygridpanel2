@@ -70,8 +70,6 @@
                                     "    return '(No Date)';\r",
                                     "}\r",
                                     "dueDateTime = Ext.Date.clearTime(date).getTime();\r",
-                                    "console.log('funtion group ');\r",
-                                    "console.log(dueDateTime);\r",
                                     "\r",
                                     "if(dueDateTime === todayTime) {\r",
                                     "    return '<span style=\"color:blue;\">Today</span>';\r",

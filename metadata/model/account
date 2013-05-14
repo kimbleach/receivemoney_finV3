@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "bankInfo"
+        "designer|userClassName": "account"
     },
     "designerId": "d876644a-0d20-4588-8cc6-7e12fd2847c5",
     "cn": [
@@ -30,18 +30,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "name"
-            },
-            "designerId": "0c4a4ff6-1b17-4da7-976f-83030724a026"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
                 "name": "branch"
             },
             "designerId": "c566d26e-0aee-4dda-9ebc-9f064cf84d23"
@@ -54,7 +42,19 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "accountNo"
+                "name": "type"
+            },
+            "designerId": "8582ab2f-e4be-4d68-b221-db3a0a0ab5cf"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "account_number"
             },
             "designerId": "cc3d367d-1292-4a4d-b9e7-8f7454d262de"
         },
@@ -66,9 +66,21 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "type"
+                "name": "bank_id"
             },
-            "designerId": "8582ab2f-e4be-4d68-b221-db3a0a0ab5cf"
+            "designerId": "41d89ea0-d911-4c5e-a6f7-a0517e03327e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "branch_id"
+            },
+            "designerId": "dbcf7aa7-0d0c-4888-a454-34c546dbb086"
         }
     ]
 }
